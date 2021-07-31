@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+repo_dir="$HOME/.til"
+remote=https://github.com/SKalt/til.git
+
+is_git_dir() { git rev-parse; }
+tracked_in_git() { git ls-files --error-unmatch -- "$1" &>/dev/null; }
+file_exists() { test -f "$1"; }
+til_file_name() { echo "$(date +'%Y/%m/%d').md"; }
+
+template_til_file() {
+  local tags=()
+  tags=("$@")
+  echo "---"
+  printf "tags: ["
+  if test "${#tags[@]}" -gt 0; then echo; fi
+  for tag in "${tags[@]}"; do echo "  $tag,"; done
+  echo "]"
+  echo "---"
+}
+
+ensure_git_dir_pulled() {
+  if ! (is_git_dir); then
+    (
+      cd "$repo_dir" &&
+        git init &&
+        git remote add origin $remote &&
+        git fetch &&
+        git checkout --track origin/master
+    )
+  else
+    git pull
+  fi
+}
+
+ensure_file_exists() {
+  local target="$1"
+  shift
+  if ! file_exists "$target"; then template_til_file "$@" >"$target"; fi
+}
+
+commit_and_push() {
+  # must be run inside ~/.til
+  git add "$1"
+  if (git status --short -- "$1" | grep -qe '^.M'); then
+    git commit --no-gpg-sign --amend
+  else
+    git commit --no-gpg-sign -m "til"
+  fi
+  git push
+}
+
+usage() {
+  echo "USAGE: $0 [-h|--help] [TAGS...]"
+  echo "Record what you learned today at ~/.til/$(til_file_name)"
+}
+
+main() {
+  for arg in "$@"; do
+    case "$arg" in
+    -h | --help) usage && exit 0 ;;
+    esac
+  done
+  local target
+  target="$HOME/.til/$(til_file_name)"
+  local target_dir="${target%/*}"
+  mkdir -p "$target_dir"
+  (
+    cd "$target_dir" || exit 127
+
+    ensure_git_dir_pulled
+    ensure_file_exists "$target" "$@"
+
+    # maybe edit the file
+    local before
+    before="$(shasum -a 256 "$target")"
+    ${EDITOR:-vi} "$target"
+    local after
+    after="$(shasum -a 256 "$target")"
+
+    if test "$before" = "$after"; then
+      if ! tracked_in_git "$target"; then rm "$target"; fi
+    else
+      commit_and_push "$target"
+    fi
+  )
+}
+
+if test "$0" = "${BASH_SOURCE[0]}"; then main "$@"; fi
