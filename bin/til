@@ -73,7 +73,7 @@ main() {
     # maybe edit the file
     local before
     before="$(shasum -a 256 "$target")"
-    ${EDITOR:-vi} "$target"
+    sh -c "${EDITOR:-vi} $target"
     local after
     after="$(shasum -a 256 "$target")"
 
