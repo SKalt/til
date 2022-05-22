@@ -1,3 +1,4 @@
+title: TIL
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -5,3 +6,5 @@ plugins:
 exclude:
   - _config.yaml
   - .vscode
+  - docker-compose.yaml
+  - Makefile

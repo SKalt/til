@@ -1,0 +1,13 @@
+version: "3"
+services:
+  jekyll:
+    image: jekyll/jekyll:3.8
+    command: ["jekyll", "serve", "--livereload"]
+    ports:
+      - 4000:4000
+      - 35729:35729 # for the livereload.js
+    volumes:
+      - .:/srv/jekyll
+      - bundler:/usr/local/bundle
+volumes:
+  bundler:
