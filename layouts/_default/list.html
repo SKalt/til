@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+<main>
+  <!-- TODO: paginate -->
+  {{ range .Pages }}
+  <article>
+    <h2>
+      <a href="{{.Permalink}}">{{ .File.Dir }}{{ .File.BaseFileName }}</a>
+    </h2>
+    {{ .Content }}
+  </article>
+  {{ end }}
+</main>
+{{ end }}

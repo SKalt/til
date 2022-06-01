@@ -1,0 +1,23 @@
+{{define "main"}}
+<main>
+  <div>
+    <input id="search-input" type="search">
+    <ol id="results" style="padding: 0">
+
+    </ol>
+  </div>
+  <style>
+    .search-match-context {
+      color: #000;
+    }
+    .tag {
+      /* margin: .25em; */
+      border: 1px solid #ccc;
+      border-radius: 2px;
+    }
+  </style>
+  <script>window.articleIndexUrl="{{$.Site.BaseURL}}/index.json"</script>
+  <script src="{{(resources.Get "search.js" | resources.Minify | resources.Fingerprint).Permalink}}" type="module"></script>
+</main>
+<!-- layout: search -->
+{{end}}

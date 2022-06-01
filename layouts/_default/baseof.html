@@ -1,0 +1,38 @@
+{{ $style := resources.Get "critical.css" | resources.Minify | resources.Fingerprint }}
+{{ $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint }}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+    {{ block "header" .}}
+    <header>
+      <h1><a href="{{ $.Site.BaseURL }}">Today I Learned</a></h1>
+      <nav>
+        <a href="{{ absURL "tags" }}">tags</a>
+        <a href="{{ absURL "search" }}">search</a>
+        <a href="https://github.com/skalt/til">
+            <img alt="repo" title="repo" src="{{(resources.Get "icon_gh.svg" | resources.Fingerprint).Permalink}}">
+        </a>
+        <a href="{{ site.RSSLink }}">
+            <img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
+        </a>
+      </nav>
+    </header>
+    {{ end }}
+
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    {{ block "footer" . }}
+    <footer>
+      <span>© 2022-2022 {{ $.Site.Copyright }}</span>
+    </footer>
+    {{ end }}
+  </body>
+</html>

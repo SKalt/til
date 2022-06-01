@@ -1,0 +1,26 @@
+baseurl = 'https://skalt.github.io/til/'
+title = 'Today I Learned'
+enableGitInfo = true
+copyright = 'CC BY-NC-SA 4.0'
+[outputs]
+  home = ['html', 'json']
+[params]
+  AuthorName = 'Steven Kalt'
+  GitHubUser = 'skalt'
+
+[frontmatter]
+    lastmod = [':git', 'lastmod', 'date', 'publishDate']
+    publishDate = ['publishDate', 'date']
+    date = [':filename']
+
+[permalinks]
+  posts = '/:year/:month/:day/'
+
+[module]
+  [[module.mounts]]
+    source = '.'
+    target = 'content'
+    includeFiles = ['20**/**/*', 'search*']
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'

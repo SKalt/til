@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <main>
+    <h1><a href="{{ absURL .Type }}">{{ .Type }}</a>/<span>{{ path.Base .File.Dir }}</span>/{{.File.BaseFileName}}</h1>
+    <div>
+      {{ range .Params.Tags}}
+        {{ partial "tag.html" . }}
+      {{ end }}
+    </div>
+    {{ .Content }}
+  </main>
+  <!-- layout: single -->
+{{ end }}
