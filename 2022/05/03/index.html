@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset=utf-8><title>Today I Learned</title><link rel=stylesheet href=https://skalt.github.io/til/critical.min.6a570671870106508e2497b90c05333d19507b005db5ea6494292ce07c759a26.css></head><body><header><h1><a href=https://skalt.github.io/til/>Today I Learned</a></h1><nav><a href=https://skalt.github.io/til/tags>tags</a>
+<a href=https://skalt.github.io/til/search>search</a>
+<a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a>
+<a href><img alt=rss title=rss src=https://skalt.github.io/til/icon_rss.2712ea2c7402d63d00f842fbc9dc64b6461012d726f7385aae61b031d1614ebd.svg></a></a></nav></header><main><h1><a href=https://skalt.github.io/til/2022>2022</a>/<span>05</span>/03</h1><div><a href=https://skalt.github.io/til/tags/terraform>terraform</a>
+<a href=https://skalt.github.io/til/tags/tf>tf</a>
+<a href=https://skalt.github.io/til/tags/aws>aws</a></div><p>aws policy documents can change the order of items within permissions arrays, but that&rsquo;s safe to ignore:</p><ul><li><a href=https://github.com/hashicorp/terraform-provider-aws/issues/11801>Order is lost for data <code>aws_iam_policy_document</code></a></li><li><a href=https://github.com/jen20/awspolicyequivalence/issues/10>Policy elements that are syntactically lists but semantically sets should have their order ignored</a></li><li><a href=https://github.com/hashicorp/terraform-provider-aws/issues/23288>Perpetual diffs / Objects have changed outside of Terraform</a> tracking ticket</li></ul><p>Also, that <code>&</code> types take 8 bytes = 64 bits on 64-bit systems</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#66d9ef>use</span> std::mem;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>pub</span> <span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Foo</span> {
+</span></span><span style=display:flex><span>    bar: String, <span style=color:#75715e>// 24
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    baz: <span style=color:#66d9ef>usize</span>, <span style=color:#75715e>// 8
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>pub</span> <span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Quux</span><span style=color:#f92672>&lt;&#39;</span><span style=color:#a6e22e>a</span><span style=color:#f92672>&gt;</span> {
+</span></span><span style=display:flex><span>    foo: <span style=color:#66d9ef>&amp;</span><span style=color:#f92672>&#39;</span><span style=color:#a6e22e>a</span> <span style=color:#a6e22e>Foo</span>,
+</span></span><span style=display:flex><span>    bar: <span style=color:#66d9ef>usize</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fn</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    println!(<span style=color:#e6db74>&#34;Foo: {}&#34;</span>, mem::size_of::<span style=color:#f92672>&lt;</span>Foo<span style=color:#f92672>&gt;</span>()); <span style=color:#75715e>// 32
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    println!(<span style=color:#e6db74>&#34;&amp;Foo: {}&#34;</span>, mem::size_of::<span style=color:#f92672>&lt;&amp;</span>Foo<span style=color:#f92672>&gt;</span>()); <span style=color:#75715e>// 8 -- a pointer?
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    println!(<span style=color:#e6db74>&#34;Quux: {}&#34;</span>, mem::size_of::<span style=color:#f92672>&lt;</span>Quux<span style=color:#f92672>&gt;</span>()); <span style=color:#75715e>// 16 -- a pointer + a usize!
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    println!(<span style=color:#e6db74>&#34;&amp;Quux: {}&#34;</span>, mem::size_of::<span style=color:#f92672>&lt;&amp;</span>Quux<span style=color:#f92672>&gt;</span>()); <span style=color:#75715e>// 8 -- another pointer
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
