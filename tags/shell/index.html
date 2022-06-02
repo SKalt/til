@@ -62,4 +62,7 @@ See <a href=https://www.sudo.ws/posts/2022/05/sudo-for-blue-teams-how-to-control
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>JOIN</span> other_table
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>USING</span> (common_column)
 </span></span></code></pre></div><p>as shorthand for <code>one_table.common_column = other_table.common_column</code>.
-See <a href=https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM>https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM</a></p></li></ul></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+See <a href=https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM>https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM</a></p></li></ul></article><article><h2><a href=https://skalt.github.io/til/2022/06/01/>2022/06/01</a></h2><p>That <code>pg_dumpall</code> exists.
+That you need to use <code>pg_dumpall</code> to dump tablespaces, roles, and subscriptions.
+That <code>pg_dumpall</code> will dump the <code>postgres</code> role by default, causing resultant dump to fail to restore.
+Fortunately, I&rsquo;m able to <code>grep -ve '^CREATE ROLE postgres</code></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
