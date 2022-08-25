@@ -1,28 +1,22 @@
 {{ define "main" }}
 <main>
   <article>
-
-    {{ range first 1 .Pages.ByDate.Reverse }}
-      {{ range first 1 .Pages.ByDate.Reverse }}
-        <h2><a href="{{ .Permalink }}">
-          {{ .File.Dir }}{{ .File.BaseFileName }}
-        </a></h2>
-        <div>
-          {{.Content}}
-        </div>
-      {{ end}}
-    <div>
-      {{ .Content }}
-    </div>
+    {{ range first 1 .Pages.ByDate.Reverse }} {{ range first 1
+    .Pages.ByDate.Reverse }}
+    <h2>
+      <a href="{{ .Permalink }}"> {{ .File.Dir }}{{ .File.BaseFileName }} </a>
+    </h2>
+    <div>{{.Content}}</div>
+    {{ end}}
+    <div>{{ .Content }}</div>
     {{end}}
   </article>
   <ul style="list-style: none; padding: 0">
-    {{ range where .Pages.Reverse "Type" "!=" "search" }}
-      <li>
-        <a href="{{.Permalink}}">{{.Type}}</a>
-      </li>
+    {{ range where .Pages.Reverse "Type" "!=" "page" }}
+    <li>
+      <a href="{{.Permalink}}">{{.Type}}</a>
+    </li>
     {{ end}}
   </ul>
 </main>
 {{ end }}
-

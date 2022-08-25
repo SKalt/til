@@ -1,14 +1,18 @@
-
 {{ define "main" }}
 <main>
   <!-- TODO: paginate -->
-  {{ range .Pages }}
+  {{ if (eq .Type "tags") }} {{ range .Pages }}
+  <article>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+    {{ .Content }}
+  </article>
+  {{ end }} {{ else }} {{ range .Pages }}
   <article>
     <h2>
       <a href="{{.Permalink}}">{{ .File.Dir }}{{ .File.BaseFileName }}</a>
     </h2>
     {{ .Content }}
   </article>
-  {{ end }}
+  {{ end }} {{ end }}
 </main>
 {{ end }}

@@ -6,6 +6,10 @@
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
@@ -18,9 +22,11 @@
         <a href="https://github.com/skalt/til">
             <img alt="repo" title="repo" src="{{(resources.Get "icon_gh.svg" | resources.Fingerprint).Permalink}}">
         </a>
-        <a href="{{ site.RSSLink }}">
-            <img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
-        </a>
+        {{ with .OutputFormats.Get "rss" -}}
+          <a href="{{ .Permalink }}">
+              <img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
+          </a>
+        {{ end -}}
       </nav>
     </header>
     {{ end }}
