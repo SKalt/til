@@ -4,7 +4,7 @@ enableGitInfo = true
 copyright = 'CC BY-NC-SA 4.0'
 languageCode = 'en-us'
 [outputs]
-  home = ['html', 'json']
+  home = ['html', 'json', 'rss']
 [params]
   AuthorName = 'Steven Kalt'
   GitHubUser = 'skalt'
