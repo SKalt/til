@@ -86,4 +86,6 @@ That in linux ls(1) uses the environment variable LS_COLORS to determine the col
 See https://man7.org/linux/man-pages/man5/dir_colors.5.html
 That nix is complicated, which is exactly what my prior research told me.
 On one hand, it is AWESOME to cd into a project and watch direnv automatically spawn a development shell with all the fixings.</description></item><item><title/><link>https://skalt.github.io/til/2022/10/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/24/</guid><description>That you can list all addresses in terraform state by running
-terraform state list Docs at https://developer.hashicorp.com/terraform/cli/commands/state/list</description></item></channel></rss>
+terraform state list Docs at https://developer.hashicorp.com/terraform/cli/commands/state/list
+Also, that compgen -v is a function, at least on Mac zsh. Apparently in zsh compgen -v calls something like
+for var_name in &amp;#34;${(k)parameters[@]}&amp;#34;; do printf &amp;#39;%s\n&amp;#39; &amp;#34;$var_name&amp;#34; done which is the first time I&amp;rsquo;ve seen that kind of shell syntax. It generates a bad substitution message in bash 3.2, so I can only assume it&amp;rsquo;s zsh-specific.</description></item></channel></rss>
