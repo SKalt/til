@@ -69,4 +69,5 @@ print_fn_src() { declare -f &amp;#34;$1&amp;#34;; }</description></item><item><t
 That in linux ls(1) uses the environment variable LS_COLORS to determine the colors in which the filenames are to be displayed. Also, that linux specifies a dir_colors(5) configuration file format for dircolors(1), which exports LS_COLORS
 See https://man7.org/linux/man-pages/man5/dir_colors.5.html
 That nix is complicated, which is exactly what my prior research told me.
-On one hand, it is AWESOME to cd into a project and watch direnv automatically spawn a development shell with all the fixings.</description></item></channel></rss>
+On one hand, it is AWESOME to cd into a project and watch direnv automatically spawn a development shell with all the fixings.</description></item><item><title/><link>https://skalt.github.io/til/2022/10/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/24/</guid><description>That you can list all addresses in terraform state by running
+terraform state list Docs at https://developer.hashicorp.com/terraform/cli/commands/state/list</description></item></channel></rss>
