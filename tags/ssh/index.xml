@@ -3,4 +3,5 @@ Also, that make has a MAKEFLAGS variable that can be used in recursive calls to 
 When I got
 Received disconnect from 256.256.256.256 port 22:2: too many authentication failures I found the following: https://www.tecmint.com/fix-ssh-too-many-authentication-failures-error/ which advocated adding
 Host * IdentitiesOnly yes to reduce the number of tried keys</description></item><item><title/><link>https://skalt.github.io/til/2022/11/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/10/</guid><description>That Bitbucket pipelines has pipeline-specific SSH keys available at the path $BITBUCKET_SSH_KEY_FILE. See https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/
-Also, git rev-parse --show-git-dir yields a relative path to the .git dir for that repo.</description></item></channel></rss>
+Also, git rev-parse --show-git-dir yields a relative path to the .git dir for that repo.</description></item><item><title/><link>https://skalt.github.io/til/2023/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/29/</guid><description>how to setup passwordless SSH login:
+ssh-copy-id $(whoami)@${other_host} https://linuxize.com/post/how-to-setup-passwordless-ssh-login/</description></item></channel></rss>
