@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset=utf-8><title>Today I Learned</title><link rel=alternate type=application/rss+xml href=https://skalt.github.io/til/tags/ssl/index.xml title="Today I Learned"><link rel=stylesheet href=https://skalt.github.io/til/critical.min.594b5b7a363d42cef2053010611ce4d2364196b08b295f8bf7199f9406b595e4.css></head><body><header><h1><a href=https://skalt.github.io/til/>Today I Learned</a></h1><nav><a href=https://skalt.github.io/til/tags>tags</a>
+<a href=https://skalt.github.io/til/search>search</a>
+<a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a>
+<a href=https://skalt.github.io/til/tags/ssl/index.xml><img alt=rss title=rss src=https://skalt.github.io/til/icon_rss.2712ea2c7402d63d00f842fbc9dc64b6461012d726f7385aae61b031d1614ebd.svg></a></a></nav></header><main><article><a href=https://skalt.github.io/til/2023/02/22/></a><p>How to make a self-signed TLS certificate:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e># stolen from https://stackoverflow.com/questions/10175812/how-to-generate-a-self-signed-ssl-certificate-using-openssl</span>
+</span></span><span style=display:flex><span>openssl <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  req -x509 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -newkey rsa:4096 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -keyout key.pem <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -out cert.pem <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -sha256 -days <span style=color:#ae81ff>365</span> -nodes -subj <span style=color:#e6db74>&#39;/CN=localhost&#39;</span>
+</span></span></code></pre></div></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
