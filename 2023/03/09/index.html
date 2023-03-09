@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset=utf-8><title>Today I Learned</title><link rel=stylesheet href=https://skalt.github.io/til/critical.min.594b5b7a363d42cef2053010611ce4d2364196b08b295f8bf7199f9406b595e4.css></head><body><header><h1><a href=https://skalt.github.io/til/>Today I Learned</a></h1><nav><a href=https://skalt.github.io/til/tags>tags</a>
+<a href=https://skalt.github.io/til/search>search</a>
+<a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a></nav></header><main><h1><a href=https://skalt.github.io/til/2023>2023</a>/<span>03</span>/09</h1><div><a href=https://skalt.github.io/til/tags/git>git</a>
+<a href=https://skalt.github.io/til/tags/git-fsck>git-fsck</a>
+<a href=https://skalt.github.io/til/tags/git-worktree>git-worktree</a></div><p>This was a bit of a rollercoaster morning:
+(1) I tried <code>git worktree add $branch</code>, and it was pretty convenient!
+(2) until I got a pre-commit error, then I got <code>error: unable to read $HASH</code> on <code>git status</code>
+(3) which led me to discover <code>git fsck --full --name-objects</code>, which is currently yelling about <code>error: $HASH: invalid sha1 pointer in cache-tree</code></p></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
