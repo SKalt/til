@@ -28,4 +28,16 @@
 See <a href="https://docs.python.org/3/library/functions.html?highlight=isinstance#isinstance">https://docs.python.org/3/library/functions.html?highlight=isinstance#isinstance</a>.</p></article><article><a href=https://skalt.github.io/til/2023/03/04/></a><blockquote><p>The string &ldquo;0.1.12&rdquo; is a version requirement. Although it looks like a
 specific version of the time crate, it actually specifies a range of versions
 and allows SemVer compatible updates.</p><p>&ndash; <a href=https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html>https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html</a></p></blockquote><p>Instead, in order to lock to a specific version of a crate, you need to write
-<code>= 0.1.2</code>.</p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+<code>= 0.1.2</code>.</p></article><article><a href=https://skalt.github.io/til/2023/05/24/></a><p>That you can destructure struct values:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Point</span> {
+</span></span><span style=display:flex><span>    x: <span style=color:#66d9ef>i32</span>,
+</span></span><span style=display:flex><span>    y: <span style=color:#66d9ef>i32</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fn</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> p <span style=color:#f92672>=</span> Point { x: <span style=color:#ae81ff>0</span>, y: <span style=color:#ae81ff>7</span> };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> Point { x: <span style=color:#a6e22e>a</span>, y: <span style=color:#a6e22e>b</span> } <span style=color:#f92672>=</span> p;
+</span></span><span style=display:flex><span>    assert_eq!(<span style=color:#ae81ff>0</span>, a);
+</span></span><span style=display:flex><span>    assert_eq!(<span style=color:#ae81ff>7</span>, b);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>see <a href=https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs>https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
