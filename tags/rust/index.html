@@ -40,4 +40,18 @@ and allows SemVer compatible updates.</p><p>&ndash; <a href=https://doc.rust-lan
 </span></span><span style=display:flex><span>    assert_eq!(<span style=color:#ae81ff>0</span>, a);
 </span></span><span style=display:flex><span>    assert_eq!(<span style=color:#ae81ff>7</span>, b);
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>see <a href=https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs>https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+</span></span></code></pre></div><p>see <a href=https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs>https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs</a></p></article><article><a href=https://skalt.github.io/til/2023/06/18/></a><p>By default, a closure seems to live as long as its parent function <em>unless</em> you use the <code>move</code> keyword.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#66d9ef>fn</span> <span style=color:#a6e22e>unmoved</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>&#39;a</span><span style=color:#f92672>&gt;</span>(arg: <span style=color:#66d9ef>&amp;</span><span style=color:#a6e22e>&#39;a</span> <span style=color:#66d9ef>str</span>) -&gt; <span style=color:#a6e22e>impl</span> Fn() <span style=color:#f92672>+</span> <span style=color:#a6e22e>&#39;a</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> f <span style=color:#f92672>=</span> <span style=color:#f92672>||</span> println!(<span style=color:#e6db74>&#34;unmoved: </span><span style=color:#e6db74>{}</span><span style=color:#e6db74>&#34;</span>, arg);
+</span></span><span style=display:flex><span>    f
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fn</span> <span style=color:#a6e22e>moved</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>&#39;a</span><span style=color:#f92672>&gt;</span>(arg: <span style=color:#66d9ef>&amp;</span><span style=color:#a6e22e>&#39;a</span> <span style=color:#66d9ef>str</span>) -&gt; <span style=color:#a6e22e>impl</span> Fn() <span style=color:#f92672>+</span> <span style=color:#a6e22e>&#39;a</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> f <span style=color:#f92672>=</span> <span style=color:#66d9ef>move</span> <span style=color:#f92672>||</span> println!(<span style=color:#e6db74>&#34;moved: </span><span style=color:#e6db74>{}</span><span style=color:#e6db74>&#34;</span>, arg);
+</span></span><span style=display:flex><span>    f
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fn</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    unmoved(<span style=color:#e6db74>&#34;a&#34;</span>)() <span style=color:#75715e>// does not compile
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    moved(<span style=color:#e6db74>&#34;b&#34;</span>)() <span style=color:#75715e>// works fine
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><p>&ndash; <a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2021&amp;gist=abbd6cb412ea85aea82d1861c55eba35">playground link</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
