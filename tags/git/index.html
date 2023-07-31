@@ -35,4 +35,351 @@
 </span></span><span style=display:flex><span>git log
 </span></span><span style=display:flex><span><span style=color:#75715e># &lt;hash&gt;</span>
 </span></span><span style=display:flex><span><span style=color:#75715e># # not a comment, apparently</span>
-</span></span></code></pre></div></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+</span></span></code></pre></div></article><article><a href=https://skalt.github.io/til/2023/07/30/></a><h1 id=getting-the-top-level-directory-of-the-relevant-git-worktree>Getting the top-level directory of the relevant git worktree</h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e># set up a dummy repo</span>
+</span></span><span style=display:flex><span>set -euo pipefail
+</span></span><span style=display:flex><span>experiment_dir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>mktemp -d --tmpdir test_repo.XXX<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>git clone --recurse-submodules git@github.com:SKalt/dummy_repo.git <span style=color:#e6db74>&#34;</span>$experiment_dir<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>cd <span style=color:#e6db74>&#34;</span>$experiment_dir<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>git pull --recurse-submodules<span style=color:#f92672>=</span>yes
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>git checkout -b brnch <span style=color:#f92672>&amp;&amp;</span> git checkout - <span style=color:#75715e># set up a dummy branch</span>
+</span></span><span style=display:flex><span>git worktree add wrktr brnch <span style=color:#75715e># add a wortree</span>
+</span></span><span style=display:flex><span>cd wrktr <span style=color:#f92672>&amp;&amp;</span>  git submodule update --init --recursive <span style=color:#75715e># init the recursive submodules in the worktree</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>tree .
+</span></span></code></pre></div><pre tabindex=0><code>.
+├── LICENSE
+├── nested
+│   └── file.txt
+├── README.md
+├── submod
+│   ├── LICENSE
+│   ├── nested
+│   │   └── file.txt
+│   ├── README.md
+│   └── submod
+│       ├── LICENSE
+│       ├── nested
+│       │   └── file.txt
+│       └── README.md
+└── wrktr
+    ├── LICENSE
+    ├── nested
+    │   └── file.txt
+    ├── README.md
+    └── submod
+        ├── LICENSE
+        ├── nested
+        │   └── file.txt
+        ├── README.md
+        └── submod
+            ├── LICENSE
+            ├── nested
+            │   └── file.txt
+            └── README.md
+
+11 directories, 18 files
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>tree .git
+</span></span></code></pre></div><pre tabindex=0><code>./.git
+├── branches
+├── config
+├── description
+├── HEAD
+├── hooks/...
+├── index
+├── info/...
+├── logs/...
+├── modules
+│   └── submod
+│       ├── branches
+│       ├── config
+│       ├── description
+│       ├── HEAD
+│       ├── hooks/...
+│       ├── index
+│       ├── info/...
+│       ├── logs/...
+│       ├── modules
+│       │   └── submod
+│       │       ├── branches
+│       │       ├── config # &lt;- contains relative path in core.worktree
+│       │       ├── description
+│       │       ├── HEAD
+│       │       ├── hooks/...
+│       │       ├── index
+│       │       ├── info/...
+│       │       ├── logs/...
+│       │       ├── objects/...
+│       │       ├── packed-refs
+│       │       └── refs/...
+│       ├── objects/...
+│       ├── packed-refs
+│       └── refs/...
+├── objects/...
+├── packed-refs
+├── refs
+│   ├── heads
+│   │   ├── brnch
+│   │   └── main
+│   ├── remotes
+│   │   └── origin
+│   │       └── HEAD
+│   └── tags
+└── worktrees
+    └── wrktr
+        ├── commondir
+        ├── gitdir
+        ├── HEAD
+        ├── index
+        ├── logs
+        │   └── HEAD
+        ├── modules
+        │   └── submod
+        │       ├── branches
+        │       ├── config
+        │       ├── description
+        │       ├── HEAD
+        │       ├── hooks/...
+        │       ├── index
+        │       ├── info/...
+        │       ├── logs/...
+        │       ├── modules
+        │       │   └── submod
+        │       │       ├── branches
+        │       │       ├── config
+        │       │       ├── description
+        │       │       ├── HEAD
+        │       │       ├── hooks/...
+        │       │       ├── index
+        │       │       ├── info/...
+        │       │       ├── logs/...
+        │       │       ├── objects/...
+        │       │       ├── packed-refs
+        │       │       └── refs/...
+        │       ├── objects/...
+        │       ├── packed-refs
+        │       └── refs/...
+        └── ORIG_HEAD
+
+91 directories, 133 files
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>args<span style=color:#f92672>=(</span>
+</span></span><span style=display:flex><span>    --git-common-dir
+</span></span><span style=display:flex><span>    --git-dir
+</span></span><span style=display:flex><span>    --is-inside-git-dir
+</span></span><span style=display:flex><span>    --is-inside-work-tree
+</span></span><span style=display:flex><span>    --show-toplevel
+</span></span><span style=display:flex><span><span style=color:#f92672>)</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>padding<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    local delimiter<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span> <span style=color:#75715e># must be 1ch</span>
+</span></span><span style=display:flex><span>    local message<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$2<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    local width<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>3<span style=color:#66d9ef>:-</span>78<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    printf -- <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>delimiter<span style=color:#e6db74>}</span><span style=color:#e6db74>%.0s&#34;</span> <span style=color:#66d9ef>$(</span>seq <span style=color:#ae81ff>0</span> <span style=color:#66d9ef>$((</span>$width <span style=color:#f92672>-</span> <span style=color:#e6db74>${#</span>message<span style=color:#e6db74>}</span><span style=color:#66d9ef>)))</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>header<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    message<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>printf <span style=color:#e6db74>&#34;%s &#34;</span> <span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    echo
+</span></span><span style=display:flex><span>    printf <span style=color:#e6db74>&#34;%s&#34;</span> <span style=color:#e6db74>&#34;</span>$message<span style=color:#e6db74>&#34;</span>; padding <span style=color:#e6db74>&#34;#&#34;</span> <span style=color:#e6db74>&#34;</span>$message<span style=color:#e6db74>&#34;</span>; echo
+</span></span><span style=display:flex><span>    echo
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>indent<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    padding <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span> 22;
+</span></span><span style=display:flex><span>    printf <span style=color:#e6db74>&#34;%s = &#34;</span> <span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>explore<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    local to_explore<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>        cd <span style=color:#e6db74>&#34;</span>$to_explore<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        header <span style=color:#e6db74>&#34;</span>$to_explore<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> arg in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>args[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>            indent <span style=color:#e6db74>&#34;</span>$arg<span style=color:#e6db74>&#34;</span>;
+</span></span><span style=display:flex><span>            git --no-pager rev-parse <span style=color:#e6db74>&#34;</span>$arg<span style=color:#e6db74>&#34;</span> 2&gt;&amp;<span style=color:#ae81ff>1</span> <span style=color:#f92672>||</span> true;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        indent <span style=color:#e6db74>&#34;config#core.worktree&#34;</span>
+</span></span><span style=display:flex><span>        git --no-pager config core.worktree <span style=color:#f92672>||</span> echo <span style=color:#e6db74>&#34;&lt;missing&gt;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        indent <span style=color:#e6db74>&#34;./config#core.worktree&#34;</span> <span style=color:#ae81ff>22</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -f ./config <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            git --no-pager config --file <span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span>/config core.worktree <span style=color:#f92672>||</span> echo <span style=color:#e6db74>&#34;&lt;missing&gt;&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>            echo
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span>        indent <span style=color:#e6db74>&#34;./gitdir&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -f ./gitdir <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            cat ./gitdir;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>            echo
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>}</span> | sed <span style=color:#e6db74>&#39;s/^/# /g&#39;</span> | sed <span style=color:#e6db74>&#34;s#</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>#\${PWD}#g&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>paths_to_explore<span style=color:#f92672>=(</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/nested&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/.git&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/.git/worktrees&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/.git/worktrees/wrktr&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/.git/worktrees/wrktr/modules/submod&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/wrktr&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/wrktr/submod&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/submod&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>/.git/modules/submod&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> p in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>paths_to_explore[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span> explore <span style=color:#e6db74>&#34;</span>$p<span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD} ############################################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = .git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = .git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/nested #####################################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ../.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = ${PWD}/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/.git #######################################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = fatal: this operation must be run in a work tree</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/.git/worktrees #############################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ${PWD}/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = ${PWD}/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = fatal: this operation must be run in a work tree</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/.git/worktrees/wrktr #######################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ${PWD}/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = fatal: this operation must be run in a work tree</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir = ${PWD}/wrktr/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/.git/worktrees/wrktr/modules/submod ########################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}/wrktr/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = ../../../../../wrktr/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree = ../../../../../wrktr/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/wrktr ######################################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ${PWD}/.git</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = ${PWD}/.git/worktrees/wrktr</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}/wrktr</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = &lt;missing&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/wrktr/submod ###############################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ${PWD}/.git/worktrees/wrktr/modules/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = ${PWD}/.git/worktrees/wrktr/modules/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}/wrktr/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = ../../../../../wrktr/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/submod #####################################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = ${PWD}/.git/modules/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = ${PWD}/.git/modules/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = true</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = ../../../submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ${PWD}/.git/modules/submod ########################################</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#        --git-common-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               --git-dir = .</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     --is-inside-git-dir = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   --is-inside-work-tree = false</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         --show-toplevel = ${PWD}/submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    config#core.worktree = ../../../submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  ./config#core.worktree = ../../../submod</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                ./gitdir =</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>explore_tab<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    local to_explore<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>        cd <span style=color:#e6db74>&#34;</span>$to_explore<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        printf <span style=color:#e6db74>&#39;|`%s`&#39;</span> <span style=color:#e6db74>&#34;</span>$to_explore<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> arg in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>args[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>            _result<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>git --no-pager rev-parse <span style=color:#e6db74>&#34;</span>$arg<span style=color:#e6db74>&#34;</span> 2&gt;&amp;<span style=color:#ae81ff>1</span> <span style=color:#f92672>||</span> true<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>            printf <span style=color:#e6db74>&#39;|`%s`&#39;</span> <span style=color:#e6db74>&#34;</span>$_result<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># config#core.worktree</span>
+</span></span><span style=display:flex><span>        printf <span style=color:#e6db74>&#39;|`%s`&#39;</span> <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>git --no-pager config core.worktree <span style=color:#f92672>||</span> echo <span style=color:#e6db74>&#34;&lt;missing&gt;&#34;</span><span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># ./config#core.worktree</span>
+</span></span><span style=display:flex><span>        printf <span style=color:#e6db74>&#39;|&#39;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -f ./config <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            printf <span style=color:#e6db74>&#39;`%s`&#39;</span> <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>
+</span></span><span style=display:flex><span>                git --no-pager config --file <span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span>/config core.worktree <span style=color:#f92672>||</span> echo <span style=color:#e6db74>&#34;&lt;missing&gt;&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># ./gitdir</span>
+</span></span><span style=display:flex><span>        printf <span style=color:#e6db74>&#34;|&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -f ./gitdir <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            printf <span style=color:#e6db74>&#39;`%s`&#39;</span> <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>cat ./gitdir<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span>        echo <span style=color:#e6db74>&#34;|&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>_headers<span style=color:#f92672>=(</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;pwd&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>args[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;config#core.worktree&#34;</span>
+</span></span><span style=display:flex><span>    ./config#core.worktree
+</span></span><span style=display:flex><span>    ./gitdir
+</span></span><span style=display:flex><span><span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>_headers[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span> printf <span style=color:#e6db74>&#39;|`%s`&#39;</span> <span style=color:#e6db74>&#34;</span>$i<span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;|&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>_headers[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span> printf <span style=color:#e6db74>&#34;|-&#34;</span>; <span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;|&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> p in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>paths_to_explore[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>  explore_tab <span style=color:#e6db74>&#34;</span>$p<span style=color:#e6db74>&#34;</span> | sed <span style=color:#e6db74>&#34;s#</span><span style=color:#e6db74>${</span>PWD<span style=color:#e6db74>}</span><span style=color:#e6db74>#\${PWD}#g&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><table><thead><tr><th><code>pwd</code></th><th><code>--git-common-dir</code></th><th><code>--git-dir</code></th><th><code>--is-inside-git-dir</code></th><th><code>--is-inside-work-tree</code></th><th><code>--show-toplevel</code></th><th><code>config#core.worktree</code></th><th><code>./config#core.worktree</code></th><th><code>./gitdir</code></th></tr></thead><tbody><tr><td><code>${PWD}</code></td><td><code>.git</code></td><td><code>.git</code></td><td><code>false</code></td><td><code>true</code></td><td><code>${PWD}</code></td><td><code>&lt;missing></code></td><td></td><td></td></tr><tr><td><code>${PWD}/nested</code></td><td><code>../.git</code></td><td><code>${PWD}/.git</code></td><td><code>false</code></td><td><code>true</code></td><td><code>${PWD}</code></td><td><code>&lt;missing></code></td><td></td><td></td></tr><tr><td><code>${PWD}/.git</code></td><td><code>.</code></td><td><code>.</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td><code>&lt;missing></code></td><td></td></tr><tr><td><code>${PWD}/.git/worktrees</code></td><td><code>${PWD}/.git</code></td><td><code>${PWD}/.git</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td></td><td></td></tr><tr><td><code>${PWD}/.git/worktrees/wrktr</code></td><td><code>${PWD}/.git</code></td><td><code>.</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td></td><td><code>${PWD}/wrktr/.git</code></td></tr><tr><td><code>${PWD}/.git/worktrees/wrktr/modules/submod</code></td><td><code>.</code></td><td><code>.</code></td><td><code>false</code></td><td><code>false</code></td><td><code>${PWD}/wrktr/submod</code></td><td><code>../../../../../wrktr/submod</code></td><td><code>../../../../../wrktr/submod</code></td><td></td></tr><tr><td><code>${PWD}/wrktr</code></td><td><code>${PWD}/.git</code></td><td><code>${PWD}/.git/worktrees/wrktr</code></td><td><code>false</code></td><td><code>true</code></td><td><code>${PWD}/wrktr</code></td><td><code>&lt;missing></code></td><td></td><td></td></tr><tr><td><code>${PWD}/wrktr/submod</code></td><td><code>${PWD}/.git/worktrees/wrktr/modules/submod</code></td><td><code>${PWD}/.git/worktrees/wrktr/modules/submod</code></td><td><code>false</code></td><td><code>true</code></td><td><code>${PWD}/wrktr/submod</code></td><td><code>../../../../../wrktr/submod</code></td><td></td><td></td></tr><tr><td><code>${PWD}/submod</code></td><td><code>${PWD}/.git/modules/submod</code></td><td><code>${PWD}/.git/modules/submod</code></td><td><code>false</code></td><td><code>true</code></td><td><code>${PWD}/submod</code></td><td><code>../../../submod</code></td><td></td><td></td></tr><tr><td><code>${PWD}/.git/modules/submod</code></td><td><code>.</code></td><td><code>.</code></td><td><code>false</code></td><td><code>false</code></td><td><code>${PWD}/submod</code></td><td><code>../../../submod</code></td><td><code>../../../submod</code></td><td></td></tr></tbody></table><table><thead><tr><th><code>pwd</code></th><th><code>--git-common-dir</code></th><th><code>--git-dir</code></th><th><code>--is-inside-git-dir</code></th><th><code>--is-inside-work-tree</code></th><th><code>--show-toplevel</code></th><th><code>config#core.worktree</code></th><th><code>./config#core.worktree</code></th><th><code>./gitdir</code></th></tr></thead><tbody><tr><td><code>${PWD}/.git</code></td><td><code>.</code></td><td><code>.</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td><code>&lt;missing></code></td><td></td></tr><tr><td><code>${PWD}/.git/worktrees</code></td><td><code>${PWD}/.git</code></td><td><code>${PWD}/.git</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td></td><td></td></tr><tr><td><code>${PWD}/.git/worktrees/wrktr</code></td><td><code>${PWD}/.git</code></td><td><code>.</code></td><td><code>true</code></td><td><code>false</code></td><td><code>fatal: this operation must be run in a work tree</code></td><td><code>&lt;missing></code></td><td></td><td><code>${PWD}/wrktr/.git</code></td></tr><tr><td><code>${PWD}/.git/worktrees/wrktr/modules/submod</code></td><td><code>.</code></td><td><code>.</code></td><td><code>false</code></td><td><code>false</code></td><td><code>${PWD}/wrktr/submod</code></td><td><code>../../../../../wrktr/submod</code></td><td><code>../../../../../wrktr/submod</code></td><td></td></tr><tr><td><code>${PWD}/.git/modules/submod</code></td><td><code>.</code></td><td><code>.</code></td><td><code>false</code></td><td><code>false</code></td><td><code>${PWD}/submod</code></td><td><code>../../../submod</code></td><td><code>../../../submod</code></td><td></td></tr></tbody></table></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
