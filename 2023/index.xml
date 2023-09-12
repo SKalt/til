@@ -40,4 +40,10 @@ printf &amp;#34;password: &amp;#34; read -s password printf &amp;#34;%s&amp;#34;
 --build-id[=style]
 [Create a ] .note.gnu.build-id ELF note section or a .buildid COFF section. The contents of the note are unique bits identifying this linked file.</description></item><item><title/><link>https://skalt.github.io/til/2023/09/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/09/</guid><description>To add JSON schema validation to e.g. Cargo.toml files in VSCode using tamasfe.even-better-toml, you can add a special comment:
 #:schema https://json.schemastore.org/cargo.json # see https://taplo.tamasfe.dev/configuration/directives.html#the-schema-directive That there&amp;rsquo;s such a thing as &amp;ldquo;canadian compilation&amp;rdquo;:
-If build, host, and target are all the same, this is called a native. If build and host are the same but target is different, this is called a cross. If build, host, and target are all different this is called a canadian (for obscure reasons dealing with Canada’s political party and the background of the person working on the build at that time).</description></item></channel></rss>
+If build, host, and target are all the same, this is called a native. If build and host are the same but target is different, this is called a cross. If build, host, and target are all different this is called a canadian (for obscure reasons dealing with Canada’s political party and the background of the person working on the build at that time).</description></item><item><title/><link>https://skalt.github.io/til/2023/09/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/12/</guid><description>Start typing your search with&amp;hellip;
+^ to show only matches in your browsing history.
+* to show only matches in your bookmarks.
++ to show only matches in bookmarks you’ve tagged.
+% to show only matches in your currently open tabs.
+# to show only matches where every search term is part of the title or part of a tag.
+$ to show only matches where every search term is part of the web address (URL).</description></item></channel></rss>
