@@ -1,6 +1,20 @@
-{{ $style := resources.Get "critical.css" | resources.Minify | resources.Fingerprint }}
-{{ $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint }}
-
+{{- $critical_css := resources.Get "critical.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $syntax_light := resources.Get "syntax-light.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $syntax_dark  := resources.Get "syntax-dark.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint -}}
+{{- $clipboard :=  resources.Get "copy_on_click.ts"
+  | js.Build (dict
+      "minify" true
+      "format" "iife"
+    )
+  | resources.Fingerprint
+-}}
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +24,14 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $critical_css.Permalink }}">
+    <style>
+      @import url("{{ $syntax_light.Permalink | safeCSS }}");
+      @media (prefers-color-scheme: dark) {
+        @import url("{{ $syntax_dark.Permalink | safeCSS }}");
+      }
+    </style>
+    <script src="{{ $clipboard.Permalink }}" integrity="{{ $clipboard.Data.Integrity }}" defer></script>
   </head>
   <body>
     {{ block "header" .}}
@@ -38,6 +59,7 @@
     {{ block "footer" . }}
     <footer>
       <span>© 2022-2022 {{ $.Site.Copyright }}</span>
+      <!--  -->
     </footer>
     {{ end }}
   </body>

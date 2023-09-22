@@ -8,12 +8,10 @@
   --font-color: #000;
   --background: #fff;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --font-color: #fff;
     --background: #000;
-    
   }
 }
 body {
@@ -27,7 +25,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 
 header{
   margin: auto;
@@ -47,6 +44,22 @@ footer {
 
 pre {
   padding: .25em .5em;
+  overflow-x: scroll;
+}
+div.highlight:hover {
+  position: relative;
+  /* TODO: add a border */
+}
+.copy-on-click {
+  display: none;
+}
+div.highlight:hover > .copy-on-click {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+  height: 1em;
 }
 
 code {
@@ -71,4 +84,4 @@ li.flex {
 }
 li.flex>a:first-child{
   padding-right: 1em;
-} 
+}

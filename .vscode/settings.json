@@ -1,3 +1,17 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false,
+
+    // Enable per-language
+    "[markdown]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[css]": {
+      "editor.formatOnSave": true
+    }
 }
