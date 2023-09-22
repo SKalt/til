@@ -19,6 +19,7 @@
             nixpkgs-fmt
             rnix-lsp
             hugo
+            lychee
           ];
         };
       }
