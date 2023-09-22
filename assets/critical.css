@@ -53,6 +53,9 @@ div.highlight:hover {
 .copy-on-click {
   display: none;
 }
+.highlight>pre {
+  padding-bottom: .75em; /* to make room for a lateral scrollbar*/
+}
 div.highlight:hover > .copy-on-click {
   position: absolute;
   display: block;
