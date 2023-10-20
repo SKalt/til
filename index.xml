@@ -167,4 +167,7 @@ the client generates a private/public key pair the client generates a request fo
 Internet Standard (e.g. HTTP/1.1) Proposed Standard (e.g. HTTP/3, HTTP/2) Best Current Practice Experimental Informational Historic [&amp;hellip;]
 RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group. In the IETF, these are then usually adopted by a working group, and improved and revised.
 &amp;ndash; https://www.ietf.org/standards/rfcs/
-Class fields are public by default, but private class members can be created by using a hash # prefix.</description></item></channel></rss>
+Class fields are public by default, but private class members can be created by using a hash # prefix.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>First, that hugo supports goat ascii diagrams out-of-the box.
+Second, about OAuth 2.0 authentication + authorization flows:
+Authorization Code Flow From https://tools.ietf.org/html/rfc6749#section-4.1 and https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow
+U U s s e c e r l r i c k l o g C i C l n l i i e P O e n O r T n t S e P t T d , A i c c r c c l e l e i c i s e t e s n L n t t o t t o g o I I k D I i O D e , d n T , n P t P , r o c e l I d I i D i d e A r P n t A u e t o u t c k t h t s e h o e n o r U c r i R r i z I e z a t a t t i i o o n I n D S S e t e r o r v k v e e e r n r I I d d P P Note: IdP = &amp;ldquo;Identity Provider&amp;rdquo;.</description></item></channel></rss>
