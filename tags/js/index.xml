@@ -10,4 +10,5 @@ const isVisible = (el) =&amp;gt; (el.offsetWidth || el.offsetHeight) &amp;gt; 0;
 Internet Standard (e.g. HTTP/1.1) Proposed Standard (e.g. HTTP/3, HTTP/2) Best Current Practice Experimental Informational Historic [&amp;hellip;]
 RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group. In the IETF, these are then usually adopted by a working group, and improved and revised.
 &amp;ndash; https://www.ietf.org/standards/rfcs/
-Class fields are public by default, but private class members can be created by using a hash # prefix.</description></item></channel></rss>
+Class fields are public by default, but private class members can be created by using a hash # prefix.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/31/</guid><description>That POSIX shell has configuration option, set -a or set -o allexport that exports all assigned variables. This simplifies using .env files in .envrc files:
+# evaluate a .env file, if it exists if [ -f .env ]; then set -a # assigning a variable exports the variable # shellcheck disable=SC1091 source .env set +a fi That JS has a String.raw template literal tag function that unescapes escape sequences in a backtick-string:</description></item></channel></rss>
