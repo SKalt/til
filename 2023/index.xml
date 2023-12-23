@@ -70,4 +70,4 @@ Any value in an array may be semantically null, whether primitive or nested type
 [&amp;hellip;]
 Arrays having a 0 null count may choose to not allocate the validity bitmap; how this is represented depends on the implementation
 &amp;ndash; https://arrow.apache.org/docs/format/Columnar.html#null-count
-Which is frustrating. I usually think of arrays or database columns as NOT NULL by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.</description></item></channel></rss>
+Which is frustrating. I usually think of arrays or database columns as NOT NULL by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.</description></item><item><title/><link>https://skalt.github.io/til/2023/12/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/23/</guid><description>Turns out Rust does support Any-types and downcasting: see https://doc.rust-lang.org/std/any/index.html and https://doc.rust-lang.org/std/any/struct.TypeId.html .</description></item></channel></rss>
