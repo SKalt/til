@@ -48,4 +48,17 @@ However, as a very rough guideline, an &ldquo;average&rdquo; font might have a c
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>descender  _
 </span></span></code></pre></div><h2 id=language-categories>Language categories</h2><blockquote><p>For ease of internationalization, Google has categorized languages into three categories: English-like, tall, and dense.</p><ul><li>Tall: Language scripts that require extra line height to accommodate larger glyphs &mldr; like Arabic, Hindi, Telugu, Thai, and Vietnamese.</li><li>Dense: Language scripts that require extra line height to accommodate larger glyphs but have different metrics from tall scripts.
-Includes Chinese, Japanese, and Korean.</li></ul><p>&ndash; <a href=https://m2.material.io/design/typography/language-support.html#language-categories-reference>Material Design: Language categories</a></p></blockquote></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+Includes Chinese, Japanese, and Korean.</li></ul><p>&ndash; <a href=https://m2.material.io/design/typography/language-support.html#language-categories-reference>Material Design: Language categories</a></p></blockquote></article><article><a href=https://skalt.github.io/til/2024/02/14/></a><p>A more concise way to implement light/dark modes:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=p>:</span><span class=nd>root</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>color-scheme</span><span class=p>:</span> <span class=n>light</span> <span class=n>dark</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>which saves a few more bytes than my usual</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=p>:</span><span class=nd>root</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>--fg</span><span class=p>:</span> <span class=mh>#000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>--bg</span><span class=p>:</span> <span class=mh>#fff</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>:</span><span class=nd>root</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>--fg</span><span class=p>:</span> <span class=mh>#fff</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>--bg</span><span class=p>:</span> <span class=mh>#000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>&ndash; <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences>https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
