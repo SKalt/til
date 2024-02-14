@@ -1,4 +1,3 @@
-
 :root {
   --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
     "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
@@ -26,11 +25,18 @@ body {
   margin: 0;
 }
 
-header{
+header {
   margin: auto;
 }
-nav {display: flex; justify-content: center;}
-nav>*{flex-grow: 1; display: flex; justify-content: center;}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav > * {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
 main {
   flex: 1 0 auto;
   flex-grow: 1;
@@ -43,7 +49,7 @@ footer {
 }
 
 pre {
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   overflow-x: scroll;
 }
 div.highlight:hover {
@@ -53,8 +59,8 @@ div.highlight:hover {
 .copy-on-click {
   display: none;
 }
-.highlight>pre {
-  padding-bottom: .75em; /* to make room for a lateral scrollbar */
+.highlight > pre {
+  padding-bottom: 0.75em; /* to make room for a lateral scrollbar */
 }
 div.highlight:hover > .copy-on-click {
   position: absolute;
@@ -68,7 +74,7 @@ div.highlight:hover > .copy-on-click {
 code {
   font-family: var(--mono-font);
   border-radius: 2px;
-  border: 1px solid rgba(150,150,150,0.5);
+  border: 1px solid rgba(150, 150, 150, 0.5);
 }
 pre code {
   border: none;
@@ -85,6 +91,6 @@ footer {
 li.flex {
   display: flex;
 }
-li.flex>a:first-child{
+li.flex > a:first-child {
   padding-right: 1em;
 }

@@ -17,7 +17,8 @@
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             nixpkgs-fmt
-            rnix-lsp
+            nil
+            pagefind
             hugo
             lychee
           ];
