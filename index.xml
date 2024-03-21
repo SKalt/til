@@ -202,4 +202,7 @@ See https://en.wikipedia.org/wiki/Common_Platform_Enumeration</description></ite
 An example of all five types:
 &amp;gt; [!NOTE] &amp;gt; Highlights information that users should take into account, even when skimming. &amp;gt; [!TIP] &amp;gt; Optional information to help a user be more successful. [!IMPORTANT]
 Crucial information necessary for users to succeed.
-[!WARNING]</description></item></channel></rss>
+[!WARNING]</description></item><item><title/><link>https://skalt.github.io/til/2024/03/21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/21/</guid><description>that depends_on: [ service ] waits for service to be started, not for service to be healthy.
+On startup, Compose does not wait until a container is &amp;ldquo;ready&amp;rdquo;, only until it&amp;rsquo;s running.
+The solution for detecting the ready state of a service is to use the condition attribute with one of the following options:
+service_started service_healthy. This specifies that a dependency is expected to be “healthy”, which is defined with healthcheck, before starting a dependent service.</description></item></channel></rss>
