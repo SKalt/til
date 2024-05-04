@@ -16,4 +16,28 @@ See also <a href=https://doc.rust-lang.org/cargo/reference/workspaces.html>https
 <code>go</code> will maintain a separate <code>go.work.sum</code> file with the checksums of the workspace&rsquo;s dependencies.
 <code>go work {init,use,edit}</code> manages the work-files.
 <code>$GOWORK</code> pointing to a file named like <code>*.work</code> can switch between multiple workspace files.
-See <a href=https://go.dev/ref/mod#workspaces;>https://go.dev/ref/mod#workspaces;</a> the syntax of <code>*.work</code> files is roughly equivalent to the syntax in <code>go.mod</code>.</p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+See <a href=https://go.dev/ref/mod#workspaces;>https://go.dev/ref/mod#workspaces;</a> the syntax of <code>*.work</code> files is roughly equivalent to the syntax in <code>go.mod</code>.</p><hr><p>That none of the following options ensure unused debug info is not included in rust wasm output:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[</span><span class=nx>profile</span><span class=p>.</span><span class=nx>release</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nx>opt-level</span> <span class=p>=</span> <span class=s2>&#34;z&#34;</span>
+</span></span><span class=line><span class=cl><span class=nx>lto</span> <span class=p>=</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl><span class=nx>codegen-units</span> <span class=p>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl><span class=nx>panic</span> <span class=p>=</span> <span class=s2>&#34;abort&#34;</span>
+</span></span></code></pre></div><p>Commenting each line and rebuilding with <code>--target=wasm32-unknown-unknown --release</code> resulted in 0% change in output .wasm size.
+In each experiment, <code>twiggy garbage ./target/wasm*/release/my_lib.wasm</code> reported</p><pre tabindex=0><code> Bytes  │ Size % │ Garbage Item
+────────┼────────┼─────────────────────────────────────────
+ 280220 ┊ 33.30% ┊ custom section &#39;.debug_str&#39;
+ 181364 ┊ 21.55% ┊ custom section &#39;.debug_info&#39;
+ 159353 ┊ 18.94% ┊ custom section &#39;.debug_line&#39;
+  96881 ┊ 11.51% ┊ custom section &#39;.debug_pubnames&#39;
+  87936 ┊ 10.45% ┊ custom section &#39;.debug_ranges&#39;
+   2030 ┊  0.24% ┊ custom section &#39;.debug_abbrev&#39;
+    342 ┊  0.04% ┊ custom section &#39;.debug_pubtypes&#39;
+     67 ┊  0.01% ┊ custom section &#39;producers&#39;
+     28 ┊  0.00% ┊ custom section &#39;target_features&#39;
+ 808221 ┊ 96.05% ┊ Σ [9 Total Rows]
+</code></pre><p>I cut those sections out using the 2-year-old recipe from <a href=https://github.com/Xe/x/blob/c87eb51e0afe78a958eecaffb83318f91c6f78dd/web/mastosan/README.md>https://github.com/Xe/x/blob/c87eb51e0afe78a958eecaffb83318f91c6f78dd/web/mastosan/README.md</a>:</p><pre tabindex=0><code>wasm-opt -oZ ...
+wasm-snip \
+  --skip-producers-section \
+  --snip-rust-panicking-code \
+  --snip-rust-fmt-code \
+  ...
+</code></pre></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
