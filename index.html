@@ -1,33 +1,5 @@
-<!doctype html><html><head><meta name=generator content="Hugo 0.125.5"><meta charset=utf-8><title>Today I Learned</title>
+<!doctype html><html><head><meta name=generator content="Hugo 0.127.0"><meta charset=utf-8><title>Today I Learned</title>
 <link rel=alternate type=application/rss+xml href=https://skalt.github.io/til/index.xml title="Today I Learned"><link rel=stylesheet href=https://skalt.github.io/til/critical.min.31ad46bcf2679dac23a81f48b7ead9b8f05c1c77fe86709a56fcce62f2ee6107.css><style>@import "https://skalt.github.io/til/syntax-light.min.cf596d35510d6f4d08d1eec88d3d2374b3ba785ef2c68eb605930d31b93576a5.css";@media(prefers-color-scheme:dark){@import "https://skalt.github.io/til/syntax-dark.min.aa68da46c4e748d1db4b8300bf7e282aaa0befd767ada0dcc34734e9ac4e0d51.css"}</style><script src=https://skalt.github.io/til/copy_on_click.3e911aeaa98e4d249246dac78aeae0701f095f2f31738c7f930a823f012b4c2b.js integrity="sha256-PpEa6qmOTSSSRtrHiurgcB8JXy8xc4x/kwqCPwErTCs=" defer></script></head><body><header><h1><a href=https://skalt.github.io/til/>Today I Learned</a></h1><nav><a href=https://skalt.github.io/til/tags>tags</a>
 <a href=https://skalt.github.io/til/search>search</a>
 <a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg>
-</a><a href=https://skalt.github.io/til/index.xml><img alt=rss title=rss src=https://skalt.github.io/til/icon_rss.2712ea2c7402d63d00f842fbc9dc64b6461012d726f7385aae61b031d1614ebd.svg></a></a></nav></header><main><article><h2><a href=https://skalt.github.io/til/2024/05/04/>2024/05/04</a></h2><div><p>That a <code>go.work</code> file can point to local &ldquo;main modules&rdquo; used for minimum-version selection.
-<code>go</code> will maintain a separate <code>go.work.sum</code> file with the checksums of the workspace&rsquo;s dependencies.
-<code>go work {init,use,edit}</code> manages the work-files.
-<code>$GOWORK</code> pointing to a file named like <code>*.work</code> can switch between multiple workspace files.
-See <a href=https://go.dev/ref/mod#workspaces;>https://go.dev/ref/mod#workspaces;</a> the syntax of <code>*.work</code> files is roughly equivalent to the syntax in <code>go.mod</code>.</p><hr><p>That none of the following options ensure unused debug info is not included in rust wasm output:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[</span><span class=nx>profile</span><span class=p>.</span><span class=nx>release</span><span class=p>]</span>
-</span></span><span class=line><span class=cl><span class=nx>opt-level</span> <span class=p>=</span> <span class=s2>&#34;z&#34;</span>
-</span></span><span class=line><span class=cl><span class=nx>lto</span> <span class=p>=</span> <span class=kc>true</span>
-</span></span><span class=line><span class=cl><span class=nx>codegen-units</span> <span class=p>=</span> <span class=mi>1</span>
-</span></span><span class=line><span class=cl><span class=nx>panic</span> <span class=p>=</span> <span class=s2>&#34;abort&#34;</span>
-</span></span></code></pre></div><p>Commenting each line and rebuilding with <code>--target=wasm32-unknown-unknown --release</code> resulted in 0% change in output .wasm size.
-In each experiment, <code>twiggy garbage ./target/wasm*/release/my_lib.wasm</code> reported</p><pre tabindex=0><code> Bytes  │ Size % │ Garbage Item
-────────┼────────┼─────────────────────────────────────────
- 280220 ┊ 33.30% ┊ custom section &#39;.debug_str&#39;
- 181364 ┊ 21.55% ┊ custom section &#39;.debug_info&#39;
- 159353 ┊ 18.94% ┊ custom section &#39;.debug_line&#39;
-  96881 ┊ 11.51% ┊ custom section &#39;.debug_pubnames&#39;
-  87936 ┊ 10.45% ┊ custom section &#39;.debug_ranges&#39;
-   2030 ┊  0.24% ┊ custom section &#39;.debug_abbrev&#39;
-    342 ┊  0.04% ┊ custom section &#39;.debug_pubtypes&#39;
-     67 ┊  0.01% ┊ custom section &#39;producers&#39;
-     28 ┊  0.00% ┊ custom section &#39;target_features&#39;
- 808221 ┊ 96.05% ┊ Σ [9 Total Rows]
-</code></pre><p>I cut those sections out using the 2-year-old recipe from <a href=https://github.com/Xe/x/blob/c87eb51e0afe78a958eecaffb83318f91c6f78dd/web/mastosan/README.md>https://github.com/Xe/x/blob/c87eb51e0afe78a958eecaffb83318f91c6f78dd/web/mastosan/README.md</a>:</p><pre tabindex=0><code>wasm-opt -oZ ...
-wasm-snip \
-  --skip-producers-section \
-  --snip-rust-panicking-code \
-  --snip-rust-fmt-code \
-  ...
-</code></pre></div><div></div></article><ul style=list-style:none;padding:0><li><a href=https://skalt.github.io/til/2024/>2024</a></li><li><a href=https://skalt.github.io/til/2023/>2023</a></li><li><a href=https://skalt.github.io/til/2022/>2022</a></li><li><a href=https://skalt.github.io/til/2021/>2021</a></li></ul></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+</a><a href=https://skalt.github.io/til/index.xml><img alt=rss title=rss src=https://skalt.github.io/til/icon_rss.2712ea2c7402d63d00f842fbc9dc64b6461012d726f7385aae61b031d1614ebd.svg></a></a></nav></header><main><article><h2><a href=https://skalt.github.io/til/2024/06/12/>2024/06/12</a></h2><div><p>That hosting websites in S3 <em>will</em> redirect <code>/</code> to <code>/index.html</code> if you configure <code>index.html</code> as in index document: <a href=https://docs.aws.amazon.com/AmazonS3/latest/userguide/IndexDocumentSupport.html>https://docs.aws.amazon.com/AmazonS3/latest/userguide/IndexDocumentSupport.html</a></p></div><div></div></article><ul style=list-style:none;padding:0><li><a href=https://skalt.github.io/til/2024/>2024</a></li><li><a href=https://skalt.github.io/til/2023/>2023</a></li><li><a href=https://skalt.github.io/til/2022/>2022</a></li><li><a href=https://skalt.github.io/til/2021/>2021</a></li></ul></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
