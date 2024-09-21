@@ -1,74 +1,1398 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>2023s on Today I Learned</title><link>https://skalt.github.io/til/2023/</link><description>Recent content in 2023s on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2023/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/01/</guid><description>The difference between triggers and event triggers in postgres:
-Unlike regular triggers, which are attached to a single table and capture only DML events, event triggers are global to a particular database and are capable of capturing DDL events. Like regular triggers, event triggers can be written in any procedural language that includes event trigger support, or in C, but not in plain SQL.
-&amp;ndash; https://www.postgresql.org/docs/current/event-triggers.html</description></item><item><title/><link>https://skalt.github.io/til/2023/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/09/</guid><description>That a directory service doesn&amp;rsquo;t necessarily provide authentication: https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/what-is-a-directory-service describes a directory service as a document database optimized for searches of a hierarchical (directory) tree.
-[Directory] entries are arranged hierarchically in a tree that is structured geographically and organizationally. Global entries, such as countries/regions, reside at the top of the tree, followed by state or national organizations, then organizational units, people, devices, or anything else that might be represented in a directory.</description></item><item><title/><link>https://skalt.github.io/til/2023/01/17/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/17/</guid><description>that you can set PYTHONDONTWRITEBYTECODE=1 to prevent python from writing pycs (see https://docs.python.org/3/using/cmdline.html#envvar-PYTHONDONTWRITEBYTECODE)
-Also: that AWS SSO does SCIM actions using the sso-directory:* IAM prefix rather than the sso:* prefix.</description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>That you need ato git add a flake.nix for the flake&amp;rsquo;s contents to start to work with nix develop
-This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them. &amp;ndash; https://xeiaso.net/blog/nix-flakes-go-programs
-that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the $COLORTERM env var</description></item><item><title/><link>https://skalt.github.io/til/2023/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/29/</guid><description>how to setup passwordless SSH login:
-ssh-copy-id $(whoami)@${other_host} https://linuxize.com/post/how-to-setup-passwordless-ssh-login/
-how to change a ubuntu machine&amp;rsquo;s computer&amp;rsquo;s hostname:
-echo &amp;#34;new-hostname&amp;#34; &amp;gt; sudo tee /etc/hostname; sudo sed -i &amp;#39;s/old-hostname/new-hostname/1&amp;#39; /etc/hosts; sudo hosname &amp;#39;new-hostname&amp;#39;; # &amp;lt;- for changes to take effect prior to reboot h/t https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/</description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>That psql et al. support colors:
-export PG_COLOR=auto # only colorize output to ttys learned from https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html See also:
-https://www.postgresql.org/docs/current/color-when.html https://www.postgresql.org/docs/current/color-which.html</description></item><item><title/><link>https://skalt.github.io/til/2023/02/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/01/</guid><description>git restore exists, and works like a more destructive git stash
-See https://git-scm.com/docs/git-restore</description></item><item><title/><link>https://skalt.github.io/til/2023/02/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/08/</guid><description>That in Rust, assert! runs in both debug and release builds. For debug-only assertions, use debug_assert!. See https://doc.rust-lang.org/stable/std/macro.debug_assert.html.
-That in Python, you can call isinstance(thing, (tuple, OfMany, DifferentClasses)) to check if a variable is an instance of many possible classes. See https://docs.python.org/3/library/functions.html?highlight=isinstance#isinstance.</description></item><item><title/><link>https://skalt.github.io/til/2023/02/21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/21/</guid><description>That properties of a NamedTuple can have docstrings:
-class FooBar(NamedTuple): foo: str &amp;#34;&amp;#34;&amp;#34;Foo&amp;#34;&amp;#34;&amp;#34; bar: int &amp;#34;&amp;#34;&amp;#34;Bar&amp;#34;&amp;#34;&amp;#34; As seen in https://github.com/sqlalchemy/sqlalchemy/blob/main/lib/sqlalchemy/sql/compiler.py#L348</description></item><item><title/><link>https://skalt.github.io/til/2023/02/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/22/</guid><description>How to make a self-signed TLS certificate:
-#!/usr/bin/env bash # stolen from https://stackoverflow.com/questions/10175812/how-to-generate-a-self-signed-ssl-certificate-using-openssl openssl \ req -x509 \ -newkey rsa:4096 \ -keyout key.pem \ -out cert.pem \ -sha256 -days 365 -nodes -subj &amp;#39;/CN=localhost&amp;#39;</description></item><item><title/><link>https://skalt.github.io/til/2023/03/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/02/</guid><description>that there&amp;rsquo;s a git commit --trailer &amp;lt;token&amp;gt;:&amp;lt;value&amp;gt; flag.
-https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---trailerlttokengtltvaluegt</description></item><item><title/><link>https://skalt.github.io/til/2023/03/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/04/</guid><description>The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a specific version of the time crate, it actually specifies a range of versions and allows SemVer compatible updates.
-&amp;ndash; https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
-Instead, in order to lock to a specific version of a crate, you need to write = 0.1.2.</description></item><item><title/><link>https://skalt.github.io/til/2023/03/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/09/</guid><description>This was a bit of a rollercoaster morning: (1) I tried git worktree add $branch, and it was pretty convenient! (2) until I got a pre-commit error, then I got error: unable to read $HASH on git status (3) which led me to discover git fsck --full --name-objects, which is currently yelling about error: $HASH: invalid sha1 pointer in cache-tree</description></item><item><title/><link>https://skalt.github.io/til/2023/03/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/19/</guid><description>That you can use a .gitattributes file to prevent files from appearing in GitHub diffs like so:
-generated/**/* linguist-generated=true See https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github</description></item><item><title/><link>https://skalt.github.io/til/2023/05/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/09/</guid><description>About the precedent for deriving serde from serialize/deserialize:
-A codec is a device or computer program that encodes or decodes a data stream or signal. Codec is a portmanteau of coder/decoder. In electronic communications, an endec is a device that acts as both an encoder and a decoder on a signal or data stream, and hence is a type of codec. Endec is a portmanteau of encoder/decoder. &amp;ndash; https://en.wikipedia.org/wiki/Codec</description></item><item><title/><link>https://skalt.github.io/til/2023/05/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/15/</guid><description>That powerline networking kits exist: they send signals over home electrical wiring to extend your home network. Similarly, MoCA (Multimedia over Coaxial Alliance) sends signals over coax cable.</description></item><item><title/><link>https://skalt.github.io/til/2023/05/16/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/16/</guid><description>That there are instances where a git commit-message can start with a #:
-set -eu experiment=&amp;#34;$(mkdtemp -d)&amp;#34; cd &amp;#34;$experiment&amp;#34; git init# touch readme &amp;amp;&amp;amp; git add readme git commit -m &amp;#34;# not a comment, apparently&amp;#34; actual=&amp;#34;$(cat ./.git/COMMIT_EDITMSG)&amp;#34; expected=&amp;#34;# not a comment, apparently&amp;#34; test &amp;#34;$actual&amp;#34; = &amp;#34;$expected&amp;#34; git log # &amp;lt;hash&amp;gt; # # not a comment, apparently</description></item><item><title/><link>https://skalt.github.io/til/2023/05/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/24/</guid><description>That you can destructure struct values:
-struct Point { x: i32, y: i32, } fn main() { let p = Point { x: 0, y: 7 }; let Point { x: a, y: b } = p; assert_eq!(0, a); assert_eq!(7, b); } see https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs</description></item><item><title/><link>https://skalt.github.io/til/2023/05/27/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/27/</guid><description>That you can list the files in a zipfile using unzip -l path/to/file.zip. Also, that VSIX (Visual Studio and VSCode extension packaging files) are zipfiles with an XML manifest.</description></item><item><title/><link>https://skalt.github.io/til/2023/05/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/28/</guid><description>type NonEmptyArray&amp;lt;T&amp;gt; = [T, ...T[]]; First seen at https://github.com/rust-lang/rust-analyzer/blob/master/editors/code/src/util.ts#L24</description></item><item><title/><link>https://skalt.github.io/til/2023/05/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/29/</guid><description>During some research on build systems, I began re-reading Build Systems a la Carte (repo, paper). I found the Haskell even more confusing than I remembered, so I set out to translate the Haskell types to Typescript, Rust, and other type systems I know. When I got into the translation, I realized I only know enough to get the vibe of what Haskell code&amp;rsquo;s saying :/.
-The following are my notes on the 2021 open-source update to Learn You A Haskell for Great Good.</description></item><item><title/><link>https://skalt.github.io/til/2023/05/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/30/</guid><description>That there&amp;rsquo;s a Linux command to do sql-like JOINs of lines in files, possibly based on a field in each line: join(1)</description></item><item><title/><link>https://skalt.github.io/til/2023/05/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/31/</guid><description>WebDAV (Web Distributed Authoring and Versioning) is a set of extensions to the Hypertext Transfer Protocol (HTTP)[. WebDAV provides] concurrency control and namespace operations &amp;hellip; WebDAV is defined in IETF RFC 4918.
-&amp;ndash; https://en.wikipedia.org/wiki/WebDAV
-Apparently, Bazel, Gradle, and CCache all have support for a WebDAV-based remote cache: https://github.com/mozilla/sccache/blob/main/docs/Webdav.md</description></item><item><title/><link>https://skalt.github.io/til/2023/06/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/04/</guid><description>That k8s can run &amp;ldquo;init containers&amp;rdquo; before a pod&amp;rsquo;s app containers: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/. This provides setup-script functionality, and Cloudflare Pages uses multiple init containers for cloning, installing toolchains, and building pages: https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/#our-modular-and-scalable-architecture</description></item><item><title/><link>https://skalt.github.io/til/2023/06/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/05/</guid><description>SPF (Sender Policy Framework) records are DNS TXT records like v=spf1 _include=${email_server_domain} ~all. SPF records help email servers verify that another email server is allowed to send messages from a domain (e.g. foo@domain.com should only be sent by servers listed in an SPF record on a DNS server with authority over domain.com). More info at https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/
-DKIM is another TXT record that issues public keys to check signature headers in email: https://www.</description></item><item><title/><link>https://skalt.github.io/til/2023/06/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/13/</guid><description>That
-uuids are 128 bits long in uuid v1, only the first 8 hex digits (32 bits) are randomly generated in uuid v4, the entire 128 bits are randomly generated uuid v5 derives all 128 bits deterministically from the hash of a seed uuid and some input bytes See https://www.sohamkamani.com/uuid-versions-explained/</description></item><item><title/><link>https://skalt.github.io/til/2023/06/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/18/</guid><description>By default, a closure seems to live as long as its parent function unless you use the move keyword.
-fn unmoved&amp;lt;&amp;#39;a&amp;gt;(arg: &amp;amp;&amp;#39;a str) -&amp;gt; impl Fn() + &amp;#39;a { let f = || println!(&amp;#34;unmoved: {}&amp;#34;, arg); f } fn moved&amp;lt;&amp;#39;a&amp;gt;(arg: &amp;amp;&amp;#39;a str) -&amp;gt; impl Fn() + &amp;#39;a { let f = move || println!(&amp;#34;moved: {}&amp;#34;, arg); f } fn main() { unmoved(&amp;#34;a&amp;#34;)() // does not compile moved(&amp;#34;b&amp;#34;)() // works fine } &amp;ndash; playground link</description></item><item><title/><link>https://skalt.github.io/til/2023/06/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/19/</guid><description>That Option&amp;lt;T&amp;gt; costs ~1x the alignment value of T. I also learned Vec&amp;lt;T&amp;gt;&amp;rsquo;s size and alignment don&amp;rsquo;t reflect the size and alignment of T since the Vec is tracking an owned buffer on the heap which isn&amp;rsquo;t counted in the Vec&amp;rsquo;s own size.
-struct Alone8(u8); // size= 1, align=1 struct Opt8(Option&amp;lt;u8&amp;gt;); // size= 2, align=1 struct Vec8(Vec&amp;lt;u8&amp;gt;); // size=24; align=8 struct Alone64(u64); // size= 8, align=8 struct Opt64(Option&amp;lt;u64&amp;gt;); // size=16, align=8 struct Vec64(Vec&amp;lt;u64&amp;gt;); // size=24; align=8 That Firefox bundles process and task managers for performance monitoring, available at about:processes and about:tasks, respectively https://support.</description></item><item><title/><link>https://skalt.github.io/til/2023/06/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/22/</guid><description>That you can send texts to email and recieve emails from texts. When recieving an email from a text client, the emaio sender will be an email address at the text-sender&amp;rsquo;s carrier domain (e.g. +1234567890@carrier.domain).</description></item><item><title/><link>https://skalt.github.io/til/2023/07/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/09/</guid><description>I guessed that not all data centers were created equal, but I hadn&amp;rsquo;t heard of an official ranking system before now.
-Apparently the Uptime Institute provides international rankings of trustworthiness based on uptime guarantees, redundancy, security measures, etc.
-The tiers of data centers:
-Tier 1: A data center with a single path for power and cooling, and no backup components. This tier has an expected uptime of 99.671% per year.</description></item><item><title/><link>https://skalt.github.io/til/2023/07/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/10/</guid><description>That in vscode, you can make your keypresses display on-screen using the &amp;ldquo;Developer: Toggle screencast mode&amp;rdquo; command.</description></item><item><title/><link>https://skalt.github.io/til/2023/07/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/12/</guid><description>How to create subtables in a table in an array in TOML: [table_name.subtable_name].
-Any reference to an array of tables points to the most recently defined table element of the array. This allows you to define sub-tables, and even sub-arrays of tables, inside the most recent table.
-&amp;ndash; https://toml.io/en/v1.0.0#array-of-tables</description></item><item><title/><link>https://skalt.github.io/til/2023/07/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/30/</guid><description>Getting the top-level directory of the relevant git worktree #!/usr/bin/env bash # set up a dummy repo set -euo pipefail experiment_dir=&amp;#34;$(mktemp -d --tmpdir test_repo.XXX)&amp;#34; git clone --recurse-submodules git@github.com:SKalt/dummy_repo.git &amp;#34;$experiment_dir&amp;#34; cd &amp;#34;$experiment_dir&amp;#34; git pull --recurse-submodules=yes git checkout -b brnch &amp;amp;&amp;amp; git checkout - # set up a dummy branch git worktree add wrktr brnch # add a wortree cd wrktr &amp;amp;&amp;amp; git submodule update --init --recursive # init the recursive submodules in the worktree tree .</description></item><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>On ubuntu:
-# X11 keyboard options contain the codes that can be passed as options man xkeyboard-config # dconf controls how your keyboard(s) behave -- including lighting the caps-lock # indicator dconf_opts=&amp;#34;/org/gnome/desktop/input-sources/xkb-options&amp;#34; dconf read $dconf_opts dconf write $dconf_opts &amp;#34;[$values]&amp;#34; # where values are taken from `man xkeyboard-config` # notably, dconf&amp;#39;s settings clobber those set by `setxkbmap` and # `/etc/default/keyboard`&amp;#39;s XKBOPTIONS variable setxkbmap -query # prints the current key-map settings setxkbmap -option $values # &amp;lt;- these changes show up in Settings&amp;gt;Keyboard&amp;gt;${CurrentLayout} cat /etc/default/keyboard | grep XKBOPTIONS xev # opens a window and prints the events it sees -- including keypress events # with key codes https://unix.</description></item><item><title/><link>https://skalt.github.io/til/2023/08/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/08/</guid><description>sqlite3 has a .import [--csv] [--skip 1] FILE [TABLE] meta-command (docs). Also, for some reason my version of sqlite3 doesn&amp;rsquo;t respect any flags.
-Also, sqlite3 has a .dump meta-command that out puts pure SQL (plus a few sqlite PRAGMAs): docs</description></item><item><title/><link>https://skalt.github.io/til/2023/08/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/09/</guid><description>That you can cancel/reset timeouts in JS using clearTimeout</description></item><item><title/><link>https://skalt.github.io/til/2023/08/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/18/</guid><description>That the authorative database of top-level domains is published by the IANA at https://www.iana.org/domains/root/db</description></item><item><title/><link>https://skalt.github.io/til/2023/08/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/20/</guid><description>That there&amp;rsquo;s a JSON schema for job postings that usually gets included in job-posting pages as a &amp;lt;script type=&amp;quot;application/ld+json&amp;quot;&amp;gt;.</description></item><item><title/><link>https://skalt.github.io/til/2023/08/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/26/</guid><description>That sometimes ssh sessions with x-forwarding don&amp;rsquo;t unlock the GNOME &amp;ldquo;login&amp;rdquo; keyring. This can lead to &amp;ldquo;Cannot create an item in a locked collection&amp;rdquo; errors. The way to fix the problem is to:
-printf &amp;#34;password: &amp;#34; read -s password printf &amp;#34;%s&amp;#34; &amp;#34;$password&amp;#34; | gnome-keyring-daemon --replace --unlock</description></item><item><title/><link>https://skalt.github.io/til/2023/09/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/08/</guid><description>(1) that gnu ld, part of gnu&amp;rsquo;s binutils suite, is the de-facto standard interface for linker CLIs. Thus, all of gold (elf-only ld), mold/sold, and lld also try to expose ld-compatible CLIs.
-(2) that ld has several modes of adding a build id to an executable:
---build-id[=style]
-[Create a ] .note.gnu.build-id ELF note section or a .buildid COFF section. The contents of the note are unique bits identifying this linked file.</description></item><item><title/><link>https://skalt.github.io/til/2023/09/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/09/</guid><description>To add JSON schema validation to e.g. Cargo.toml files in VSCode using tamasfe.even-better-toml, you can add a special comment:
-#:schema https://json.schemastore.org/cargo.json # see https://taplo.tamasfe.dev/configuration/directives.html#the-schema-directive That there&amp;rsquo;s such a thing as &amp;ldquo;canadian compilation&amp;rdquo;:
-If build, host, and target are all the same, this is called a native. If build and host are the same but target is different, this is called a cross. If build, host, and target are all different this is called a canadian (for obscure reasons dealing with Canada’s political party and the background of the person working on the build at that time).</description></item><item><title/><link>https://skalt.github.io/til/2023/09/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/12/</guid><description>Start typing your search with&amp;hellip;
-^ to show only matches in your browsing history.
-* to show only matches in your bookmarks.
-+ to show only matches in bookmarks you’ve tagged.
-% to show only matches in your currently open tabs.
-# to show only matches where every search term is part of the title or part of a tag.
-$ to show only matches where every search term is part of the web address (URL).</description></item><item><title/><link>https://skalt.github.io/til/2023/09/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/20/</guid><description>The meaning of the tags
-#LI-Remote: Remote #LI-Hybrid: Hybrid #LI-Onsite: Onsite #LI-DNI: To prevent jobs from displaying on LinkedIn completely. (DNI = Do Not Ingest) #LI-DNP: To prevent jobs from filling a job slot, use this tag or use the ‘block job’ functionality. &amp;ndash; https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/</description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>How to position an element relative to its parent without affecting the flow of other sibling elements:
-you&amp;rsquo;re most likely interested in position: absolute which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has position: relative or position: absolute set on it, then it will act as the parent for positioning coordinates for its children.
-&amp;ndash; https://stackoverflow.</description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>Acronym Meaning DSO distribution system operators AGR aggregator TSO transmission system operator MCM market-based coordination mechanism &amp;ndash; https://lfenergy.org/projects/shapeshifter/</description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>Executables, dynamic libraries and debug companions on all Apple platforms use the Mach Object, or short Mach-O, container format. This applies to iOS, iPadOS, tvOS, watchOS, and macOS.
-Executables do not carry a file extension. For desktop applications, they are often placed in app bundle structures with the .app suffix. Unless stripped manually, executables contain unwind information and a symbol table. Debug information is never stored in executables. Dynamic Libraries use the .</description></item><item><title/><link>https://skalt.github.io/til/2023/10/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/03/</guid><description>That out of ~51672 extensions on the VSCode marketplace, there are only 31 that are marked as commercial software: &amp;ldquo;Trial&amp;rdquo; rather than &amp;ldquo;Free&amp;rdquo;.
-# date extension publisher license kind 1 2020-04-18 Redis Weijan Chen MIT db 2 2020-04-21 SSH Client Weijan Chen MIT db 3 2020-05-05 MySQL Weijan Chen MIT db 4 2021-01-27 ElasticSearch Weijan Chen MIT db 5 2021-01-27 PostgreSQL Weijan Chen MIT db 6 2021-02-05 Database Client Weijan Chen MIT db 7 2021-06-20 JS Refactoring Assistant P42 MIT ai 8 2021-06-29 GitHub Copilot GitHub commercial ai 9 2021-11-22 Local CI Local CI GPL-2 tool 10 2021-12-01 SQl Server Client(mssql) Weijan Chen MIT db 11 2022-01-18 DVT IDE for Visual Studio Code AMIQ EDA s.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>About the hot-off-the-press OAuth2 DPoP specification: https://datatracker.ietf.org/doc/html/rfc9449. DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.
-My simplified understanding of DPoP is as follows:
-the client generates a private/public key pair the client generates a request for an access token. The request includes: the client&amp;rsquo;s public key the the authorization endpoint&amp;rsquo;s URL the client signs the request with the client&amp;rsquo;s private key the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/17/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/17/</guid><description>&amp;ldquo;relationship-based access control model (ReBAC).&amp;rdquo;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/18/</guid><description>RFCs are labeled with different statuses:
-Internet Standard (e.g. HTTP/1.1) Proposed Standard (e.g. HTTP/3, HTTP/2) Best Current Practice Experimental Informational Historic [&amp;hellip;]
-RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group. In the IETF, these are then usually adopted by a working group, and improved and revised.
-&amp;ndash; https://www.ietf.org/standards/rfcs/
-Class fields are public by default, but private class members can be created by using a hash # prefix.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>First, that hugo supports goat ascii diagrams out-of-the box.
-Second, about OAuth 2.0 authentication + authorization flows:
-Authorization Code Flow From https://tools.ietf.org/html/rfc6749#section-4.1 and https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow
-U U s s e c e r l r i c k l o g C i C l n l i i e P O e n O r T n t S e P t T d , A i c c r c c l e l e i c i s e t e s n L n t t o t t o g o I I k D I i O D e , d n T , n P t P , r o c e l I d I i D i d e A r P n t A u e t o u t c k t h t s e h o e n o r U c r i R r i z I e z a t a t t i i o o n I n D S S e t e r o r v k v e e e r n r I I d d P P Note: IdP = &amp;ldquo;Identity Provider&amp;rdquo;.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/23/</guid><description>About the three VCard specifications:
-2.1 3.0 4.0 (2011) I also learned that iPhones can import contacts from a v4.0-formatted vcf file, but a (Samsung) android phne will only import portions of the same file. Exporting contacts from my android phone seems to use v2.1.</description></item><item><title/><link>https://skalt.github.io/til/2023/10/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/31/</guid><description>That POSIX shell has configuration option, set -a or set -o allexport that exports all assigned variables. This simplifies using .env files in .envrc files:
-# evaluate a .env file, if it exists if [ -f .env ]; then set -a # assigning a variable exports the variable # shellcheck disable=SC1091 source .env set +a fi That JS has a String.raw template literal tag function that unescapes escape sequences in a backtick-string:</description></item><item><title/><link>https://skalt.github.io/til/2023/11/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/11/02/</guid><description>How to type a decorator function or decorator factory in Python: see https://mypy.readthedocs.io/en/stable/generics.html##declaring-decorators</description></item><item><title/><link>https://skalt.github.io/til/2023/12/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/12/</guid><description>TL;DR: slap copyright comments on files and vendor licenses into a top-level LICENSES/${spdx_id}.${ext} directory.
-The SPDX spec v2.3 references the REUSE spec v3.
-Alternatively, you can use aLicenseRef-custom license identifier to refer to a license that is not on the SPDX License List, such as the following:
-SPDX-License-Identifier: LicenseRef-my-special-license TheLicenseRef-format is defined in AnnexD. When using a customLicenseRef-identifier, you will also need to provide a way for others to determine what license text corresponds to it.</description></item><item><title/><link>https://skalt.github.io/til/2023/12/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/15/</guid><description>That
-Any value in an array may be semantically null, whether primitive or nested type.
-[&amp;hellip;]
-Arrays having a 0 null count may choose to not allocate the validity bitmap; how this is represented depends on the implementation
-&amp;ndash; https://arrow.apache.org/docs/format/Columnar.html#null-count
-Which is frustrating. I usually think of arrays or database columns as NOT NULL by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.</description></item><item><title/><link>https://skalt.github.io/til/2023/12/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/23/</guid><description>Turns out Rust does support Any-types and downcasting: see https://doc.rust-lang.org/std/any/index.html and https://doc.rust-lang.org/std/any/struct.TypeId.html .</description></item><item><title/><link>https://skalt.github.io/til/2023/12/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/24/</guid><description>Bayer and McCreight never explained what, if anything, the B stands for: Boeing, balanced, between, broad, bushy, and Bayer have been suggested. McCreight has said that &amp;ldquo;the more you think about what the B in B-trees means, the better you understand B-trees.&amp;rdquo;
-&amp;ndash; https://en.wikipedia.org/wiki/B-tree#History</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>2023s on Today I Learned</title><link>https://skalt.github.io/til/2023/</link><description>Recent content in 2023s on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2023/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/01/</guid><description>&lt;p>The difference between triggers and event triggers in postgres:&lt;/p>
+&lt;blockquote>
+&lt;p>Unlike regular triggers, which are attached to a single table and capture only DML events, event triggers are global to a particular database and are capable of capturing DDL events.
+Like regular triggers, event triggers can be written in any procedural language that includes event trigger support, or in C, but not in plain SQL.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/event-triggers.html">https://www.postgresql.org/docs/current/event-triggers.html&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2023/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/09/</guid><description>&lt;p>That a directory service doesn&amp;rsquo;t necessarily provide authentication:
+&lt;a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/what-is-a-directory-service">https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/what-is-a-directory-service&lt;/a>
+describes a directory service as a document database optimized for searches of a hierarchical (directory) tree.&lt;/p>
+&lt;blockquote>
+&lt;p>[Directory] entries are arranged hierarchically in a tree that is structured geographically and organizationally. Global entries, such as countries/regions, reside at the top of the tree, followed by state or national organizations, then organizational units, people, devices, or anything else that might be represented in a directory.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/17/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/17/</guid><description>&lt;p>that you can set &lt;code>PYTHONDONTWRITEBYTECODE=1&lt;/code> to prevent python from writing pycs (see &lt;a href="https://docs.python.org/3/using/cmdline.html#envvar-PYTHONDONTWRITEBYTECODE">https://docs.python.org/3/using/cmdline.html#envvar-PYTHONDONTWRITEBYTECODE&lt;/a>)&lt;/p>
+&lt;p>Also: that AWS SSO does SCIM actions using the &lt;code>sso-directory:*&lt;/code> IAM prefix rather than the &lt;code>sso:*&lt;/code> prefix.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>&lt;p>That you need ato &lt;code>git add&lt;/code> a &lt;code>flake.nix&lt;/code> for the flake&amp;rsquo;s contents to start to work with &lt;code>nix develop&lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them.
+&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs">https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the &lt;code>$COLORTERM&lt;/code> env var&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/29/</guid><description>&lt;p>how to setup passwordless SSH login:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">ssh-copy-id &lt;span class="k">$(&lt;/span>whoami&lt;span class="k">)&lt;/span>@&lt;span class="si">${&lt;/span>&lt;span class="nv">other_host&lt;/span>&lt;span class="si">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://linuxize.com/post/how-to-setup-passwordless-ssh-login/">https://linuxize.com/post/how-to-setup-passwordless-ssh-login/&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>how to change a ubuntu machine&amp;rsquo;s computer&amp;rsquo;s hostname:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;new-hostname&amp;#34;&lt;/span> &amp;gt; sudo tee /etc/hostname&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo sed -i &lt;span class="s1">&amp;#39;s/old-hostname/new-hostname/1&amp;#39;&lt;/span> /etc/hosts&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo hosname &lt;span class="s1">&amp;#39;new-hostname&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1"># &amp;lt;- for changes to take effect prior to reboot&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>h/t &lt;a href="https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/">https://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>&lt;p>That &lt;code>psql&lt;/code> et al. support colors:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">PG_COLOR&lt;/span>&lt;span class="o">=&lt;/span>auto &lt;span class="c1"># only colorize output to ttys&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>learned from &lt;a href="https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html">https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html&lt;/a>
+See also:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.postgresql.org/docs/current/color-when.html">https://www.postgresql.org/docs/current/color-when.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.postgresql.org/docs/current/color-which.html">https://www.postgresql.org/docs/current/color-which.html&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title/><link>https://skalt.github.io/til/2023/02/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/01/</guid><description>&lt;p>&lt;code>git restore&lt;/code> exists, and works like a more destructive &lt;code>git stash&lt;/code>&lt;/p>
+&lt;p>See &lt;a href="https://git-scm.com/docs/git-restore">https://git-scm.com/docs/git-restore&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/02/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/08/</guid><description>&lt;p>That in Rust, &lt;code>assert!&lt;/code> runs in both debug and release builds. For debug-only assertions, use &lt;code>debug_assert!&lt;/code>. See &lt;a href="https://doc.rust-lang.org/stable/std/macro.debug_assert.html">https://doc.rust-lang.org/stable/std/macro.debug_assert.html&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;p>That in Python, you can call &lt;code>isinstance(thing, (tuple, OfMany, DifferentClasses))&lt;/code> to check if a variable is an instance of many possible classes.
+See &lt;a href="https://docs.python.org/3/library/functions.html?highlight=isinstance#isinstance">https://docs.python.org/3/library/functions.html?highlight=isinstance#isinstance&lt;/a>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/02/21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/21/</guid><description>&lt;p>That properties of a &lt;code>NamedTuple&lt;/code> can have docstrings:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">FooBar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NamedTuple&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">foo&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Foo&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">bar&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Bar&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>As seen in &lt;a href="https://github.com/sqlalchemy/sqlalchemy/blob/main/lib/sqlalchemy/sql/compiler.py#L348">https://github.com/sqlalchemy/sqlalchemy/blob/main/lib/sqlalchemy/sql/compiler.py#L348&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/02/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/02/22/</guid><description>&lt;p>How to make a self-signed TLS certificate:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1"># stolen from https://stackoverflow.com/questions/10175812/how-to-generate-a-self-signed-ssl-certificate-using-openssl&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">openssl &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> req -x509 &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -newkey rsa:4096 &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -keyout key.pem &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -out cert.pem &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -sha256 -days &lt;span class="m">365&lt;/span> -nodes -subj &lt;span class="s1">&amp;#39;/CN=localhost&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2023/03/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/02/</guid><description>&lt;p>that there&amp;rsquo;s a &lt;code>git commit --trailer &amp;lt;token&amp;gt;:&amp;lt;value&amp;gt;&lt;/code> flag.&lt;/p>
+&lt;p>&lt;a href="https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---trailerlttokengtltvaluegt">https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---trailerlttokengtltvaluegt&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/03/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/04/</guid><description>&lt;blockquote>
+&lt;p>The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a
+specific version of the time crate, it actually specifies a range of versions
+and allows SemVer compatible updates.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html">https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Instead, in order to lock to a specific version of a crate, you need to write
+&lt;code>= 0.1.2&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/03/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/09/</guid><description>&lt;p>This was a bit of a rollercoaster morning:
+(1) I tried &lt;code>git worktree add $branch&lt;/code>, and it was pretty convenient!
+(2) until I got a pre-commit error, then I got &lt;code>error: unable to read $HASH&lt;/code> on &lt;code>git status&lt;/code>
+(3) which led me to discover &lt;code>git fsck --full --name-objects&lt;/code>, which is currently yelling about &lt;code>error: $HASH: invalid sha1 pointer in cache-tree&lt;/code>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/03/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/19/</guid><description>&lt;p>That you can use a &lt;code>.gitattributes&lt;/code> file to prevent files from appearing in GitHub diffs like so:&lt;/p>
+&lt;pre tabindex="0">&lt;code>generated/**/* linguist-generated=true
+&lt;/code>&lt;/pre>&lt;p>See &lt;a href="https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github">https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/09/</guid><description>&lt;p>About the precedent for deriving &lt;code>serde&lt;/code> from serialize/deserialize:&lt;/p>
+&lt;blockquote>
+&lt;p>A &lt;em>codec&lt;/em> is a device or computer program that encodes or decodes a data stream or signal.
+Codec is a portmanteau of coder/decoder.
+In electronic communications, an &lt;em>endec&lt;/em> is a device that acts as both an encoder and a decoder on a signal or data stream, and hence is a type of codec.
+Endec is a portmanteau of encoder/decoder.
+&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/Codec">https://en.wikipedia.org/wiki/Codec&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2023/05/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/15/</guid><description>&lt;p>That &lt;a href="https://www.nytimes.com/wirecutter/reviews/best-powerline-networking-kit/">powerline networking kits exist&lt;/a>: they send signals over home electrical wiring to extend your home network.
+Similarly, MoCA (Multimedia over Coaxial Alliance) sends signals over coax cable.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/16/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/16/</guid><description>&lt;p>That there are instances where a git commit-message can start with a &lt;code>#&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> -eu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">experiment&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>mkdtemp -d&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$experiment&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git init#
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">touch readme &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> git add readme
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &lt;span class="s2">&amp;#34;# not a comment, apparently&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">actual&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>cat ./.git/COMMIT_EDITMSG&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">expected&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;# not a comment, apparently&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">test&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$actual&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$expected&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git log
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># &amp;lt;hash&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># # not a comment, apparently&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2023/05/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/24/</guid><description>&lt;p>That you can destructure struct values:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-rs" data-lang="rs">&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">Point&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">x&lt;/span>: &lt;span class="kt">i32&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">y&lt;/span>: &lt;span class="kt">i32&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">fn&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Point&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">x&lt;/span>: &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">y&lt;/span>: &lt;span class="mi">7&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">};&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Point&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">x&lt;/span>: &lt;span class="nc">a&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">y&lt;/span>: &lt;span class="nc">b&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="fm">assert_eq!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="fm">assert_eq!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>see &lt;a href="https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs">https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/27/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/27/</guid><description>&lt;p>That you can list the files in a zipfile using &lt;code>unzip -l path/to/file.zip&lt;/code>.
+Also, that VSIX (Visual Studio and VSCode extension packaging files) are zipfiles with an XML manifest.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/28/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ts" data-lang="ts">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">type&lt;/span> &lt;span class="nx">NonEmptyArray&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">...&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="p">[]];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>First seen at &lt;a href="https://github.com/rust-lang/rust-analyzer/blob/master/editors/code/src/util.ts#L24">https://github.com/rust-lang/rust-analyzer/blob/master/editors/code/src/util.ts#L24&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/29/</guid><description>&lt;p>During some research on build systems, I began re-reading Build Systems a la Carte (&lt;a href="https://github.com/snowleopard/build">repo&lt;/a>, &lt;a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/097CE52C750E69BD16B78C318754C7A4/S0956796820000088a.pdf/build-systems-a-la-carte-theory-and-practice.pdf">paper&lt;/a>).
+I found the Haskell even more confusing than I remembered, so I set out to translate the Haskell types to Typescript, Rust, and other type systems I know.
+When I got into the translation, I realized I only know enough to get the &lt;em>vibe&lt;/em> of what Haskell code&amp;rsquo;s saying :/.&lt;/p>
+&lt;p>The following are my notes on the 2021 open-source update to &lt;em>&lt;a href="https://learnyouahaskell.github.io/types-and-typeclasses.html">Learn You A Haskell for Great Good&lt;/a>&lt;/em>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/30/</guid><description>&lt;p>That there&amp;rsquo;s a Linux command to do sql-like &lt;code>JOIN&lt;/code>s of lines in files, possibly based on a field in each line: &lt;a href="https://linux.die.net/man/1/join">&lt;code>join(1)&lt;/code>&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/31/</guid><description>&lt;blockquote>
+&lt;p>WebDAV (Web Distributed Authoring and Versioning) is a set of extensions to the Hypertext Transfer Protocol (HTTP)[. WebDAV provides] concurrency control and namespace operations &amp;hellip;
+WebDAV is defined in &lt;a href="https://datatracker.ietf.org/doc/html/rfc4918">IETF RFC 4918&lt;/a>.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/WebDAV">https://en.wikipedia.org/wiki/WebDAV&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Apparently, Bazel, Gradle, and CCache all have support for a WebDAV-based remote cache: &lt;a href="https://github.com/mozilla/sccache/blob/main/docs/Webdav.md">https://github.com/mozilla/sccache/blob/main/docs/Webdav.md&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/04/</guid><description>&lt;p>That k8s can run &amp;ldquo;init containers&amp;rdquo; before a pod&amp;rsquo;s app containers:
+&lt;a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/">https://kubernetes.io/docs/concepts/workloads/pods/init-containers/&lt;/a>.
+This provides setup-script functionality, and Cloudflare Pages uses multiple init containers for cloning, installing toolchains, and building pages: &lt;a href="https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/#our-modular-and-scalable-architecture">https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/#our-modular-and-scalable-architecture&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/05/</guid><description>&lt;p>SPF (Sender Policy Framework) records are DNS TXT records like &lt;code>v=spf1 _include=${email_server_domain} ~all&lt;/code>.
+SPF records help email servers verify that another email server is allowed to send messages from a domain (e.g. &lt;code>foo@domain.com&lt;/code> should only be sent by servers listed in an SPF record on a DNS server with authority over &lt;code>domain.com&lt;/code>).
+More info at &lt;a href="https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/">https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/&lt;/a>&lt;/p>
+&lt;p>DKIM is another TXT record that issues public keys to check signature headers in email:
+&lt;a href="https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/">https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/13/</guid><description>&lt;p>That&lt;/p>
+&lt;ul>
+&lt;li>uuids are 128 bits long&lt;/li>
+&lt;li>in uuid v1, only the first 8 hex digits (32 bits) are randomly generated&lt;/li>
+&lt;li>in uuid v4, the entire 128 bits are randomly generated&lt;/li>
+&lt;li>uuid v5 derives all 128 bits deterministically from the hash of a seed uuid and some input bytes&lt;/li>
+&lt;/ul>
+&lt;p>See &lt;a href="https://www.sohamkamani.com/uuid-versions-explained/">https://www.sohamkamani.com/uuid-versions-explained/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/18/</guid><description>&lt;p>By default, a closure seems to live as long as its parent function &lt;em>unless&lt;/em> you use the &lt;code>move&lt;/code> keyword.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-rs" data-lang="rs">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fn&lt;/span> &lt;span class="nf">unmoved&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="na">&amp;#39;a&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">arg&lt;/span>: &lt;span class="kp">&amp;amp;&lt;/span>&lt;span class="na">&amp;#39;a&lt;/span> &lt;span class="kt">str&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>-&amp;gt; &lt;span class="nc">impl&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">Fn&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">&amp;#39;a&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">||&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="fm">println!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;unmoved: &lt;/span>&lt;span class="si">{}&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arg&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">fn&lt;/span> &lt;span class="nf">moved&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="na">&amp;#39;a&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">arg&lt;/span>: &lt;span class="kp">&amp;amp;&lt;/span>&lt;span class="na">&amp;#39;a&lt;/span> &lt;span class="kt">str&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>-&amp;gt; &lt;span class="nc">impl&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">Fn&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">&amp;#39;a&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">move&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">||&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="fm">println!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;moved: &lt;/span>&lt;span class="si">{}&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arg&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">fn&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">unmoved&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;a&amp;#34;&lt;/span>&lt;span class="p">)()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// does not compile
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">moved&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;b&amp;#34;&lt;/span>&lt;span class="p">)()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// works fine
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;ndash; &lt;a href="https://play.rust-lang.org/?version=stable&amp;amp;mode=debug&amp;amp;edition=2021&amp;amp;gist=abbd6cb412ea85aea82d1861c55eba35">playground link&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/19/</guid><description>&lt;p>That &lt;code>Option&amp;lt;T&amp;gt;&lt;/code> costs ~1x the alignment value of &lt;code>T&lt;/code>.
+I also learned &lt;code>Vec&amp;lt;T&amp;gt;&lt;/code>&amp;rsquo;s size and alignment don&amp;rsquo;t reflect the size and alignment of &lt;code>T&lt;/code> since the Vec is tracking an owned buffer on the heap which isn&amp;rsquo;t counted in the Vec&amp;rsquo;s own size.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-rs" data-lang="rs">&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">Alone8&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">u8&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size= 1, align=1
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Opt8&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Option&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">u8&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size= 2, align=1
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Vec8&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">u8&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size=24; align=8
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Alone64&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">u64&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size= 8, align=8
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Opt64&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Option&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">u64&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size=16, align=8
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Vec64&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">u64&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// size=24; align=8
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>That Firefox bundles process and task managers for performance monitoring, available at &lt;code>about:processes&lt;/code> and &lt;code>about:tasks&lt;/code>, respectively
+&lt;a href="https://support.mozilla.org/en-US/kb/task-manager-tabs-or-extensions-are-slowing-firefox">https://support.mozilla.org/en-US/kb/task-manager-tabs-or-extensions-are-slowing-firefox&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/06/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/22/</guid><description>&lt;p>That you can send texts to email and recieve emails from texts.
+When recieving an email from a text client, the emaio sender will be an email address at the text-sender&amp;rsquo;s carrier domain (e.g. &lt;code>+1234567890@carrier.domain&lt;/code>).&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/07/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/09/</guid><description>&lt;p>I guessed that not all data centers were created equal, but I hadn&amp;rsquo;t heard of an official ranking system before now.&lt;/p>
+&lt;p>Apparently &lt;a href="https://uptimeinstitute.com/">the Uptime Institute&lt;/a> provides international rankings of trustworthiness based on uptime guarantees, redundancy, security measures, etc.&lt;/p>
+&lt;p>The tiers of data centers:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Tier 1&lt;/strong>: A data center with a single path for power and cooling, and no backup components. This tier has an expected uptime of 99.671% per year.&lt;/p>
+&lt;p>&lt;strong>Tier 2&lt;/strong>: A data center with a single path for power and cooling, and some redundant and backup components. This tier offers an expected uptime of 99.741% per year.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/07/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/10/</guid><description>&lt;p>That in vscode, you can make your keypresses display on-screen using the &lt;a href="https://code.visualstudio.com/updates/v1_31#_screencast-mode">&amp;ldquo;Developer: Toggle screencast mode&amp;rdquo;&lt;/a> command.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/07/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/12/</guid><description>&lt;p>How to create subtables in a table in an array in TOML: &lt;code>[table_name.subtable_name]&lt;/code>.&lt;/p>
+&lt;blockquote>
+&lt;p>Any reference to an array of tables points to the most recently defined table element of the array.
+This allows you to define sub-tables, and even sub-arrays of tables, inside the most recent table.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://toml.io/en/v1.0.0#array-of-tables">https://toml.io/en/v1.0.0#array-of-tables&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2023/07/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/30/</guid><description>&lt;h1 id="getting-the-top-level-directory-of-the-relevant-git-worktree">Getting the top-level directory of the relevant git worktree&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1"># set up a dummy repo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> -euo pipefail
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">experiment_dir&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>mktemp -d --tmpdir test_repo.XXX&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone --recurse-submodules git@github.com:SKalt/dummy_repo.git &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$experiment_dir&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$experiment_dir&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git pull --recurse-submodules&lt;span class="o">=&lt;/span>yes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout -b brnch &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> git checkout - &lt;span class="c1"># set up a dummy branch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git worktree add wrktr brnch &lt;span class="c1"># add a wortree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> wrktr &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> git submodule update --init --recursive &lt;span class="c1"># init the recursive submodules in the worktree&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">tree .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code>.
+├── LICENSE
+├── nested
+│   └── file.txt
+├── README.md
+├── submod
+│   ├── LICENSE
+│   ├── nested
+│   │   └── file.txt
+│   ├── README.md
+│   └── submod
+│   ├── LICENSE
+│   ├── nested
+│   │   └── file.txt
+│   └── README.md
+└── wrktr
+├── LICENSE
+├── nested
+│   └── file.txt
+├── README.md
+└── submod
+├── LICENSE
+├── nested
+│   └── file.txt
+├── README.md
+└── submod
+├── LICENSE
+├── nested
+│   └── file.txt
+└── README.md
+11 directories, 18 files
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">tree .git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code>./.git
+├── branches
+├── config
+├── description
+├── HEAD
+├── hooks/...
+├── index
+├── info/...
+├── logs/...
+├── modules
+│   └── submod
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks/...
+│   ├── index
+│   ├── info/...
+│   ├── logs/...
+│   ├── modules
+│   │   └── submod
+│   │   ├── branches
+│   │   ├── config # &amp;lt;- contains relative path in core.worktree
+│   │   ├── description
+│   │   ├── HEAD
+│   │   ├── hooks/...
+│   │   ├── index
+│   │   ├── info/...
+│   │   ├── logs/...
+│   │   ├── objects/...
+│   │   ├── packed-refs
+│   │   └── refs/...
+│   ├── objects/...
+│   ├── packed-refs
+│   └── refs/...
+├── objects/...
+├── packed-refs
+├── refs
+│   ├── heads
+│   │   ├── brnch
+│   │   └── main
+│   ├── remotes
+│   │   └── origin
+│   │   └── HEAD
+│   └── tags
+└── worktrees
+└── wrktr
+├── commondir
+├── gitdir
+├── HEAD
+├── index
+├── logs
+│   └── HEAD
+├── modules
+│   └── submod
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks/...
+│   ├── index
+│   ├── info/...
+│   ├── logs/...
+│   ├── modules
+│   │   └── submod
+│   │   ├── branches
+│   │   ├── config
+│   │   ├── description
+│   │   ├── HEAD
+│   │   ├── hooks/...
+│   │   ├── index
+│   │   ├── info/...
+│   │   ├── logs/...
+│   │   ├── objects/...
+│   │   ├── packed-refs
+│   │   └── refs/...
+│   ├── objects/...
+│   ├── packed-refs
+│   └── refs/...
+└── ORIG_HEAD
+91 directories, 133 files
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">args&lt;/span>&lt;span class="o">=(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --git-common-dir
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --git-dir
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --is-inside-git-dir
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --is-inside-work-tree
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --show-toplevel
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">)&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">padding&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">local&lt;/span> &lt;span class="nv">delimiter&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="c1"># must be 1ch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">local&lt;/span> &lt;span class="nv">message&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$2&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">local&lt;/span> &lt;span class="nv">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">3&lt;/span>&lt;span class="k">:-&lt;/span>&lt;span class="nv">78&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> -- &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">delimiter&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">%.0s&amp;#34;&lt;/span> &lt;span class="k">$(&lt;/span>seq &lt;span class="m">0&lt;/span> &lt;span class="k">$((&lt;/span>&lt;span class="nv">$width&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="si">${#&lt;/span>&lt;span class="nv">message&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="k">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">header&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">message&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>&lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;%s &amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;%s&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$message&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> padding &lt;span class="s2">&amp;#34;#&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$message&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">indent&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding &lt;span class="s2">&amp;#34; &amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> 22&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;%s = &amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">explore&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">local&lt;/span> &lt;span class="nv">to_explore&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">cd&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$to_explore&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> header &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$to_explore&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> arg in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">args&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> indent &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$arg&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> git --no-pager rev-parse &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$arg&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> 2&amp;gt;&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="m">1&lt;/span> &lt;span class="o">||&lt;/span> true&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> indent &lt;span class="s2">&amp;#34;config#core.worktree&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> git --no-pager config core.worktree &lt;span class="o">||&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;missing&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> indent &lt;span class="s2">&amp;#34;./config#core.worktree&amp;#34;&lt;/span> &lt;span class="m">22&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f ./config &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> git --no-pager config --file &lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>/config core.worktree &lt;span class="o">||&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;missing&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> indent &lt;span class="s2">&amp;#34;./gitdir&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f ./gitdir &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> cat ./gitdir&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span> &lt;span class="p">|&lt;/span> sed &lt;span class="s1">&amp;#39;s/^/# /g&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> sed &lt;span class="s2">&amp;#34;s#&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">#\${PWD}#g&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">paths_to_explore&lt;/span>&lt;span class="o">=(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/nested&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/.git&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/.git/worktrees&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/.git/worktrees/wrktr&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/.git/worktrees/wrktr/modules/submod&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/wrktr&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/wrktr/submod&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/submod&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">/.git/modules/submod&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> p in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">paths_to_explore&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span> explore &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$p&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD} ############################################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = .git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = .git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/nested #####################################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ../.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = ${PWD}/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/.git #######################################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = fatal: this operation must be run in a work tree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/.git/worktrees #############################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ${PWD}/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = ${PWD}/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = fatal: this operation must be run in a work tree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/.git/worktrees/wrktr #######################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ${PWD}/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = fatal: this operation must be run in a work tree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir = ${PWD}/wrktr/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/.git/worktrees/wrktr/modules/submod ########################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}/wrktr/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = ../../../../../wrktr/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree = ../../../../../wrktr/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/wrktr ######################################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ${PWD}/.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = ${PWD}/.git/worktrees/wrktr&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}/wrktr&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = &amp;lt;missing&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/wrktr/submod ###############################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ${PWD}/.git/worktrees/wrktr/modules/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = ${PWD}/.git/worktrees/wrktr/modules/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}/wrktr/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = ../../../../../wrktr/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/submod #####################################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = ${PWD}/.git/modules/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = ${PWD}/.git/modules/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = ../../../submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ${PWD}/.git/modules/submod ########################################&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-common-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --git-dir = .&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-git-dir = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --is-inside-work-tree = false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># --show-toplevel = ${PWD}/submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># config#core.worktree = ../../../submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./config#core.worktree = ../../../submod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ./gitdir =&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">explore_tab&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">local&lt;/span> &lt;span class="nv">to_explore&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">cd&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$to_explore&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;|`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$to_explore&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> arg in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">args&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">_result&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>git --no-pager rev-parse &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$arg&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> 2&amp;gt;&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="m">1&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;|`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$_result&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># config#core.worktree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;|`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>git --no-pager config core.worktree &lt;span class="o">||&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;missing&amp;gt;&amp;#34;&lt;/span>&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># ./config#core.worktree&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;|&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f ./config &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> git --no-pager config --file &lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>/config core.worktree &lt;span class="o">||&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;missing&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># ./gitdir&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;|&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f ./gitdir &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>cat ./gitdir&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;|&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">_headers&lt;/span>&lt;span class="o">=(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;pwd&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">args&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;config#core.worktree&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ./config#core.worktree
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ./gitdir
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> i in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">_headers&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span> &lt;span class="nb">printf&lt;/span> &lt;span class="s1">&amp;#39;|`%s`&amp;#39;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$i&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;|&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> i in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">_headers&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span> &lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;|-&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;|&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> p in &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">paths_to_explore&lt;/span>&lt;span class="p">[@]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> explore_tab &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$p&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> sed &lt;span class="s2">&amp;#34;s#&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">PWD&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">#\${PWD}#g&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">&lt;code>pwd&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--git-common-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--git-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--show-toplevel&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>config#core.worktree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>./config#core.worktree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>./gitdir&lt;/code>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/nested&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">&lt;code>pwd&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--git-common-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--git-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>--show-toplevel&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>config#core.worktree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>./config#core.worktree&lt;/code>&lt;/th>
+&lt;th style="text-align: left">&lt;code>./gitdir&lt;/code>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>&lt;p>On ubuntu:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># X11 keyboard options contain the codes that can be passed as options&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man xkeyboard-config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># dconf controls how your keyboard(s) behave -- including lighting the caps-lock&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># indicator&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">dconf_opts&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/org/gnome/desktop/input-sources/xkb-options&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dconf &lt;span class="nb">read&lt;/span> &lt;span class="nv">$dconf_opts&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dconf write &lt;span class="nv">$dconf_opts&lt;/span> &lt;span class="s2">&amp;#34;[&lt;/span>&lt;span class="nv">$values&lt;/span>&lt;span class="s2">]&amp;#34;&lt;/span> &lt;span class="c1"># where values are taken from `man xkeyboard-config`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># notably, dconf&amp;#39;s settings clobber those set by `setxkbmap` and &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># `/etc/default/keyboard`&amp;#39;s XKBOPTIONS variable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">setxkbmap -query &lt;span class="c1"># prints the current key-map settings&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">setxkbmap -option &lt;span class="nv">$values&lt;/span> &lt;span class="c1"># &amp;lt;- these changes show up in Settings&amp;gt;Keyboard&amp;gt;${CurrentLayout}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat /etc/default/keyboard &lt;span class="p">|&lt;/span> grep XKBOPTIONS
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xev &lt;span class="c1"># opens a window and prints the events it sees -- including keypress events&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># with key codes&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://unix.stackexchange.com/a/331210/234355">https://unix.stackexchange.com/a/331210/234355&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/08/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/08/</guid><description>&lt;p>&lt;code>sqlite3&lt;/code> has a &lt;code>.import [--csv] [--skip 1] FILE [TABLE]&lt;/code> meta-command (&lt;a href="https://sqlite.org/cli.html#importing_files_as_csv_or_other_formats">docs&lt;/a>).
+Also, for some reason my version of &lt;code>sqlite3&lt;/code> doesn&amp;rsquo;t respect any flags.&lt;/p>
+&lt;p>Also, &lt;code>sqlite3&lt;/code> has a &lt;code>.dump&lt;/code> meta-command that out puts pure SQL (plus a few sqlite &lt;code>PRAGMA&lt;/code>s): &lt;a href="https://sqlite.org/cli.html#converting_an_entire_database_to_a_text_file">docs&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/08/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/09/</guid><description>&lt;p>That you can cancel/reset timeouts in JS using &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout">&lt;code>clearTimeout&lt;/code>&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/08/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/18/</guid><description>&lt;p>That the authorative database of top-level domains is published by the IANA at &lt;a href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/08/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/20/</guid><description>&lt;p>That there&amp;rsquo;s a &lt;a href="https://schema.org/JobPosting">JSON schema for job postings&lt;/a> that usually gets included in job-posting pages as a &lt;code>&amp;lt;script type=&amp;quot;application/ld+json&amp;quot;&amp;gt;&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/08/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/26/</guid><description>&lt;p>That sometimes ssh sessions with x-forwarding don&amp;rsquo;t unlock the GNOME &amp;ldquo;login&amp;rdquo; keyring.
+This can lead to &amp;ldquo;Cannot create an item in a locked collection&amp;rdquo; errors.
+The way to fix the problem is to:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;password: &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">read&lt;/span> -s password
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">printf&lt;/span> &lt;span class="s2">&amp;#34;%s&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$password&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> gnome-keyring-daemon --replace --unlock
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2023/09/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/08/</guid><description>&lt;p>(1) that gnu &lt;a href="https://sourceware.org/binutils/docs-2.41/ld/Options.html">&lt;code>ld&lt;/code>&lt;/a>, part of gnu&amp;rsquo;s binutils suite, is the de-facto standard interface for linker CLIs.
+Thus, all of &lt;a href="https://en.wikipedia.org/wiki/Gold_(linker)">&lt;code>gold&lt;/code> (elf-only &lt;code>ld&lt;/code>)&lt;/a>, &lt;a href="https://github.com/rui314/mold/blob/main/docs/mold.md#gnu-compatible-options">&lt;code>mold&lt;/code>&lt;/a>/&lt;a href="https://github.com/rui314/mold/blob/main/docs/mold.md#gnu-compatible-options">&lt;code>sold&lt;/code>&lt;/a>, and &lt;a href="https://github.com/llvm/llvm-project/blob/main/lld/docs/ld.lld.1#L26">&lt;code>lld&lt;/code>&lt;/a> also try to expose &lt;code>ld&lt;/code>-compatible CLIs.&lt;/p>
+&lt;p>(2) that &lt;code>ld&lt;/code> has several modes of adding a build id to an executable:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>--build-id[=style]&lt;/code>&lt;/p>
+&lt;p>[Create a ] &lt;code>.note.gnu.build-id&lt;/code> ELF note section or a &lt;code>.buildid&lt;/code> COFF section.
+The contents of the note are unique bits identifying this linked file.
+&lt;code>style&lt;/code> can be&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/09/</guid><description>&lt;p>To add JSON schema validation to e.g. Cargo.toml files in VSCode using &lt;code>tamasfe.even-better-toml&lt;/code>, you can add a special comment:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c">#:schema https://json.schemastore.org/cargo.json&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c"># see https://taplo.tamasfe.dev/configuration/directives.html#the-schema-directive&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>That there&amp;rsquo;s such a thing as &amp;ldquo;canadian compilation&amp;rdquo;:&lt;/p>
+&lt;blockquote>
+&lt;p>If build, host, and target are all the same, this is called a &lt;strong>native&lt;/strong>.
+If build and host are the same but target is different, this is called a &lt;strong>cross&lt;/strong>.
+If build, host, and target are all different this is called a &lt;strong>canadian&lt;/strong> (for obscure reasons dealing with Canada’s political party and the background of the person working on the build at that time).&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/12/</guid><description>&lt;blockquote>
+&lt;p>Start typing your search with&amp;hellip;&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>^&lt;/code> to show only matches in your browsing history.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>*&lt;/code> to show only matches in your bookmarks.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>+&lt;/code> to show only matches in bookmarks you’ve tagged.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>%&lt;/code> to show only matches in your currently open tabs.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>#&lt;/code> to show only matches where every search term is part of the title or part of a tag.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>$&lt;/code> to show only matches where every search term is part of the web address (URL).
+The text &lt;code>https://&lt;/code> or &lt;code>http://&lt;/code> in the URL is ignored but not &lt;code>file:///&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/20/</guid><description>&lt;p>The meaning of the tags&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>&lt;code>#LI-Remote&lt;/code>: Remote&lt;/li>
+&lt;li>&lt;code>#LI-Hybrid&lt;/code>: Hybrid&lt;/li>
+&lt;li>&lt;code>#LI-Onsite&lt;/code>: Onsite&lt;/li>
+&lt;li>&lt;code>#LI-DNI&lt;/code>: To prevent jobs from displaying on LinkedIn completely. (DNI = Do Not Ingest)&lt;/li>
+&lt;li>&lt;code>#LI-DNP&lt;/code>: To prevent jobs from filling a job slot, use this tag or use the ‘block job’ functionality.&lt;/li>
+&lt;/ul>
+&lt;p>&amp;ndash; &lt;a href="https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/">https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>&lt;p>How to position an element relative to its parent without affecting the flow of other sibling elements:&lt;/p>
+&lt;blockquote>
+&lt;p>you&amp;rsquo;re most likely interested in &lt;code>position: absolute&lt;/code> which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has &lt;code>position: relative&lt;/code> or &lt;code>position: absolute&lt;/code> set on it, then it will act as the parent for positioning coordinates for its children.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://stackoverflow.com/a/105035/6571327">https://stackoverflow.com/a/105035/6571327&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Acronym&lt;/th>
+&lt;th style="text-align: left">Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">DSO&lt;/td>
+&lt;td style="text-align: left">distribution system operators&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">AGR&lt;/td>
+&lt;td style="text-align: left">aggregator&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">TSO&lt;/td>
+&lt;td style="text-align: left">transmission system operator&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">MCM&lt;/td>
+&lt;td style="text-align: left">market-based coordination mechanism&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/">https://lfenergy.org/projects/shapeshifter/&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>&lt;blockquote>
+&lt;p>Executables, dynamic libraries and debug companions on all Apple platforms use the &lt;em>Mach Object&lt;/em>, or short &lt;em>Mach-O&lt;/em>, container format.
+This applies to iOS, iPadOS, tvOS, watchOS, and macOS.&lt;/p>
+&lt;ul>
+&lt;li>Executables do not carry a file extension.
+For desktop applications, they are often placed in app bundle structures with the .app suffix.
+Unless stripped manually, executables contain unwind information and a symbol table.
+Debug information is never stored in executables.&lt;/li>
+&lt;li>Dynamic Libraries use the .dylib extension, and otherwise behave exactly the same as executables.&lt;/li>
+&lt;li>Debug Companions are placed in a folder structure with the &lt;code>.dSYM&lt;/code> extension, and are located at &lt;code>&amp;lt;name&amp;gt;.dSYM/Contents/Resources/DWARF/&amp;lt;name&amp;gt;&lt;/code>.
+They usually contain a symbol table and debug information, but rarely unwind information.&lt;/li>
+&lt;/ul>
+&lt;p>&amp;ndash; &lt;a href="https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/">https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/03/</guid><description>&lt;p>That out of ~51672 extensions on the VSCode marketplace, there are only 31 that are marked as commercial software: &amp;ldquo;Trial&amp;rdquo; rather than &amp;ldquo;Free&amp;rdquo;.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">#&lt;/th>
+&lt;th style="text-align: left">date&lt;/th>
+&lt;th style="text-align: left">extension&lt;/th>
+&lt;th style="text-align: left">publisher&lt;/th>
+&lt;th style="text-align: left">license&lt;/th>
+&lt;th style="text-align: left">kind&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;td style="text-align: left">2020-04-18&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client">Redis&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">2&lt;/td>
+&lt;td style="text-align: left">2020-04-21&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh">SSH Client&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">3&lt;/td>
+&lt;td style="text-align: left">2020-05-05&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">MySQL&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">4&lt;/td>
+&lt;td style="text-align: left">2021-01-27&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2">ElasticSearch&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">5&lt;/td>
+&lt;td style="text-align: left">2021-01-27&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2">PostgreSQL&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">6&lt;/td>
+&lt;td style="text-align: left">2021-02-05&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2">Database Client&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">7&lt;/td>
+&lt;td style="text-align: left">2021-06-20&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor">JS Refactoring Assistant&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://p42.ai">P42&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">8&lt;/td>
+&lt;td style="text-align: left">2021-06-29&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">9&lt;/td>
+&lt;td style="text-align: left">2021-11-22&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci">Local CI&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://getlocalci.com">Local CI&lt;/a>&lt;/td>
+&lt;td style="text-align: left">GPL-2&lt;/td>
+&lt;td style="text-align: left">tool&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">10&lt;/td>
+&lt;td style="text-align: left">2021-12-01&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2">SQl Server Client(mssql)&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">11&lt;/td>
+&lt;td style="text-align: left">2022-01-18&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt">DVT IDE for Visual Studio Code&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://amiq.com">AMIQ EDA s.r.l.&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">tool&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">12&lt;/td>
+&lt;td style="text-align: left">2022-06-27&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test">TestExtension&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://sap.com">Prashant&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">experiment&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">13&lt;/td>
+&lt;td style="text-align: left">2022-11-09&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub">GitHub Copilot Voice&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">14&lt;/td>
+&lt;td style="text-align: left">2022-11-25&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg">UPG Code Generator for VS Code&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://gptlabs.us/">GPT Labs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">15&lt;/td>
+&lt;td style="text-align: left">2022-12-14&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode">SkyCode&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://singularity-ai.com/">singularity-ai&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">16&lt;/td>
+&lt;td style="text-align: left">2023-01-01&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension">Software Testing AI&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://softwaretesting.ai/">Software Testing AI&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">17&lt;/td>
+&lt;td style="text-align: left">2023-01-06&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme">arandomtheme&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MiloTilo&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">experiment&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">18&lt;/td>
+&lt;td style="text-align: left">2023-01-19&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist">CodeAssist&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://www.codeassist.tech">CodeAssist&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">19&lt;/td>
+&lt;td style="text-align: left">2023-01-27&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools">DuckDB Sql Tools&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Random Fractals Inc.&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">20&lt;/td>
+&lt;td style="text-align: left">2023-03-28&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook">Polyverse Boost AI: Complexity Simplified&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://polyverse.com">Polyverse Corporation&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">21&lt;/td>
+&lt;td style="text-align: left">2023-04-12&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai">Merlin: GPT Assistant for VS Code&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://spellcraft.org">Spellcraft&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">22&lt;/td>
+&lt;td style="text-align: left">2023-04-27&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot Chat&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">ai&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">23&lt;/td>
+&lt;td style="text-align: left">2023-07-03&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl">Grappl&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://grappl.io">Grappl&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">tool&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">24&lt;/td>
+&lt;td style="text-align: left">2023-07-16&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask">Bask&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://scious.io">Scious&lt;/a>&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">dsl&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">25&lt;/td>
+&lt;td style="text-align: left">2023-07-17&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync">Data Sync&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://nguyenngoclongdev.github.io/">Nguyen Ngoc Long&lt;/a>&lt;/td>
+&lt;td style="text-align: left">MIT&lt;/td>
+&lt;td style="text-align: left">db&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">26&lt;/td>
+&lt;td style="text-align: left">2023-07-19&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map">FnMap&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://yicode.tech">yicode.tech&lt;/a>&lt;/td>
+&lt;td style="text-align: left">GPL-3&lt;/td>
+&lt;td style="text-align: left">tool&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">27&lt;/td>
+&lt;td style="text-align: left">2023-08-10&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy">Taskfy&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Taskfy&lt;/td>
+&lt;td style="text-align: left">commercial&lt;/td>
+&lt;td style="text-align: left">tool&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The paying for use of an extension is usually predicated on using a remote API (i.e. remote LLM services) using a paid API key or a subscription associated with an OIDC identity (e.g. a GitHub user account).
+Most common yet is no monetization scheme, which is understandable &amp;ndash; setting up payments isn&amp;rsquo;t trivial.
+However, occasionally monetization schemes occasionally appear:&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>&lt;p>About the hot-off-the-press OAuth2 DPoP specification: &lt;a href="https://datatracker.ietf.org/doc/html/rfc9449">https://datatracker.ietf.org/doc/html/rfc9449&lt;/a>.
+DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.&lt;/p>
+&lt;p>My simplified understanding of DPoP is as follows:&lt;/p>
+&lt;ol>
+&lt;li>the client generates a private/public key pair&lt;/li>
+&lt;li>the client generates a request for an access token. The request includes:
+&lt;ul>
+&lt;li>the client&amp;rsquo;s public key&lt;/li>
+&lt;li>the the authorization endpoint&amp;rsquo;s URL&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>the client signs the request with the client&amp;rsquo;s private key&lt;/li>
+&lt;li>the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key. As is normal in OAuth2, the access token is signed by the authorization server&amp;rsquo;s private key.&lt;/li>
+&lt;li>the client generates a new proof including the client&amp;rsquo;s public key and the intended API endpoint, attaches that to the access token (remember, the access token also includes the thumbprint of the client&amp;rsquo;s public key). The client sends the proof and access token to the API.&lt;/li>
+&lt;li>The API validates
+&lt;ol>
+&lt;li>the proof was signed by the client&amp;rsquo;s public key&lt;/li>
+&lt;li>the client&amp;rsquo;s public key matches the thumbprint in the access token&lt;/li>
+&lt;li>and the access key was signed by the and the authorization server&amp;rsquo;s public key&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;p>This seems much easier to manage than MTLS, which (I think) involves maintaining long-lived X509 certificates, signing infrastructure, and chains of trust.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/17/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/17/</guid><description>&lt;p>&amp;ldquo;relationship-based access control model (ReBAC).&amp;rdquo;&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/18/</guid><description>&lt;blockquote>
+&lt;p>RFCs are labeled with different statuses:&lt;/p>
+&lt;ol>
+&lt;li>Internet Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9112/">HTTP/1.1&lt;/a>)&lt;/li>
+&lt;li>Proposed Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9114/">HTTP/3&lt;/a>, &lt;a href="https://datatracker.ietf.org/doc/html/rfc9113">HTTP/2&lt;/a>)&lt;/li>
+&lt;li>Best Current Practice&lt;/li>
+&lt;li>Experimental&lt;/li>
+&lt;li>Informational&lt;/li>
+&lt;li>Historic&lt;/li>
+&lt;/ol>
+&lt;p>[&amp;hellip;]&lt;/p>
+&lt;p>RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
+In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>Class fields are public by default, but private class members can be created by using a hash &lt;code>#&lt;/code> prefix.
+The privacy encapsulation of these class features is enforced by JavaScript itself.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>&lt;p>First, that &lt;a href="https://gohugo.io/content-management/diagrams/">&lt;code>hugo&lt;/code>&lt;/a> supports &lt;a href="https://github.com/bep/goat">&lt;code>goat&lt;/code>&lt;/a> ascii diagrams out-of-the box.&lt;/p>
+&lt;p>Second, about OAuth 2.0 authentication + authorization flows:&lt;/p>
+&lt;h2 id="authorization-code-flow">Authorization Code Flow&lt;/h2>
+&lt;p>From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1">https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a>
+and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow">https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a>&lt;/p>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 504 489"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,0 L 488,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 8,32 L 48,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,32 L 152,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,32 L 440,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,32 L 488,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 32,80 L 112,80' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 128,128 L 352,128' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 32,176 L 352,176' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 32,224 L 464,224' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 368,272 L 464,272' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 128,320 L 352,320' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 128,368 L 352,368' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 128,416 L 352,416' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 8,432 L 48,432' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,432 L 152,432' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,432 L 440,432' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,432 L 488,432' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 8,464 L 48,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,464 L 152,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,464 L 440,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,464 L 488,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 8,0 L 8,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 8,432 L 8,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 24,48 L 24,416' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 48,0 L 48,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 48,432 L 48,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,0 L 96,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 96,432 L 96,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,48 L 120,160' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,192 L 120,208' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,240 L 120,416' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 152,0 L 152,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 152,432 L 152,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,0 L 280,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 280,432 L 280,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,48 L 360,208' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,240 L 360,416' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 448,0 L 448,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 448,432 L 448,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 456,0 L 456,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 456,432 L 456,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 472,48 L 472,416' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 488,0 L 488,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 488,432 L 488,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 24,40 L 24,48' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 24,416 L 24,424' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,40 L 120,48' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,160 L 120,168' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,184 L 120,192' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,208 L 120,216' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,232 L 120,240' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 120,416 L 120,424' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,40 L 360,48' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,208 L 360,216' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,232 L 360,240' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 360,416 L 360,424' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 472,40 L 472,48' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 472,416 L 472,424' fill='none' stroke='currentColor'>&lt;/path>
+&lt;polygon points='40.000000,176.000000 28.000000,170.399994 28.000000,181.600006' fill='currentColor' transform='rotate(180.000000, 32.000000, 176.000000)'>&lt;/polygon>
+&lt;polygon points='120.000000,80.000000 108.000000,74.400002 108.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 112.000000, 80.000000)'>&lt;/polygon>
+&lt;polygon points='136.000000,320.000000 124.000000,314.399994 124.000000,325.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 320.000000)'>&lt;/polygon>
+&lt;polygon points='136.000000,416.000000 124.000000,410.399994 124.000000,421.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 416.000000)'>&lt;/polygon>
+&lt;polygon points='360.000000,128.000000 348.000000,122.400002 348.000000,133.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 128.000000)'>&lt;/polygon>
+&lt;polygon points='360.000000,368.000000 348.000000,362.399994 348.000000,373.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 368.000000)'>&lt;/polygon>
+&lt;polygon points='376.000000,272.000000 364.000000,266.399994 364.000000,277.600006' fill='currentColor' transform='rotate(180.000000, 368.000000, 272.000000)'>&lt;/polygon>
+&lt;polygon points='472.000000,224.000000 460.000000,218.399994 460.000000,229.600006' fill='currentColor' transform='rotate(0.000000, 464.000000, 224.000000)'>&lt;/polygon>
+&lt;path d='M 440,0 A 16,16 0 0,1 456,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,0 A 16,16 0 0,0 448,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 456,16 A 16,16 0 0,1 440,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 448,16 A 16,16 0 0,0 464,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 440,432 A 16,16 0 0,1 456,448' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 464,432 A 16,16 0 0,0 448,448' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 456,448 A 16,16 0 0,1 440,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 448,448 A 16,16 0 0,0 464,464' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='16' y='452' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='24' y='452' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='32' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='40' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='104' y='452' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='112' y='452' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='120' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='128' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='136' y='164' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='136' y='452' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>S&lt;/text>
+&lt;text text-anchor='middle' x='144' y='164' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='152' y='164' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='152' y='404' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='160' y='164' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='160' y='404' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='168' y='164' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='168' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='168' y='404' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='176' y='164' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='176' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='184' y='116' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='164' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='184' y='356' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='404' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='192' y='164' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='192' y='404' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'>L&lt;/text>
+&lt;text text-anchor='middle' x='200' y='356' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='208' y='164' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='208' y='212' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='208' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='208' y='404' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='164' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='216' y='404' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='224' y='356' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='224' y='404' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='232' y='116' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='232' y='164' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='232' y='308' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='232' y='356' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='232' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='116' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='240' y='164' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='240' y='212' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='240' y='308' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='240' y='356' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='240' y='404' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='248' y='164' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='248' y='308' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='248' y='404' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='256' y='116' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='256' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='264' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='264' y='356' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='264' y='404' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='272' y='116' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='272' y='212' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='272' y='356' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='272' y='404' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='280' y='116' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='280' y='212' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='280' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='288' y='20' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='288' y='116' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='288' y='212' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='288' y='356' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='288' y='404' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='288' y='452' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='296' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='296' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='296' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='296' y='404' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='296' y='452' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='304' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='304' y='116' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='304' y='404' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='304' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='312' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='312' y='116' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='312' y='356' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='312' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='312' y='452' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='320' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='320' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='320' y='404' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='320' y='452' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='328' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='328' y='116' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='328' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='328' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='336' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='336' y='116' fill='currentColor' style='font-size:1em'>R&lt;/text>
+&lt;text text-anchor='middle' x='336' y='356' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='336' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='344' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='344' y='116' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='344' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='344' y='452' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='352' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='352' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='352' y='452' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='360' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='360' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='368' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='368' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='376' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='376' y='452' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='384' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='384' y='260' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='384' y='452' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='392' y='260' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='400' y='20' fill='currentColor' style='font-size:1em'>S&lt;/text>
+&lt;text text-anchor='middle' x='400' y='452' fill='currentColor' style='font-size:1em'>S&lt;/text>
+&lt;text text-anchor='middle' x='408' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='408' y='260' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='408' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='416' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='416' y='260' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='416' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='424' y='20' fill='currentColor' style='font-size:1em'>v&lt;/text>
+&lt;text text-anchor='middle' x='424' y='260' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='424' y='452' fill='currentColor' style='font-size:1em'>v&lt;/text>
+&lt;text text-anchor='middle' x='432' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='432' y='260' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='432' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='440' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='440' y='260' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='440' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='464' y='20' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='464' y='452' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='472' y='20' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='472' y='452' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;p>Note: IdP = &amp;ldquo;&lt;strong>Id&lt;/strong>entity &lt;strong>P&lt;/strong>rovider&amp;rdquo;.
+Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/23/</guid><description>&lt;p>About the three VCard specifications:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://web.archive.org/web/20150906130553/http://www.imc.org/pdi/">2.1 &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://web.archive.org/web/20150906130553/http://www.imc.org/pdi/">3.0&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.rfc-editor.org/rfc/rfc6350">4.0 (2011)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>I also learned that iPhones can import contacts from a v4.0-formatted vcf file, but a (Samsung) android phne will only import portions of the same file.
+Exporting contacts from my android phone seems to use v2.1.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/31/</guid><description>&lt;p>That POSIX shell has configuration option, &lt;a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_25_03">&lt;code>set -a&lt;/code> or &lt;code>set -o allexport&lt;/code>&lt;/a> that exports all assigned variables.
+This simplifies using &lt;code>.env&lt;/code> files in &lt;code>.envrc&lt;/code> files:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># evaluate a .env file, if it exists&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[&lt;/span> -f .env &lt;span class="o">]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">set&lt;/span> -a &lt;span class="c1"># assigning a variable exports the variable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># shellcheck disable=SC1091&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">source&lt;/span> .env
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">set&lt;/span> +a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>That JS has a &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw">&lt;code>String.raw&lt;/code>&lt;/a> &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">template literal tag function&lt;/a> that unescapes escape sequences in a backtick-string:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">String&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">raw&lt;/span>&lt;span class="sb">`\t\r\n`&lt;/span> &lt;span class="c1">// =&amp;gt; &amp;#34;\\t\\r\\n&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2023/11/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/11/02/</guid><description>&lt;p>How to type a decorator function or decorator factory in Python: see &lt;a href="https://mypy.readthedocs.io/en/stable/generics.html##declaring-decorators">https://mypy.readthedocs.io/en/stable/generics.html##declaring-decorators&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/12/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/12/</guid><description>&lt;p>TL;DR: slap copyright comments on files and vendor licenses into a top-level &lt;code>LICENSES/${spdx_id}.${ext}&lt;/code> directory.&lt;/p>
+&lt;hr>
+&lt;p>The &lt;a href="https://spdx.github.io/spdx-spec/v2.3/using-SPDX-short-identifiers-in-source-files/#e4-representing-multiple-licenses">SPDX spec v2.3&lt;/a> references &lt;a href="https://reuse.software/spec/">the REUSE spec v3&lt;/a>.&lt;/p>
+&lt;blockquote>
+&lt;p>Alternatively, you can use a&lt;code>LicenseRef-&lt;/code>custom license identifier to refer to a license that is not on the SPDX License List, such as the following:&lt;/p>
+&lt;pre tabindex="0">&lt;code>SPDX-License-Identifier: LicenseRef-my-special-license
+&lt;/code>&lt;/pre>&lt;p>The&lt;code>LicenseRef-&lt;/code>format is defined in Annex&lt;a href="https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/">D&lt;/a>. When using a custom&lt;code>LicenseRef-&lt;/code>identifier, you will also need to provide a way for others to determine what license text corresponds to it.&lt;a href="https://reuse.software/spec/">Version 3.0 of the REUSE Software Specification&lt;/a>provides a standardized format that can optionally be used for providing the corresponding license text for these identifiers.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/12/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/15/</guid><description>&lt;p>That&lt;/p>
+&lt;blockquote>
+&lt;p>Any value in an array may be semantically null, whether primitive or nested type.&lt;/p>
+&lt;p>[&amp;hellip;]&lt;/p>
+&lt;p>Arrays having a 0 null count may choose to not allocate the validity bitmap; how this is represented depends on the implementation&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://arrow.apache.org/docs/format/Columnar.html#null-count">https://arrow.apache.org/docs/format/Columnar.html#null-count&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Which is frustrating.
+I usually think of arrays or database columns as &lt;code>NOT NULL&lt;/code> by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/12/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/23/</guid><description>&lt;p>Turns out Rust does support Any-types and downcasting: see
+&lt;a href="https://doc.rust-lang.org/std/any/index.html">https://doc.rust-lang.org/std/any/index.html&lt;/a>
+and
+&lt;a href="https://doc.rust-lang.org/std/any/struct.TypeId.html">https://doc.rust-lang.org/std/any/struct.TypeId.html&lt;/a>
+.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/12/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/24/</guid><description>&lt;blockquote>
+&lt;p>Bayer and McCreight never explained what, if anything, the B stands for: Boeing, balanced, between, broad, bushy, and Bayer have been suggested.
+McCreight has said that &amp;ldquo;the more you think about what the B in B-trees means, the better you understand B-trees.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/B-tree#History">https://en.wikipedia.org/wiki/B-tree#History&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

@@ -1,5 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Typography on Today I Learned</title><link>https://skalt.github.io/til/tags/typography/</link><description>Recent content in Typography on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/typography/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/07/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/04/</guid><description>How to subset fonts:
-# in a virtualenv pip install fonttools brotli zopfli pyftsubset --help see:
-https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification https://markoskon.com/creating-font-subsets/#available-tools https://clagnut.com/blog/2418/ https://wakamaifondue.com/beta/ Also, optical-sized variable fonts look great.</description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>Typographic Units Absolute distance Name CSS Unit length Picas pc 1/6 inch Points pt 1/72 inches &amp;ndash; https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units
-Font-relative units em:
-In metal type, the point size (and hence the em, from em quadrat) was equal to the line height of the metal body from which the letter rises. [&amp;hellip;] In some older texts, but not all, the em is defined, or said to have been defined, as the width of the capital &amp;lsquo;M&amp;rsquo; in the current typeface and point size.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Typography on Today I Learned</title><link>https://skalt.github.io/til/tags/typography/</link><description>Recent content in Typography on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/typography/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/07/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/04/</guid><description>&lt;p>How to subset fonts:&lt;/p>
+&lt;pre tabindex="0">&lt;code># in a virtualenv
+pip install fonttools brotli zopfli
+pyftsubset --help
+&lt;/code>&lt;/pre>&lt;p>see:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification">https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://markoskon.com/creating-font-subsets/#available-tools">https://markoskon.com/creating-font-subsets/#available-tools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://clagnut.com/blog/2418/">https://clagnut.com/blog/2418/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://wakamaifondue.com/beta/">https://wakamaifondue.com/beta/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Also, optical-sized variable fonts look great.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>&lt;h2 id="typographic-units">Typographic Units&lt;/h2>
+&lt;h3 id="absolute-distance">Absolute distance&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Name&lt;/th>
+&lt;th style="text-align: center">CSS Unit&lt;/th>
+&lt;th style="text-align: left">length&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Picas&lt;/td>
+&lt;td style="text-align: center">&lt;code>pc&lt;/code>&lt;/td>
+&lt;td style="text-align: left">1/6 inch&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Points&lt;/td>
+&lt;td style="text-align: center">&lt;code>pt&lt;/code>&lt;/td>
+&lt;td style="text-align: left">1/72 inches&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units&lt;/a>&lt;/p>
+&lt;h3 id="font-relative-units">Font-relative units&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>em&lt;/code>:&lt;/p>
+&lt;blockquote>
+&lt;p>In metal type, the point size (and hence the em, from em quadrat) was equal to the line height of the metal body from which the letter rises.
+[&amp;hellip;]
+In some older texts, but not all, the em is defined, or said to have been defined, as the width of the capital &amp;lsquo;M&amp;rsquo; in the current typeface and point size.
+[&amp;hellip;]
+In [CSS] the em unit is the height of the font in nominal points or inches.&lt;/p></description></item></channel></rss>

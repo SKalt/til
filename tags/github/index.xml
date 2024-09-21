@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Github on Today I Learned</title><link>https://skalt.github.io/til/tags/github/</link><description>Recent content in Github on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/03/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/19/</guid><description>That you can use a .gitattributes file to prevent files from appearing in GitHub diffs like so:
-generated/**/* linguist-generated=true See https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github</description></item><item><title/><link>https://skalt.github.io/til/2024/03/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/18/</guid><description>Alerts are an extension of Markdown used to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.
-An example of all five types:
-&amp;gt; [!NOTE] &amp;gt; Highlights information that users should take into account, even when skimming. &amp;gt; [!TIP] &amp;gt; Optional information to help a user be more successful. [!IMPORTANT]
-Crucial information necessary for users to succeed.
-[!WARNING]</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Github on Today I Learned</title><link>https://skalt.github.io/til/tags/github/</link><description>Recent content in Github on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/03/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/19/</guid><description>&lt;p>That you can use a &lt;code>.gitattributes&lt;/code> file to prevent files from appearing in GitHub diffs like so:&lt;/p>
+&lt;pre tabindex="0">&lt;code>generated/**/* linguist-generated=true
+&lt;/code>&lt;/pre>&lt;p>See &lt;a href="https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github">https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/03/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/18/</guid><description>&lt;blockquote>
+&lt;p>Alerts are an extension of Markdown used to emphasize critical information.
+On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.&lt;/p>
+&lt;p>An example of all five types:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="k">&amp;gt; &lt;/span>&lt;span class="ge">[!NOTE]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ge">&lt;/span>&lt;span class="k">&amp;gt; &lt;/span>&lt;span class="ge">Highlights information that users should take into account, even when skimming.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ge">&lt;/span>&lt;span class="k">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">&amp;gt; &lt;/span>&lt;span class="ge">[!TIP]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ge">&lt;/span>&lt;span class="k">&amp;gt; &lt;/span>&lt;span class="ge">Optional information to help a user be more successful.
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>[!IMPORTANT]&lt;br>
+Crucial information necessary for users to succeed.&lt;/p></description></item></channel></rss>

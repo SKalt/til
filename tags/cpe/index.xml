@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cpe on Today I Learned</title><link>https://skalt.github.io/til/tags/cpe/</link><description>Recent content in Cpe on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/cpe/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/03/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/13/</guid><description>Common Platform Enumeration, a syntax for identifying &amp;ldquo;IT stuff&amp;rdquo;:
-cpe :&amp;lt;cpe_version&amp;gt; :&amp;lt;part&amp;gt; :&amp;lt;vendor&amp;gt; :&amp;lt;product&amp;gt; :&amp;lt;version&amp;gt; :&amp;lt;update&amp;gt; :&amp;lt;edition&amp;gt; :&amp;lt;language&amp;gt; :&amp;lt;sw_edition&amp;gt; :&amp;lt;target_sw&amp;gt; :&amp;lt;target_hw&amp;gt; :&amp;lt;other&amp;gt; Notably, part can only be a|h|o = app | hardware | OS, not &amp;ldquo;documentation&amp;rdquo;.
-See https://en.wikipedia.org/wiki/Common_Platform_Enumeration</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cpe on Today I Learned</title><link>https://skalt.github.io/til/tags/cpe/</link><description>Recent content in Cpe on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/cpe/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/03/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/13/</guid><description>&lt;p>Common Platform Enumeration, a syntax for identifying &amp;ldquo;IT stuff&amp;rdquo;:&lt;/p>
+&lt;pre tabindex="0">&lt;code>cpe
+:&amp;lt;cpe_version&amp;gt;
+:&amp;lt;part&amp;gt;
+:&amp;lt;vendor&amp;gt;
+:&amp;lt;product&amp;gt;
+:&amp;lt;version&amp;gt;
+:&amp;lt;update&amp;gt;
+:&amp;lt;edition&amp;gt;
+:&amp;lt;language&amp;gt;
+:&amp;lt;sw_edition&amp;gt;
+:&amp;lt;target_sw&amp;gt;
+:&amp;lt;target_hw&amp;gt;
+:&amp;lt;other&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Notably, &lt;code>part&lt;/code> can only be &lt;code>a|h|o&lt;/code> = &lt;code>app | hardware | OS&lt;/code>, not &amp;ldquo;documentation&amp;rdquo;.&lt;/p>
+&lt;p>See &lt;a href="https://en.wikipedia.org/wiki/Common_Platform_Enumeration">https://en.wikipedia.org/wiki/Common_Platform_Enumeration&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,15 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Css on Today I Learned</title><link>https://skalt.github.io/til/tags/css/</link><description>Recent content in Css on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/01/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/04/</guid><description>about the css :target selector (matches the element with the id specified by the url document-fragment) and the svg &amp;lt;view&amp;gt; element, which specifies a viewBox and can have an id.
-see https://css-tricks.com/svg-fragment-identifiers-work/</description></item><item><title/><link>https://skalt.github.io/til/2022/01/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/11/</guid><description>that you can pass default values to css variable references, e.g. var(--button-color, pink)
-Also,
-If the SVG fragment identifier addresses a time segment (e.g., MyDrawing.svg#t=10),then the initial view into the SVG document is established as if no fragment identifier was provided. The rendering of the SVG Document shall be as if the setCurrentTime method on the SVG Document element had been called with the begin time value from the fragment identifier.</description></item><item><title/><link>https://skalt.github.io/til/2022/07/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/01/</guid><description>That in Chrome/chromium you can view the actually-rendered font by
-inspecting an element view computed properties source: https://stackoverflow.com/a/31254584/6571327</description></item><item><title/><link>https://skalt.github.io/til/2022/07/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/04/</guid><description>How to subset fonts:
-# in a virtualenv pip install fonttools brotli zopfli pyftsubset --help see:
-https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification https://markoskon.com/creating-font-subsets/#available-tools https://clagnut.com/blog/2418/ https://wakamaifondue.com/beta/ Also, optical-sized variable fonts look great.</description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>How to position an element relative to its parent without affecting the flow of other sibling elements:
-you&amp;rsquo;re most likely interested in position: absolute which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has position: relative or position: absolute set on it, then it will act as the parent for positioning coordinates for its children.
-&amp;ndash; https://stackoverflow.</description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>Typographic Units Absolute distance Name CSS Unit length Picas pc 1/6 inch Points pt 1/72 inches &amp;ndash; https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units
-Font-relative units em:
-In metal type, the point size (and hence the em, from em quadrat) was equal to the line height of the metal body from which the letter rises. [&amp;hellip;] In some older texts, but not all, the em is defined, or said to have been defined, as the width of the capital &amp;lsquo;M&amp;rsquo; in the current typeface and point size.</description></item><item><title/><link>https://skalt.github.io/til/2024/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/14/</guid><description>A more concise way to implement light/dark modes:
-:root { color-scheme: light dark; } which saves a few more bytes than my usual
-:root { --fg: #000; --bg: #fff; } @media (prefers-color-scheme: dark) { :root { --fg: #fff; --bg: #000; } } &amp;ndash; https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences
-I also learned that CSS has special syntax for systmem-provided colors, notably:
-Canvas: the default background color CanvasText: the default text color &amp;ndash; https://developer.mozilla.org/en-US/docs/Web/CSS/system-color#syntax</description></item><item><title/><link>https://skalt.github.io/til/2024/02/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/19/</guid><description>That CSS can adjust any font&amp;rsquo;s aspect value using font-size-adjust &amp;ndash; the ratio between the cap height and the x-height, NOT the aspect ratio.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Css on Today I Learned</title><link>https://skalt.github.io/til/tags/css/</link><description>Recent content in Css on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/01/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/04/</guid><description>&lt;p>about the css &lt;code>:target&lt;/code> selector (matches the element with the id specified by the url document-fragment)
+and the svg &lt;code>&amp;lt;view&amp;gt;&lt;/code> element, which specifies a &lt;code>viewBox&lt;/code> and can have an id.&lt;/p>
+&lt;p>see &lt;a href="https://css-tricks.com/svg-fragment-identifiers-work/">https://css-tricks.com/svg-fragment-identifiers-work/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/01/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/11/</guid><description>&lt;p>that you can pass default values to css variable references, e.g. &lt;code>var(--button-color, pink)&lt;/code>&lt;/p>
+&lt;p>Also,&lt;/p>
+&lt;blockquote>
+&lt;p>If the SVG fragment identifier addresses a time segment (e.g., MyDrawing.svg#t=10),then the initial view into the SVG document is established as if no fragment identifier was provided. The rendering of the SVG Document shall be as if the setCurrentTime method on the SVG Document element had been called with the begin time value from the fragment identifier. Additionally, if an end time value is provided in the fragment identifier, the effect is equivalent to calling the pauseAnimations method on the SVG Document when the document time reaches the end time of the fragment identifier.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/07/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/01/</guid><description>&lt;p>That in Chrome/chromium you can view the actually-rendered font by&lt;/p>
+&lt;ol>
+&lt;li>inspecting an element&lt;/li>
+&lt;li>view computed properties&lt;/li>
+&lt;/ol>
+&lt;p>source: &lt;a href="https://stackoverflow.com/a/31254584/6571327">https://stackoverflow.com/a/31254584/6571327&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/07/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/07/04/</guid><description>&lt;p>How to subset fonts:&lt;/p>
+&lt;pre tabindex="0">&lt;code># in a virtualenv
+pip install fonttools brotli zopfli
+pyftsubset --help
+&lt;/code>&lt;/pre>&lt;p>see:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification">https://fonttools.readthedocs.io/en/latest/subset/index.html#initial-glyph-set-specification&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://markoskon.com/creating-font-subsets/#available-tools">https://markoskon.com/creating-font-subsets/#available-tools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://clagnut.com/blog/2418/">https://clagnut.com/blog/2418/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://wakamaifondue.com/beta/">https://wakamaifondue.com/beta/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Also, optical-sized variable fonts look great.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>&lt;p>How to position an element relative to its parent without affecting the flow of other sibling elements:&lt;/p>
+&lt;blockquote>
+&lt;p>you&amp;rsquo;re most likely interested in &lt;code>position: absolute&lt;/code> which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has &lt;code>position: relative&lt;/code> or &lt;code>position: absolute&lt;/code> set on it, then it will act as the parent for positioning coordinates for its children.&lt;/p>
+&lt;p>&amp;ndash; &lt;a href="https://stackoverflow.com/a/105035/6571327">https://stackoverflow.com/a/105035/6571327&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>&lt;h2 id="typographic-units">Typographic Units&lt;/h2>
+&lt;h3 id="absolute-distance">Absolute distance&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Name&lt;/th>
+&lt;th style="text-align: center">CSS Unit&lt;/th>
+&lt;th style="text-align: left">length&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Picas&lt;/td>
+&lt;td style="text-align: center">&lt;code>pc&lt;/code>&lt;/td>
+&lt;td style="text-align: left">1/6 inch&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Points&lt;/td>
+&lt;td style="text-align: center">&lt;code>pt&lt;/code>&lt;/td>
+&lt;td style="text-align: left">1/72 inches&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units&lt;/a>&lt;/p>
+&lt;h3 id="font-relative-units">Font-relative units&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>em&lt;/code>:&lt;/p>
+&lt;blockquote>
+&lt;p>In metal type, the point size (and hence the em, from em quadrat) was equal to the line height of the metal body from which the letter rises.
+[&amp;hellip;]
+In some older texts, but not all, the em is defined, or said to have been defined, as the width of the capital &amp;lsquo;M&amp;rsquo; in the current typeface and point size.
+[&amp;hellip;]
+In [CSS] the em unit is the height of the font in nominal points or inches.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/14/</guid><description>&lt;p>A more concise way to implement light/dark modes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">color-scheme&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">light&lt;/span> &lt;span class="n">dark&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>which saves a few more bytes than my usual&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--fg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mh">#000&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--bg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mh">#fff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">media&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="nt">prefers-color-scheme&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">dark&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--fg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mh">#fff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--bg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mh">#000&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences&lt;/a>&lt;/p>
+&lt;p>I also learned that CSS has special syntax for systmem-provided colors, notably:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Canvas&lt;/code>: the default background color&lt;/li>
+&lt;li>&lt;code>CanvasText&lt;/code>: the default text color&lt;/li>
+&lt;/ul>
+&lt;p>&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/system-color#syntax">https://developer.mozilla.org/en-US/docs/Web/CSS/system-color#syntax&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/02/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/19/</guid><description>&lt;p>That CSS can adjust any font&amp;rsquo;s aspect value using &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust">&lt;code>font-size-adjust&lt;/code>&lt;/a> &amp;ndash; the ratio between the cap height and the x-height, NOT the aspect ratio.&lt;/p></description></item></channel></rss>

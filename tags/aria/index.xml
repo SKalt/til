@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Aria on Today I Learned</title><link>https://skalt.github.io/til/tags/aria/</link><description>Recent content in Aria on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/aria/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/23/</guid><description>That ARIA stands for Accessible Rich Internet Applications! See https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
-That in linux ls(1) uses the environment variable LS_COLORS to determine the colors in which the filenames are to be displayed. Also, that linux specifies a dir_colors(5) configuration file format for dircolors(1), which exports LS_COLORS
-See https://man7.org/linux/man-pages/man5/dir_colors.5.html
-That nix is complicated, which is exactly what my prior research told me.
-On one hand, it is AWESOME to cd into a project and watch direnv automatically spawn a development shell with all the fixings.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Aria on Today I Learned</title><link>https://skalt.github.io/til/tags/aria/</link><description>Recent content in Aria on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/aria/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/23/</guid><description>&lt;p>That ARIA stands for Accessible Rich Internet Applications!
+See &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>That in linux &lt;code>ls(1)&lt;/code> uses the environment variable &lt;code>LS_COLORS&lt;/code> to determine the colors in which the filenames are to be displayed.
+Also, that linux specifies a &lt;code>dir_colors(5)&lt;/code> configuration file format for &lt;code>dircolors(1)&lt;/code>, which exports &lt;code>LS_COLORS&lt;/code>&lt;/p>
+&lt;p>See &lt;a href="https://man7.org/linux/man-pages/man5/dir_colors.5.html">https://man7.org/linux/man-pages/man5/dir_colors.5.html&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>That nix is complicated, which is exactly what my prior research told me.&lt;/p>
+&lt;p>On one hand, it is &lt;strong>AWESOME&lt;/strong> to cd into a project and watch &lt;a href="">&lt;code>direnv&lt;/code>&lt;/a> automatically spawn a development shell with all the fixings.
+On the other, the nix ecosystem is bewildering.
+I read through a few articles:&lt;/p></description></item></channel></rss>
