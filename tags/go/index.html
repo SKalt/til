@@ -38,4 +38,11 @@ wasm-snip \
   --snip-rust-fmt-code \
   ...
 </code></pre></article><article><a href=https://skalt.github.io/til/2024/08/19/></a><p>That <code>go build ./path/to/main.go</code> disregards other files in the same directory/package.
-<code>go build ./path/to</code> works fine.</p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+<code>go build ./path/to</code> works fine.</p></article><article><a href=https://skalt.github.io/til/2024/09/24/></a><p>That you an render code blocks in Go doc comments by indenting the lines of code:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=c1>// Add two numbers.
+</span></span></span><span class=line><span class=cl><span class=c1>//   this
+</span></span></span><span class=line><span class=cl><span class=c1>//   is a
+</span></span></span><span class=line><span class=cl><span class=c1>//   code block
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>func</span> <span class=nf>Add</span><span class=p>(</span><span class=nx>a</span><span class=p>,</span> <span class=nx>b</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=nx>a</span> <span class=o>+</span> <span class=nx>b</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>See <a href=https://tip.golang.org/doc/comment#code>https://tip.golang.org/doc/comment#code</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
