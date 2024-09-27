@@ -1,18 +1,32 @@
 {{ define "main" }}
 <main>
+  <h1>{{.Type}}</h1>
   <!-- TODO: paginate -->
-  {{ if (eq .Type "tags") }} {{ range .Pages }}
-  <article>
-    <a href="{{.Permalink}}">{{.Title}}</a>
-    {{ .Content }}
-  </article>
-  {{ end }} {{ else }} {{ range .Pages }}
-  <article>
-    <h2>
-      <a href="{{.Permalink}}">{{ .File.Dir }}{{ .File.BaseFileName }}</a>
-    </h2>
-    {{ .Content }}
-  </article>
-  {{ end }} {{ end }}
+  {{ if (eq .Type "tags") }}
+    {{ range .Pages }}
+    {{ if (compare.Eq .Title  "") }}
+      <hr>
+    {{ end }}
+    <article>
+      {{ if not (compare.Eq .Title  "") }}
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      {{else}}
+        <h3><a href="{{.Permalink}}">{{.File.Dir }}{{ .File.BaseFileName }}</a></h3>
+      {{end}}
+
+      {{ .Content }}
+    </article>
+    {{ end }}
+  {{ else }}
+    {{ range .Pages }}
+    <hr />
+    <article>
+      <h2>
+        <a href="{{.Permalink}}">{{ .File.Dir }}{{ .File.BaseFileName }}</a>
+      </h2>
+      {{ .Content }}
+    </article>
+    {{ end }}
+  {{ end }}
 </main>
 {{ end }}
