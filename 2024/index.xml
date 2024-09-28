@@ -218,4 +218,10 @@ See &lt;a href="https://github.com/microsoft/TypeScript/wiki/Performance-Tracing
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">func&lt;/span> &lt;span class="nf">Add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">b&lt;/span> &lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">b&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="https://tip.golang.org/doc/comment#code">https://tip.golang.org/doc/comment#code&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="https://tip.golang.org/doc/comment#code">https://tip.golang.org/doc/comment#code&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/09/28/</guid><description>&lt;p>That on windows, creating a virtualenv:&lt;/p>
+&lt;ol>
+&lt;li>symlinks executables into &lt;code>$VIRTUAL_ENV/Scripts&lt;/code> rather than &lt;code>$VIRTUAL_ENV/bin&lt;/code>&lt;/li>
+&lt;li>only creates a &lt;code>python.exe&lt;/code> symlink, not a &lt;code>python3.exe&lt;/code> symlink.&lt;/li>
+&lt;/ol>
+&lt;p>See &lt;a href="https://docs.python.org/3/library/venv.html#creating-virtual-environments">https://docs.python.org/3/library/venv.html#creating-virtual-environments&lt;/a>&lt;/p>
+&lt;p>Less exciting, but I also (re-)learned that setting a &lt;code>PYTHONPATH&lt;/code> on windows requires using &lt;code>;&lt;/code> rather than &lt;code>:&lt;/code> as the path-separator.&lt;/p></description></item></channel></rss>
