@@ -2094,4 +2094,9 @@ See &lt;a href="https://github.com/microsoft/TypeScript/wiki/Performance-Tracing
 &lt;li>only creates a &lt;code>python.exe&lt;/code> symlink, not a &lt;code>python3.exe&lt;/code> symlink.&lt;/li>
 &lt;/ol>
 &lt;p>See &lt;a href="https://docs.python.org/3/library/venv.html#creating-virtual-environments">https://docs.python.org/3/library/venv.html#creating-virtual-environments&lt;/a>&lt;/p>
-&lt;p>Less exciting, but I also (re-)learned that setting a &lt;code>PYTHONPATH&lt;/code> on windows requires using &lt;code>;&lt;/code> rather than &lt;code>:&lt;/code> as the path-separator.&lt;/p></description></item></channel></rss>
+&lt;p>Less exciting, but I also (re-)learned that setting a &lt;code>PYTHONPATH&lt;/code> on windows requires using &lt;code>;&lt;/code> rather than &lt;code>:&lt;/code> as the path-separator.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/10/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/10/14/</guid><description>&lt;p>That &lt;a href="https://without.boats">https://without.boats&lt;/a> is named after a Michel Foucault quote:&lt;/p>
+&lt;blockquote>
+&lt;p>“In civilizations without boats, dreams dry up, espionage takes the place of adventure and the police take the place of pirates.”&lt;/p>
+&lt;p>&amp;ndash; Michel Foucault
+&amp;ndash; &lt;a href="https://www.goodreads.com/quotes/1082065-in-civilizations-without-boats-dreams-dry-up-espionage-takes-the">https://www.goodreads.com/quotes/1082065-in-civilizations-without-boats-dreams-dry-up-espionage-takes-the&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
