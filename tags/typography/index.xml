@@ -14,21 +14,21 @@ pyftsubset --help
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Name&lt;/th>
+&lt;th>Name&lt;/th>
 &lt;th style="text-align: center">CSS Unit&lt;/th>
-&lt;th style="text-align: left">length&lt;/th>
+&lt;th>length&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Picas&lt;/td>
+&lt;td>Picas&lt;/td>
 &lt;td style="text-align: center">&lt;code>pc&lt;/code>&lt;/td>
-&lt;td style="text-align: left">1/6 inch&lt;/td>
+&lt;td>1/6 inch&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Points&lt;/td>
+&lt;td>Points&lt;/td>
 &lt;td style="text-align: center">&lt;code>pt&lt;/code>&lt;/td>
-&lt;td style="text-align: left">1/72 inches&lt;/td>
+&lt;td>1/72 inches&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>

@@ -16,21 +16,21 @@ See &lt;a href="https://datatracker.ietf.org/doc/html/rfc6750#section-3">https:/
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Name&lt;/th>
+&lt;th>Name&lt;/th>
 &lt;th style="text-align: center">CSS Unit&lt;/th>
-&lt;th style="text-align: left">length&lt;/th>
+&lt;th>length&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Picas&lt;/td>
+&lt;td>Picas&lt;/td>
 &lt;td style="text-align: center">&lt;code>pc&lt;/code>&lt;/td>
-&lt;td style="text-align: left">1/6 inch&lt;/td>
+&lt;td>1/6 inch&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Points&lt;/td>
+&lt;td>Points&lt;/td>
 &lt;td style="text-align: center">&lt;code>pt&lt;/code>&lt;/td>
-&lt;td style="text-align: left">1/72 inches&lt;/td>
+&lt;td>1/72 inches&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -229,4 +229,8 @@ See &lt;a href="https://github.com/microsoft/TypeScript/wiki/Performance-Tracing
 &lt;p>“In civilizations without boats, dreams dry up, espionage takes the place of adventure and the police take the place of pirates.”&lt;/p>
 &lt;p>&amp;ndash; Michel Foucault
 &amp;ndash; &lt;a href="https://www.goodreads.com/quotes/1082065-in-civilizations-without-boats-dreams-dry-up-espionage-takes-the">https://www.goodreads.com/quotes/1082065-in-civilizations-without-boats-dreams-dry-up-espionage-takes-the&lt;/a>&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2024/10/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/10/15/</guid><description>&lt;p>What an anycast IP is:&lt;/p>
+&lt;blockquote>
+&lt;p>Anycast is a network addressing and routing methodology in which a single IP address is shared by devices (generally servers) in multiple locations.
+Routers direct packets addressed to this destination to the location nearest the sender, using their normal decision-making algorithms, typically the lowest number of BGP network hops.
+Anycast routing is widely used by content delivery networks such as web and name servers, to bring their content closer to end users.&lt;/p></description></item></channel></rss>

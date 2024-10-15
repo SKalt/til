@@ -357,199 +357,199 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">&lt;code>pwd&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--git-common-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--git-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--show-toplevel&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>config#core.worktree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>./config#core.worktree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>./gitdir&lt;/code>&lt;/th>
+&lt;th>&lt;code>pwd&lt;/code>&lt;/th>
+&lt;th>&lt;code>--git-common-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--git-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
+&lt;th>&lt;code>--show-toplevel&lt;/code>&lt;/th>
+&lt;th>&lt;code>config#core.worktree&lt;/code>&lt;/th>
+&lt;th>&lt;code>./config#core.worktree&lt;/code>&lt;/th>
+&lt;th>&lt;code>./gitdir&lt;/code>&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td>&lt;code>.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/nested&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/nested&lt;/code>&lt;/td>
+&lt;td>&lt;code>../.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">&lt;code>pwd&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--git-common-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--git-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>--show-toplevel&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>config#core.worktree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>./config#core.worktree&lt;/code>&lt;/th>
-&lt;th style="text-align: left">&lt;code>./gitdir&lt;/code>&lt;/th>
+&lt;th>&lt;code>pwd&lt;/code>&lt;/th>
+&lt;th>&lt;code>--git-common-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--git-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--is-inside-git-dir&lt;/code>&lt;/th>
+&lt;th>&lt;code>--is-inside-work-tree&lt;/code>&lt;/th>
+&lt;th>&lt;code>--show-toplevel&lt;/code>&lt;/th>
+&lt;th>&lt;code>config#core.worktree&lt;/code>&lt;/th>
+&lt;th>&lt;code>./config#core.worktree&lt;/code>&lt;/th>
+&lt;th>&lt;code>./gitdir&lt;/code>&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>true&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/.git&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>true&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>fatal: this operation must be run in a work tree&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;lt;missing&amp;gt;&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/.git&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../../../wrktr/submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>.&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>false&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>${PWD}/submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>../../../submod&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>&lt;code>${PWD}/.git/modules/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>.&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>false&lt;/code>&lt;/td>
+&lt;td>&lt;code>${PWD}/submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td>&lt;code>../../../submod&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item></channel></rss>

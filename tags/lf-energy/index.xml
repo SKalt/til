@@ -2,26 +2,26 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Acronym&lt;/th>
-&lt;th style="text-align: left">Meaning&lt;/th>
+&lt;th>Acronym&lt;/th>
+&lt;th>Meaning&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">DSO&lt;/td>
-&lt;td style="text-align: left">distribution system operators&lt;/td>
+&lt;td>DSO&lt;/td>
+&lt;td>distribution system operators&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">AGR&lt;/td>
-&lt;td style="text-align: left">aggregator&lt;/td>
+&lt;td>AGR&lt;/td>
+&lt;td>aggregator&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">TSO&lt;/td>
-&lt;td style="text-align: left">transmission system operator&lt;/td>
+&lt;td>TSO&lt;/td>
+&lt;td>transmission system operator&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">MCM&lt;/td>
-&lt;td style="text-align: left">market-based coordination mechanism&lt;/td>
+&lt;td>MCM&lt;/td>
+&lt;td>market-based coordination mechanism&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>

@@ -12,230 +12,230 @@ If build, host, and target are all different this is called a &lt;strong>canadia
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">#&lt;/th>
-&lt;th style="text-align: left">date&lt;/th>
-&lt;th style="text-align: left">extension&lt;/th>
-&lt;th style="text-align: left">publisher&lt;/th>
-&lt;th style="text-align: left">license&lt;/th>
-&lt;th style="text-align: left">kind&lt;/th>
+&lt;th>#&lt;/th>
+&lt;th>date&lt;/th>
+&lt;th>extension&lt;/th>
+&lt;th>publisher&lt;/th>
+&lt;th>license&lt;/th>
+&lt;th>kind&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">1&lt;/td>
-&lt;td style="text-align: left">2020-04-18&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client">Redis&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>2020-04-18&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client">Redis&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">2&lt;/td>
-&lt;td style="text-align: left">2020-04-21&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh">SSH Client&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>2&lt;/td>
+&lt;td>2020-04-21&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh">SSH Client&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">3&lt;/td>
-&lt;td style="text-align: left">2020-05-05&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">MySQL&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>2020-05-05&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2">MySQL&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">4&lt;/td>
-&lt;td style="text-align: left">2021-01-27&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2">ElasticSearch&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>2021-01-27&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2">ElasticSearch&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">5&lt;/td>
-&lt;td style="text-align: left">2021-01-27&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2">PostgreSQL&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>5&lt;/td>
+&lt;td>2021-01-27&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2">PostgreSQL&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">6&lt;/td>
-&lt;td style="text-align: left">2021-02-05&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2">Database Client&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>6&lt;/td>
+&lt;td>2021-02-05&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2">Database Client&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">7&lt;/td>
-&lt;td style="text-align: left">2021-06-20&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor">JS Refactoring Assistant&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://p42.ai">P42&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>7&lt;/td>
+&lt;td>2021-06-20&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor">JS Refactoring Assistant&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://p42.ai">P42&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">8&lt;/td>
-&lt;td style="text-align: left">2021-06-29&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>8&lt;/td>
+&lt;td>2021-06-29&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">9&lt;/td>
-&lt;td style="text-align: left">2021-11-22&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci">Local CI&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://getlocalci.com">Local CI&lt;/a>&lt;/td>
-&lt;td style="text-align: left">GPL-2&lt;/td>
-&lt;td style="text-align: left">tool&lt;/td>
+&lt;td>9&lt;/td>
+&lt;td>2021-11-22&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci">Local CI&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://getlocalci.com">Local CI&lt;/a>&lt;/td>
+&lt;td>GPL-2&lt;/td>
+&lt;td>tool&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">10&lt;/td>
-&lt;td style="text-align: left">2021-12-01&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2">SQl Server Client(mssql)&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>10&lt;/td>
+&lt;td>2021-12-01&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2">SQl Server Client(mssql)&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://database-client.com">Weijan Chen&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">11&lt;/td>
-&lt;td style="text-align: left">2022-01-18&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt">DVT IDE for Visual Studio Code&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://amiq.com">AMIQ EDA s.r.l.&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">tool&lt;/td>
+&lt;td>11&lt;/td>
+&lt;td>2022-01-18&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt">DVT IDE for Visual Studio Code&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://amiq.com">AMIQ EDA s.r.l.&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>tool&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">12&lt;/td>
-&lt;td style="text-align: left">2022-06-27&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test">TestExtension&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://sap.com">Prashant&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">experiment&lt;/td>
+&lt;td>12&lt;/td>
+&lt;td>2022-06-27&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test">TestExtension&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://sap.com">Prashant&lt;/a>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>experiment&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">13&lt;/td>
-&lt;td style="text-align: left">2022-11-09&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub">GitHub Copilot Voice&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>13&lt;/td>
+&lt;td>2022-11-09&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub">GitHub Copilot Voice&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">14&lt;/td>
-&lt;td style="text-align: left">2022-11-25&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg">UPG Code Generator for VS Code&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://gptlabs.us/">GPT Labs&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>14&lt;/td>
+&lt;td>2022-11-25&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg">UPG Code Generator for VS Code&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://gptlabs.us/">GPT Labs&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">15&lt;/td>
-&lt;td style="text-align: left">2022-12-14&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode">SkyCode&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://singularity-ai.com/">singularity-ai&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>15&lt;/td>
+&lt;td>2022-12-14&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode">SkyCode&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://singularity-ai.com/">singularity-ai&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">16&lt;/td>
-&lt;td style="text-align: left">2023-01-01&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension">Software Testing AI&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://softwaretesting.ai/">Software Testing AI&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>16&lt;/td>
+&lt;td>2023-01-01&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension">Software Testing AI&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://softwaretesting.ai/">Software Testing AI&lt;/a>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">17&lt;/td>
-&lt;td style="text-align: left">2023-01-06&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme">arandomtheme&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MiloTilo&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">experiment&lt;/td>
+&lt;td>17&lt;/td>
+&lt;td>2023-01-06&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme">arandomtheme&lt;/a>&lt;/td>
+&lt;td>MiloTilo&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>experiment&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">18&lt;/td>
-&lt;td style="text-align: left">2023-01-19&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist">CodeAssist&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://www.codeassist.tech">CodeAssist&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>18&lt;/td>
+&lt;td>2023-01-19&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist">CodeAssist&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://www.codeassist.tech">CodeAssist&lt;/a>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">19&lt;/td>
-&lt;td style="text-align: left">2023-01-27&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools">DuckDB Sql Tools&lt;/a>&lt;/td>
-&lt;td style="text-align: left">Random Fractals Inc.&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>19&lt;/td>
+&lt;td>2023-01-27&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools">DuckDB Sql Tools&lt;/a>&lt;/td>
+&lt;td>Random Fractals Inc.&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">20&lt;/td>
-&lt;td style="text-align: left">2023-03-28&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook">Polyverse Boost AI: Complexity Simplified&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://polyverse.com">Polyverse Corporation&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>20&lt;/td>
+&lt;td>2023-03-28&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook">Polyverse Boost AI: Complexity Simplified&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://polyverse.com">Polyverse Corporation&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">21&lt;/td>
-&lt;td style="text-align: left">2023-04-12&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai">Merlin: GPT Assistant for VS Code&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://spellcraft.org">Spellcraft&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>21&lt;/td>
+&lt;td>2023-04-12&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai">Merlin: GPT Assistant for VS Code&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://spellcraft.org">Spellcraft&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">22&lt;/td>
-&lt;td style="text-align: left">2023-04-27&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot Chat&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">ai&lt;/td>
+&lt;td>22&lt;/td>
+&lt;td>2023-04-27&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot Chat&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com">GitHub&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>ai&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">23&lt;/td>
-&lt;td style="text-align: left">2023-07-03&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl">Grappl&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://grappl.io">Grappl&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">tool&lt;/td>
+&lt;td>23&lt;/td>
+&lt;td>2023-07-03&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl">Grappl&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://grappl.io">Grappl&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>tool&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">24&lt;/td>
-&lt;td style="text-align: left">2023-07-16&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask">Bask&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://scious.io">Scious&lt;/a>&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">dsl&lt;/td>
+&lt;td>24&lt;/td>
+&lt;td>2023-07-16&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask">Bask&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://scious.io">Scious&lt;/a>&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>dsl&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">25&lt;/td>
-&lt;td style="text-align: left">2023-07-17&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync">Data Sync&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://nguyenngoclongdev.github.io/">Nguyen Ngoc Long&lt;/a>&lt;/td>
-&lt;td style="text-align: left">MIT&lt;/td>
-&lt;td style="text-align: left">db&lt;/td>
+&lt;td>25&lt;/td>
+&lt;td>2023-07-17&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync">Data Sync&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://nguyenngoclongdev.github.io/">Nguyen Ngoc Long&lt;/a>&lt;/td>
+&lt;td>MIT&lt;/td>
+&lt;td>db&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">26&lt;/td>
-&lt;td style="text-align: left">2023-07-19&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map">FnMap&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://yicode.tech">yicode.tech&lt;/a>&lt;/td>
-&lt;td style="text-align: left">GPL-3&lt;/td>
-&lt;td style="text-align: left">tool&lt;/td>
+&lt;td>26&lt;/td>
+&lt;td>2023-07-19&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map">FnMap&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://yicode.tech">yicode.tech&lt;/a>&lt;/td>
+&lt;td>GPL-3&lt;/td>
+&lt;td>tool&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">27&lt;/td>
-&lt;td style="text-align: left">2023-08-10&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy">Taskfy&lt;/a>&lt;/td>
-&lt;td style="text-align: left">Taskfy&lt;/td>
-&lt;td style="text-align: left">commercial&lt;/td>
-&lt;td style="text-align: left">tool&lt;/td>
+&lt;td>27&lt;/td>
+&lt;td>2023-08-10&lt;/td>
+&lt;td>&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy">Taskfy&lt;/a>&lt;/td>
+&lt;td>Taskfy&lt;/td>
+&lt;td>commercial&lt;/td>
+&lt;td>tool&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
