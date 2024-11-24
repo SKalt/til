@@ -26,4 +26,21 @@ See &lt;a href="https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM
 &lt;/li>
 &lt;/ul></description></item><item><title/><link>https://skalt.github.io/til/2022/08/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/08/31/</guid><description>&lt;p>That linux has a capability system:
 &lt;a href="https://man7.org/linux/man-pages/man7/capabilities.7.html">https://man7.org/linux/man-pages/man7/capabilities.7.html&lt;/a>&lt;/p>
-&lt;p>I heard about this in &lt;a href="https://lobste.rs/s/ejwibq/dear_linux_privileged_ports_must_die">a discussion of privileged ports on linux&lt;/a>, specifically about &lt;code>PRIV_NET_PRIVADDR&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/30/</guid><description>&lt;p>That there&amp;rsquo;s a Linux command to do sql-like &lt;code>JOIN&lt;/code>s of lines in files, possibly based on a field in each line: &lt;a href="https://linux.die.net/man/1/join">&lt;code>join(1)&lt;/code>&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>I heard about this in &lt;a href="https://lobste.rs/s/ejwibq/dear_linux_privileged_ports_must_die">a discussion of privileged ports on linux&lt;/a>, specifically about &lt;code>PRIV_NET_PRIVADDR&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/05/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/30/</guid><description>&lt;p>That there&amp;rsquo;s a Linux command to do sql-like &lt;code>JOIN&lt;/code>s of lines in files, possibly based on a field in each line: &lt;a href="https://linux.die.net/man/1/join">&lt;code>join(1)&lt;/code>&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/11/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/11/24/</guid><description>&lt;p>That the GPU I have in the Ubuntu workstation in my office isn&amp;rsquo;t compatible with ROCm, AMD&amp;rsquo;s GPU compatibility layer, or Vulkan.
+I was trying to run the binary for &lt;a href="https://tabby.tabbyml.com/blog/2024/01/24/running-tabby-locally-with-rocm/">tabby&lt;/a> locally.
+First, I looked up my graphics card:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="p">;&lt;/span> lshw -c video
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># *-display&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># description: VGA compatible controller&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># product: Turks PRO [Radeon HD 7570]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># vendor: Advanced Micro Devices, Inc. [AMD/ATI]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># physical id: ...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># bus info: pci@0000:01:00.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># logical name: /dev/fb0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># version: 00&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># width: 64 bits&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># clock: 33MHz&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># capabilities: vga_controller bus_master cap_list rom fb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># configuration: depth=32 driver=radeon latency=0 resolution=2048,1080&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># resources: irq:42 memory:e0000000-efffffff memory:f0020000-f003ffff ioport:e000(size=256) memory:c0000-dffff&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I followed a few false starts, during which I learned:&lt;/p></description></item></channel></rss>

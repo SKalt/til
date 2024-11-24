@@ -16,4 +16,30 @@ See <a href=https://www.sudo.ws/posts/2022/05/sudo-for-blue-teams-how-to-control
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>USING</span><span class=w> </span><span class=p>(</span><span class=n>common_column</span><span class=p>)</span><span class=w>
 </span></span></span></code></pre></div><p>as shorthand for <code>one_table.common_column = other_table.common_column</code>.
 See <a href=https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM>https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM</a></p></li></ul></article><hr><article><h3><a href=https://skalt.github.io/til/2022/08/31/>2022/08/31</a></h3><p>That linux has a capability system:
-<a href=https://man7.org/linux/man-pages/man7/capabilities.7.html>https://man7.org/linux/man-pages/man7/capabilities.7.html</a></p><p>I heard about this in <a href=https://lobste.rs/s/ejwibq/dear_linux_privileged_ports_must_die>a discussion of privileged ports on linux</a>, specifically about <code>PRIV_NET_PRIVADDR</code>.</p></article><hr><article><h3><a href=https://skalt.github.io/til/2023/05/30/>2023/05/30</a></h3><p>That there&rsquo;s a Linux command to do sql-like <code>JOIN</code>s of lines in files, possibly based on a field in each line: <a href=https://linux.die.net/man/1/join><code>join(1)</code></a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+<a href=https://man7.org/linux/man-pages/man7/capabilities.7.html>https://man7.org/linux/man-pages/man7/capabilities.7.html</a></p><p>I heard about this in <a href=https://lobste.rs/s/ejwibq/dear_linux_privileged_ports_must_die>a discussion of privileged ports on linux</a>, specifically about <code>PRIV_NET_PRIVADDR</code>.</p></article><hr><article><h3><a href=https://skalt.github.io/til/2023/05/30/>2023/05/30</a></h3><p>That there&rsquo;s a Linux command to do sql-like <code>JOIN</code>s of lines in files, possibly based on a field in each line: <a href=https://linux.die.net/man/1/join><code>join(1)</code></a></p></article><hr><article><h3><a href=https://skalt.github.io/til/2024/11/24/>2024/11/24</a></h3><p>That the GPU I have in the Ubuntu workstation in my office isn&rsquo;t compatible with ROCm, AMD&rsquo;s GPU compatibility layer, or Vulkan.
+I was trying to run the binary for <a href=https://tabby.tabbyml.com/blog/2024/01/24/running-tabby-locally-with-rocm/>tabby</a> locally.
+First, I looked up my graphics card:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=p>;</span> lshw -c video
+</span></span><span class=line><span class=cl><span class=c1>#  *-display</span>
+</span></span><span class=line><span class=cl><span class=c1>#       description: VGA compatible controller</span>
+</span></span><span class=line><span class=cl><span class=c1>#       product: Turks PRO [Radeon HD 7570]</span>
+</span></span><span class=line><span class=cl><span class=c1>#       vendor: Advanced Micro Devices, Inc. [AMD/ATI]</span>
+</span></span><span class=line><span class=cl><span class=c1>#       physical id: ...</span>
+</span></span><span class=line><span class=cl><span class=c1>#       bus info: pci@0000:01:00.0</span>
+</span></span><span class=line><span class=cl><span class=c1>#       logical name: /dev/fb0</span>
+</span></span><span class=line><span class=cl><span class=c1>#       version: 00</span>
+</span></span><span class=line><span class=cl><span class=c1>#       width: 64 bits</span>
+</span></span><span class=line><span class=cl><span class=c1>#       clock: 33MHz</span>
+</span></span><span class=line><span class=cl><span class=c1>#       capabilities: vga_controller bus_master cap_list rom fb</span>
+</span></span><span class=line><span class=cl><span class=c1>#       configuration: depth=32 driver=radeon latency=0 resolution=2048,1080</span>
+</span></span><span class=line><span class=cl><span class=c1>#       resources: irq:42 memory:e0000000-efffffff memory:f0020000-f003ffff ioport:e000(size=256) memory:c0000-dffff</span>
+</span></span></code></pre></div><p>I followed a few false starts, during which I learned:</p><ul><li>CUDA is more or less NVIDIA-only</li><li>using an incompatible video driver can stall Ubuntu boots :/</li></ul><p>These are obvious in hindsight, but here are some of the commands I learned figuring out how I shot myself in the foot:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>grep <span class=s1>&#39;GRUB_CMDLINE_LINUX&#39;</span> /etc/default/grub 
+</span></span><span class=line><span class=cl>sudo vi /etc/default/grub <span class=c1># edit kernel flags</span>
+</span></span><span class=line><span class=cl>cat /proc/cmdline <span class=c1># display kernel flags in **current** session</span>
+</span></span><span class=line><span class=cl>update-grub <span class=c1># actually apply edited settings</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>inxi -G <span class=c1># display graphics hardware</span>
+</span></span><span class=line><span class=cl>sudo apt install inxi
+</span></span><span class=line><span class=cl>sudo apt install vulkan-tools
+</span></span><span class=line><span class=cl>vulkaninfo <span class=c1># display vulkan config.</span>
+</span></span></code></pre></div><p>I finally found the smoking gun in <a href=https://linuxreviews.org/The_Current_State_Of_Older_AMD_Graphics_Hardware_On_Linux:_What_Driver_To_Use_And_What_To_Expect>a 2020 wiki post on old GPUs</a>.
+Turns out the <a href="https://www.techpowerup.com/gpu-specs/amd-radeon-hd-7570-2-gb.b1205#:~:text=Release%20Date,Jan%205th%2C%202012">7570 came out in 2012</a> &ndash; while Vulkan was only standardized in 2016.</p><p>This is a bummer, but there&rsquo;s a nonzero chance one of my other salvaged boxes have newer chips.</p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
