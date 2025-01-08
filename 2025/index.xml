@@ -5,4 +5,4 @@
 &lt;pre tabindex="0">&lt;code class="language-ssh" data-lang="ssh">git config gpg.format ssh
 git config commit.gpgSign true
 git config tag.gpgSign true
-&lt;/code>&lt;/pre>&lt;p>See&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>See&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/01/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/08/</guid><description>&lt;p>That zsh completions in &lt;code>/usr/share/zsh/vendor-completions&lt;/code> must start with a &lt;code>_&lt;/code> in order to work, e.g. &lt;code>/usr/share/zsh/vendor-completions/_rg&lt;/code>. Not sure why, though.&lt;/p></description></item></channel></rss>
