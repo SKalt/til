@@ -2141,4 +2141,11 @@ First, I looked up my graphics card:&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-ssh" data-lang="ssh">git config gpg.format ssh
 git config commit.gpgSign true
 git config tag.gpgSign true
-&lt;/code>&lt;/pre>&lt;p>See&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/01/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/08/</guid><description>&lt;p>That zsh completions in &lt;code>/usr/share/zsh/vendor-completions&lt;/code> must start with a &lt;code>_&lt;/code> in order to work, e.g. &lt;code>/usr/share/zsh/vendor-completions/_rg&lt;/code>. Not sure why, though.&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>See&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/01/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/08/</guid><description>&lt;p>That zsh completions in &lt;code>/usr/share/zsh/vendor-completions&lt;/code> must start with a &lt;code>_&lt;/code> in order to work, e.g. &lt;code>/usr/share/zsh/vendor-completions/_rg&lt;/code>. Not sure why, though.&lt;/p>
+&lt;hr>
+&lt;p>While you can use the same SSH key for both authentication and signing, NIST recommends you shouldn&amp;rsquo;t: &lt;a href="https://gist.github.com/ChristopherA/3d6a2f39c4b623a1a287b3fb7e0aa05b">https://gist.github.com/ChristopherA/3d6a2f39c4b623a1a287b3fb7e0aa05b&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config commit.gpgSign &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config tag.gpgSign &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config gpg.format ssh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config user.signingKey &lt;span class="s1">&amp;#39;ssh-ed25519 AAAA...xyz&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
