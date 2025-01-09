@@ -12,4 +12,6 @@ git config tag.gpgSign true
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config tag.gpgSign &lt;span class="nb">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config gpg.format ssh
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config user.signingKey &lt;span class="s1">&amp;#39;ssh-ed25519 AAAA...xyz&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2025/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/09/</guid><description>&lt;p>Of the &lt;a href="https://github.com/ossf/security-insights-spec">&lt;code>security-insights.yaml&lt;/code>&lt;/a> specification.&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2025/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/09/</guid><description>&lt;p>Of the &lt;a href="https://github.com/ossf/security-insights-spec">&lt;code>security-insights.yaml&lt;/code>&lt;/a> specification.&lt;/p>
+&lt;hr>
+&lt;p>The Japanese term &lt;a href="https://en.wikipedia.org/wiki/Mojibake">&amp;ldquo;mojibake&amp;rdquo;&lt;/a>, meaning &amp;ldquo;character transformation&amp;rdquo; or &amp;ldquo;the garbled text resulting from using the wrong character encoding&amp;rdquo;.&lt;/p></description></item></channel></rss>
