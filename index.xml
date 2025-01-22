@@ -2169,4 +2169,4 @@ git config tag.gpgSign true
 &lt;li>make sure fingerprint auth enabled for target user&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title/><link>https://skalt.github.io/til/2025/01/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/01/22/</guid><description>&lt;p>That HTTP response code 501 is the semantically-correct way to communicate that a server does not support some functionality: &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501&lt;/a>.&lt;/p></description></item></channel></rss>
