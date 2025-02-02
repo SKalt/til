@@ -2,8 +2,7 @@
 &lt;p>The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a
 specific version of the time crate, it actually specifies a range of versions
 and allows SemVer compatible updates.&lt;/p>
-&lt;p>&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html">https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html">https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>Instead, in order to lock to a specific version of a crate, you need to write
 &lt;code>= 0.1.2&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/04/27/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/04/27/</guid><description>&lt;p>That you can add a &lt;code>[workspace.dependencies]&lt;/code> table in your top-level &lt;code>Cargo.toml&lt;/code> specifying paths to internal crates:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># ${PROJECT_DIR}/Cargo.toml&lt;/span>

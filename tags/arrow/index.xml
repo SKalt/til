@@ -3,7 +3,6 @@
 &lt;p>Any value in an array may be semantically null, whether primitive or nested type.&lt;/p>
 &lt;p>[&amp;hellip;]&lt;/p>
 &lt;p>Arrays having a 0 null count may choose to not allocate the validity bitmap; how this is represented depends on the implementation&lt;/p>
-&lt;p>&amp;ndash; &lt;a href="https://arrow.apache.org/docs/format/Columnar.html#null-count">https://arrow.apache.org/docs/format/Columnar.html#null-count&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ndash; &lt;a href="https://arrow.apache.org/docs/format/Columnar.html#null-count">https://arrow.apache.org/docs/format/Columnar.html#null-count&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>Which is frustrating.
 I usually think of arrays or database columns as &lt;code>NOT NULL&lt;/code> by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.&lt;/p></description></item></channel></rss>

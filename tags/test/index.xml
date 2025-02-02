@@ -9,6 +9,5 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">ExampleF&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="o">...&lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">ExampleT&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="o">...&lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">ExampleT_M&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="o">...&lt;/span> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;ndash; &lt;a href="https://pkg.go.dev/testing#hdr-Examples">https://pkg.go.dev/testing#hdr-Examples&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;ndash; &lt;a href="https://pkg.go.dev/testing#hdr-Examples">https://pkg.go.dev/testing#hdr-Examples&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>I feel like this might be able to be combined with &lt;a href="https://go.dev/doc/comment#:~:text=a%20code%20block%20is%20a%20span%20of%20indented%20or%20blank%20lines%20not%20starting%20with%20a%20bullet%20list%20marker%20or%20numbered%20list%20marker.%20it%20is%20rendered%20as%20preformatted%20text">doc comments&lt;/a>.&lt;/p></description></item></channel></rss>

@@ -43,8 +43,7 @@ See &lt;a href="https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM
 &lt;/ul></description></item><item><title/><link>https://skalt.github.io/til/2022/06/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/06/02/</guid><description>&lt;p>How to create a JS &lt;code>BigInt&lt;/code> value:&lt;/p>
 &lt;blockquote>
 &lt;p>A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending n to the end of an integer literal, or by calling the BigInt() constructor (but without the new operator) and giving it an integer value or string value.
-&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2022/06/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/06/14/</guid><description>&lt;p>That &lt;code>Array.sort&lt;/code> separates floats and ints:&lt;/p>
+&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2022/06/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/06/14/</guid><description>&lt;p>That &lt;code>Array.sort&lt;/code> separates floats and ints:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">7.4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">14&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">13&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">12&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">11&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// [ 8, 7.4, 14, 13, 12, 11 ]
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">x&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sort&lt;/span>&lt;span class="p">()&lt;/span>
@@ -66,8 +65,7 @@ See &lt;a href="https://www.postgresql.org/docs/current/sql-select.html#SQL-FROM
 &lt;p>[&amp;hellip;]&lt;/p>
 &lt;p>RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
 In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p>
-&lt;p>&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;blockquote>
 &lt;p>Class fields are public by default, but private class members can be created by using a hash &lt;code>#&lt;/code> prefix.
