@@ -31,4 +31,8 @@ The way to fix the problem is to:&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config tag.gpgSign &lt;span class="nb">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config gpg.format ssh
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config user.signingKey &lt;span class="s1">&amp;#39;ssh-ed25519 AAAA...xyz&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2025/02/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/02/07/</guid><description>&lt;p>That to verify git SSH commit signatures locally, you need to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config gpg.ssh.allowedSignersFile &lt;span class="nv">$PATH_TO_ALLOWED_SIGNERS_FILE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The signers file will be in the form&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">user@email.com namespace=&amp;#34;git&amp;#34; ssh-ed25519 AAA...jhq user@email.com
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

@@ -394,4 +394,6 @@ git config tag.gpgSign true
 </span></span><span class=line><span class=cl>git config tag.gpgSign <span class=nb>true</span>
 </span></span><span class=line><span class=cl>git config gpg.format ssh
 </span></span><span class=line><span class=cl>git config user.signingKey <span class=s1>&#39;ssh-ed25519 AAAA...xyz&#39;</span>
+</span></span></code></pre></div></article><hr><article><h3><a href=https://skalt.github.io/til/2025/02/07/>2025/02/07</a></h3><p>That to verify git SSH commit signatures locally, you need to</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>git config gpg.ssh.allowedSignersFile <span class=nv>$PATH_TO_ALLOWED_SIGNERS_FILE</span>
+</span></span></code></pre></div><p>The signers file will be in the form</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-txt data-lang=txt><span class=line><span class=cl>user@email.com namespace=&#34;git&#34; ssh-ed25519 AAA...jhq user@email.com
 </span></span></code></pre></div></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>

@@ -52,4 +52,8 @@ git config tag.gpgSign true
 &lt;p>It can be a media fragment in the form of &lt;code>#t=...&lt;/code>, which makes the video or audio start playing from that time.&lt;/p>
 &lt;p>&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/URI/Fragment">https://developer.mozilla.org/en-US/docs/Web/URI/Fragment&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>However, YouTube does not respect this.&lt;/p>
-&lt;p>See also: &lt;a href="https://www.w3.org/TR/media-frags/">https://www.w3.org/TR/media-frags/&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>See also: &lt;a href="https://www.w3.org/TR/media-frags/">https://www.w3.org/TR/media-frags/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/02/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/02/07/</guid><description>&lt;p>That to verify git SSH commit signatures locally, you need to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config gpg.ssh.allowedSignersFile &lt;span class="nv">$PATH_TO_ALLOWED_SIGNERS_FILE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The signers file will be in the form&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">user@email.com namespace=&amp;#34;git&amp;#34; ssh-ed25519 AAA...jhq user@email.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
