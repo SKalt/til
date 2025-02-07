@@ -35,4 +35,8 @@ The way to fix the problem is to:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config gpg.ssh.allowedSignersFile &lt;span class="nv">$PATH_TO_ALLOWED_SIGNERS_FILE&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The signers file will be in the form&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">user@email.com namespace=&amp;#34;git&amp;#34; ssh-ed25519 AAA...jhq user@email.com
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once that&amp;rsquo;s set up. you can run&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git log --show-signature
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To verify signatures locally. Alternately, you can run&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git log --format&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;signed:%G? fingerprint:%GF key:%GK&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="https://git-scm.com/docs/git-log#Documentation/git-log.txt-emGGem">https://git-scm.com/docs/git-log#Documentation/git-log.txt-emGGem&lt;/a> for more signature-related log format directives.&lt;/p></description></item></channel></rss>
