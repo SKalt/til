@@ -54,4 +54,21 @@ wasm-snip \
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>ExampleF</span><span class=p>()</span> <span class=p>{</span> <span class=o>...</span> <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>ExampleT</span><span class=p>()</span> <span class=p>{</span> <span class=o>...</span> <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>ExampleT_M</span><span class=p>()</span> <span class=p>{</span> <span class=o>...</span> <span class=p>}</span>
-</span></span></code></pre></div><p>&ndash; <a href=https://pkg.go.dev/testing#hdr-Examples>https://pkg.go.dev/testing#hdr-Examples</a></p></blockquote><p>I feel like this might be able to be combined with <a href="https://go.dev/doc/comment#:~:text=a%20code%20block%20is%20a%20span%20of%20indented%20or%20blank%20lines%20not%20starting%20with%20a%20bullet%20list%20marker%20or%20numbered%20list%20marker.%20it%20is%20rendered%20as%20preformatted%20text">doc comments</a>.</p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+</span></span></code></pre></div><p>&ndash; <a href=https://pkg.go.dev/testing#hdr-Examples>https://pkg.go.dev/testing#hdr-Examples</a></p></blockquote><p>I feel like this might be able to be combined with <a href="https://go.dev/doc/comment#:~:text=a%20code%20block%20is%20a%20span%20of%20indented%20or%20blank%20lines%20not%20starting%20with%20a%20bullet%20list%20marker%20or%20numbered%20list%20marker.%20it%20is%20rendered%20as%20preformatted%20text">doc comments</a>.</p></article><hr><article><h3><a href=https://skalt.github.io/til/2025/02/12/>2025/02/12</a></h3><p>That <code>defer</code> statements are block-scoped:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;fmt&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;end func&#34;</span><span class=p>)</span> <span class=c1>// runs at end of function</span>
+</span></span><span class=line><span class=cl>	<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;start func&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=k>defer</span> <span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;end block&#34;</span><span class=p>)</span> <span class=c1>// runs at end of block</span>
+</span></span><span class=line><span class=cl>		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;start block&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>// Output:</span>
+</span></span><span class=line><span class=cl><span class=c1>// start func</span>
+</span></span><span class=line><span class=cl><span class=c1>// statt block</span>
+</span></span><span class=line><span class=cl><span class=c1>// end block</span>
+</span></span><span class=line><span class=cl><span class=c1>// end func</span>
+</span></span></code></pre></div></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
