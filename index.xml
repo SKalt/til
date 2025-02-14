@@ -2194,4 +2194,5 @@ git config tag.gpgSign true
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// statt block&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// end block&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// end func&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2025/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/02/14/</guid><description>&lt;p>That VSCode has a &amp;ldquo;profiles&amp;rdquo; mechanism that allows bulk management of settings: &lt;a href="https://code.visualstudio.com/docs/editor/profiles">https://code.visualstudio.com/docs/editor/profiles&lt;/a>.
+These will make a fine addition to my dotfiles!&lt;/p></description></item></channel></rss>
