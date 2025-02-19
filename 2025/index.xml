@@ -79,4 +79,6 @@ git config tag.gpgSign true
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// end block&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// end func&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://skalt.github.io/til/2025/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/02/14/</guid><description>&lt;p>That VSCode has a &amp;ldquo;profiles&amp;rdquo; mechanism that allows bulk management of settings: &lt;a href="https://code.visualstudio.com/docs/editor/profiles">https://code.visualstudio.com/docs/editor/profiles&lt;/a>.
-These will make a fine addition to my dotfiles!&lt;/p></description></item></channel></rss>
+These will make a fine addition to my dotfiles!&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/02/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/02/19/</guid><description>&lt;p>How to set build-time variables in &lt;code>go&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">go build -ldflags -X importpath.name&lt;span class="o">=&lt;/span>value
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="https://pkg.go.dev/cmd/link">https://pkg.go.dev/cmd/link&lt;/a>&lt;/p></description></item></channel></rss>
