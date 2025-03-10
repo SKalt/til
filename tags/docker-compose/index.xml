@@ -8,4 +8,6 @@ That there&amp;rsquo;s a &lt;code>timeout&lt;/code> shell command in gnu coreuti
 &lt;li>service_healthy. This specifies that a dependency is expected to be “healthy”, which is defined with healthcheck, before starting a dependent service.&lt;/li>
 &lt;li>service_completed_successfully. This specifies that a dependency is expected to run to successful completion before starting a dependent service.&lt;/li>
 &lt;/ul>
-&lt;p>&amp;ndash; &lt;a href="https://docs.docker.com/compose/startup-order/">https://docs.docker.com/compose/startup-order/&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>&amp;ndash; &lt;a href="https://docs.docker.com/compose/startup-order/">https://docs.docker.com/compose/startup-order/&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2025/03/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/03/10/</guid><description>&lt;p>Why &lt;code>docker compose&lt;/code> is called &amp;ldquo;compose&amp;rdquo;: you can pass many &lt;code>compose.yaml&lt;/code> files that get merged automatically.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">docker compose -f first.yaml -f second.yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/">https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/&lt;/a>&lt;/p></description></item></channel></rss>
