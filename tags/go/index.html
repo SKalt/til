@@ -73,4 +73,19 @@ wasm-snip \
 </span></span><span class=line><span class=cl><span class=c1>// end func</span>
 </span></span></code></pre></div></article><hr><article><h3><a href=https://skalt.github.io/til/2025/02/19/>2025/02/19</a></h3><p>How to set build-time variables in <code>go</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>go build -ldflags <span class=s2>&#34;-X importpath.name=value&#34;</span>
 </span></span></code></pre></div><p>See <a href=https://pkg.go.dev/cmd/link>https://pkg.go.dev/cmd/link</a></p></article><hr><article><h3><a href=https://skalt.github.io/til/2025/04/25/>2025/04/25</a></h3><p>Apparently, the blessed way to do prettier-style line-wrapping in Go is <code>golines</code>:
-<a href=https://github.com/golang/vscode-go/issues/847#issuecomment-816992225>https://github.com/golang/vscode-go/issues/847#issuecomment-816992225</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+<a href=https://github.com/golang/vscode-go/issues/847#issuecomment-816992225>https://github.com/golang/vscode-go/issues/847#issuecomment-816992225</a></p></article><hr><article><h3><a href=https://skalt.github.io/til/2025/05/01/>2025/05/01</a></h3><p>That wrapper types preserve type information in switch statements:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;fmt&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kd>type</span> <span class=nx>x</span> <span class=kt>string</span>
+</span></span><span class=line><span class=cl>	<span class=nx>y</span> <span class=o>:=</span> <span class=nf>x</span><span class=p>(</span><span class=s>&#34;asdf&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=nx>z</span> <span class=o>:=</span> <span class=kt>any</span><span class=p>(</span><span class=nx>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=k>switch</span> <span class=nx>z</span><span class=p>.(</span><span class=kd>type</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=nx>x</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;cool&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=kt>string</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;uh&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p><a href=https://go.dev/play/p/VkDckf3vp_O>https://go.dev/play/p/VkDckf3vp_O</a></p></article></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
