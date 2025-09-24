@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Productivity on Today I Learned</title><link>https://skalt.github.io/til/tags/productivity/</link><description>Recent content in Productivity on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/07/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/25/</guid><description>&lt;p>You can create new google docs/spreadsheets/presentations, office365 docs/sheets/presentations, and github repos/gists/codespaces by accessing specific URLs in the browser:&lt;/p>
-&lt;h2 id="g-suite">G Suite&lt;/h2>
-&lt;ul>
-&lt;li>docs: &lt;a href="https://doc.new">https://doc.new&lt;/a>, &lt;a href="https://docs.new">https://docs.new&lt;/a>&lt;/li>
-&lt;li>sheets: &lt;a href="https://sheet.new">https://sheet.new&lt;/a>, &lt;a href="https://sheets.new">https://sheets.new&lt;/a>&lt;/li>
-&lt;li>slides: &lt;a href="http://slide.new">http://slide.new&lt;/a>, &lt;a href="http://slides.new">http://slides.new&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="office-365">Office 365&lt;/h2>
-&lt;ul>
-&lt;li>docs: &lt;a href="https://word.new">https://word.new&lt;/a>&lt;/li>
-&lt;li>sheets: &lt;a href="https://excel.new">https://excel.new&lt;/a>&lt;/li>
-&lt;li>slides: &lt;a href="https://ppt.new">https://ppt.new&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="github">github&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://repo.new">https://repo.new&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://gist.new">https://gist.new&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://codespace.new">https://codespace.new&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>source: &lt;a href="https://twitter.com/rothgar/status/1419339782258184192">https://twitter.com/rothgar/status/1419339782258184192&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Productivity on Today I Learned</title><link>https://skalt.github.io/til/tags/productivity/</link><description>Recent content in Productivity on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/07/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/25/</guid><description>&lt;p&gt;You can create new google docs/spreadsheets/presentations, office365 docs/sheets/presentations, and github repos/gists/codespaces by accessing specific URLs in the browser:&lt;/p&gt;
+&lt;h2 id="g-suite"&gt;G Suite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: &lt;a href="https://doc.new"&gt;https://doc.new&lt;/a&gt;, &lt;a href="https://docs.new"&gt;https://docs.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sheets: &lt;a href="https://sheet.new"&gt;https://sheet.new&lt;/a&gt;, &lt;a href="https://sheets.new"&gt;https://sheets.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;slides: &lt;a href="http://slide.new"&gt;http://slide.new&lt;/a&gt;, &lt;a href="http://slides.new"&gt;http://slides.new&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="office-365"&gt;Office 365&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: &lt;a href="https://word.new"&gt;https://word.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sheets: &lt;a href="https://excel.new"&gt;https://excel.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;slides: &lt;a href="https://ppt.new"&gt;https://ppt.new&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="github"&gt;github&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://repo.new"&gt;https://repo.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gist.new"&gt;https://gist.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codespace.new"&gt;https://codespace.new&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;source: &lt;a href="https://twitter.com/rothgar/status/1419339782258184192"&gt;https://twitter.com/rothgar/status/1419339782258184192&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

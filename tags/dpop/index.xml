@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dpop on Today I Learned</title><link>https://skalt.github.io/til/tags/dpop/</link><description>Recent content in Dpop on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/dpop/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>&lt;p>About the hot-off-the-press OAuth2 DPoP specification: &lt;a href="https://datatracker.ietf.org/doc/html/rfc9449">https://datatracker.ietf.org/doc/html/rfc9449&lt;/a>.
-DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.&lt;/p>
-&lt;p>My simplified understanding of DPoP is as follows:&lt;/p>
-&lt;ol>
-&lt;li>the client generates a private/public key pair&lt;/li>
-&lt;li>the client generates a request for an access token. The request includes:
-&lt;ul>
-&lt;li>the client&amp;rsquo;s public key&lt;/li>
-&lt;li>the the authorization endpoint&amp;rsquo;s URL&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>the client signs the request with the client&amp;rsquo;s private key&lt;/li>
-&lt;li>the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key. As is normal in OAuth2, the access token is signed by the authorization server&amp;rsquo;s private key.&lt;/li>
-&lt;li>the client generates a new proof including the client&amp;rsquo;s public key and the intended API endpoint, attaches that to the access token (remember, the access token also includes the thumbprint of the client&amp;rsquo;s public key). The client sends the proof and access token to the API.&lt;/li>
-&lt;li>The API validates
-&lt;ol>
-&lt;li>the proof was signed by the client&amp;rsquo;s public key&lt;/li>
-&lt;li>the client&amp;rsquo;s public key matches the thumbprint in the access token&lt;/li>
-&lt;li>and the access key was signed by the and the authorization server&amp;rsquo;s public key&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;p>This seems much easier to manage than MTLS, which (I think) involves maintaining long-lived X509 certificates, signing infrastructure, and chains of trust.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dpop on Today I Learned</title><link>https://skalt.github.io/til/tags/dpop/</link><description>Recent content in Dpop on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/dpop/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>&lt;p&gt;About the hot-off-the-press OAuth2 DPoP specification: &lt;a href="https://datatracker.ietf.org/doc/html/rfc9449"&gt;https://datatracker.ietf.org/doc/html/rfc9449&lt;/a&gt;.
+DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.&lt;/p&gt;
+&lt;p&gt;My simplified understanding of DPoP is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the client generates a private/public key pair&lt;/li&gt;
+&lt;li&gt;the client generates a request for an access token. The request includes:
+&lt;ul&gt;
+&lt;li&gt;the client&amp;rsquo;s public key&lt;/li&gt;
+&lt;li&gt;the the authorization endpoint&amp;rsquo;s URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;the client signs the request with the client&amp;rsquo;s private key&lt;/li&gt;
+&lt;li&gt;the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key. As is normal in OAuth2, the access token is signed by the authorization server&amp;rsquo;s private key.&lt;/li&gt;
+&lt;li&gt;the client generates a new proof including the client&amp;rsquo;s public key and the intended API endpoint, attaches that to the access token (remember, the access token also includes the thumbprint of the client&amp;rsquo;s public key). The client sends the proof and access token to the API.&lt;/li&gt;
+&lt;li&gt;The API validates
+&lt;ol&gt;
+&lt;li&gt;the proof was signed by the client&amp;rsquo;s public key&lt;/li&gt;
+&lt;li&gt;the client&amp;rsquo;s public key matches the thumbprint in the access token&lt;/li&gt;
+&lt;li&gt;and the access key was signed by the and the authorization server&amp;rsquo;s public key&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This seems much easier to manage than MTLS, which (I think) involves maintaining long-lived X509 certificates, signing infrastructure, and chains of trust.&lt;/p&gt;</description></item></channel></rss>

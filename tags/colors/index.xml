@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Colors on Today I Learned</title><link>https://skalt.github.io/til/tags/colors/</link><description>Recent content in Colors on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/colors/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/10/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/10/30/</guid><description>&lt;p>about &lt;code>terminfo&lt;/code>, the terminal information database: it can be queried to find all kinds of fun facts about your current terminal.
-For instance,&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>tput cols&lt;/code> =&amp;gt; number of columns in the current terminal&lt;/li>
-&lt;li>&lt;code>tput colors&lt;/code> =&amp;gt; number of colors the terminal supports&lt;/li>
-&lt;li>&lt;code>tput setaf&lt;/code> =&amp;gt; generate ansi codes to set the foregrount color in the terminal&lt;/li>
-&lt;/ul>
-&lt;p>Also, &lt;code>infocmp screen&lt;/code> dumps a bunch of other related information drawn from &lt;code>terminfo&lt;/code>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>&lt;p>That &lt;code>psql&lt;/code> et al. support colors:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">PG_COLOR&lt;/span>&lt;span class="o">=&lt;/span>auto &lt;span class="c1"># only colorize output to ttys&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>learned from &lt;a href="https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html">https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html&lt;/a>
-See also:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.postgresql.org/docs/current/color-when.html">https://www.postgresql.org/docs/current/color-when.html&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.postgresql.org/docs/current/color-which.html">https://www.postgresql.org/docs/current/color-which.html&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Colors on Today I Learned</title><link>https://skalt.github.io/til/tags/colors/</link><description>Recent content in Colors on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/colors/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/10/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/10/30/</guid><description>&lt;p&gt;about &lt;code&gt;terminfo&lt;/code&gt;, the terminal information database: it can be queried to find all kinds of fun facts about your current terminal.
+For instance,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tput cols&lt;/code&gt; =&amp;gt; number of columns in the current terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tput colors&lt;/code&gt; =&amp;gt; number of colors the terminal supports&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tput setaf&lt;/code&gt; =&amp;gt; generate ansi codes to set the foregrount color in the terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also, &lt;code&gt;infocmp screen&lt;/code&gt; dumps a bunch of other related information drawn from &lt;code&gt;terminfo&lt;/code&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>&lt;p&gt;That &lt;code&gt;psql&lt;/code&gt; et al. support colors:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PG_COLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;auto &lt;span class="c1"&gt;# only colorize output to ttys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;learned from &lt;a href="https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html"&gt;https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html&lt;/a&gt;
+See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/current/color-when.html"&gt;https://www.postgresql.org/docs/current/color-when.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/current/color-which.html"&gt;https://www.postgresql.org/docs/current/color-which.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

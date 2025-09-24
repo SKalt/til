@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Acronym on Today I Learned</title><link>https://skalt.github.io/til/tags/acronym/</link><description>Recent content in Acronym on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/acronym/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/09/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/09/30/</guid><description>&lt;p>that OCSP stands for Online Certificate Status Protocol. See &lt;a href="https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol">https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/10/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/07/</guid><description>&lt;p>STUN:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Acronym on Today I Learned</title><link>https://skalt.github.io/til/tags/acronym/</link><description>Recent content in Acronym on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/acronym/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/09/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/09/30/</guid><description>&lt;p&gt;that OCSP stands for Online Certificate Status Protocol. See &lt;a href="https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol"&gt;https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/10/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/07/</guid><description>&lt;p&gt;STUN:
 Session Traversal Utilities for NAT.
 A standardized set of methods, including a network protocol, for traversal of network address translator (NAT) gateways.
-see &lt;a href="https://en.wikipedia.org/wiki/STUN">https://en.wikipedia.org/wiki/STUN&lt;/a>&lt;/p>
-&lt;p>DERP: Designated Encrypted Relay for Packets.
-See &lt;a href="https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp">https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp&lt;/a>&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/11/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/07/</guid><description>&lt;p>that AWS ALB target groups support HTTPS healthcheck targets: &lt;a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html">https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>That FQDN stands for Fully Qualified Domain Name. For example &lt;code>sub.domain.tld.&lt;/code> is a FQDN.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2022/11/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/11/</guid><description>&lt;p>that SAN = Subject Alternate Name. A SAN certificate is a TLS certificate that certifies multiple domain names.&lt;/p>
-&lt;p>see &lt;a href="https://support.dnsimple.com/articles/what-is-ssl-san/">https://support.dnsimple.com/articles/what-is-ssl-san/&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>that AWS Certificate Manager and other free-TLS-certificate services can&amp;rsquo;t validate private domain names since &lt;a href="https://www.ssl.com/guide/ssl-tls-certificate-issuance-and-revocation-with-acme/">ACME (Automated Certificate Management Environment)&lt;/a> relies on public DNS or WHOIS records.&lt;/p>
-&lt;p>See also &lt;a href="https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html">https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html&lt;/a>.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Acronym&lt;/th>
-&lt;th>Meaning&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>DSO&lt;/td>
-&lt;td>distribution system operators&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>AGR&lt;/td>
-&lt;td>aggregator&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>TSO&lt;/td>
-&lt;td>transmission system operator&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>MCM&lt;/td>
-&lt;td>market-based coordination mechanism&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/">https://lfenergy.org/projects/shapeshifter/&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title/><link>https://skalt.github.io/til/2024/06/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/06/13/</guid><description>&lt;p>That MAC can stand for &amp;ldquo;Message Authentication Code&amp;rdquo; in a security context.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/08/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/08/23/</guid><description>&lt;p>This is embarrassingly late, but TIL that BOEM stands for the Bureau of Ocean Energy Management (&lt;a href="https://www.boem.gov/">https://www.boem.gov/&lt;/a>)&lt;/p></description></item></channel></rss>
+see &lt;a href="https://en.wikipedia.org/wiki/STUN"&gt;https://en.wikipedia.org/wiki/STUN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DERP: Designated Encrypted Relay for Packets.
+See &lt;a href="https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp"&gt;https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/07/</guid><description>&lt;p&gt;that AWS ALB target groups support HTTPS healthcheck targets: &lt;a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"&gt;https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;That FQDN stands for Fully Qualified Domain Name. For example &lt;code&gt;sub.domain.tld.&lt;/code&gt; is a FQDN.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/11/</guid><description>&lt;p&gt;that SAN = Subject Alternate Name. A SAN certificate is a TLS certificate that certifies multiple domain names.&lt;/p&gt;
+&lt;p&gt;see &lt;a href="https://support.dnsimple.com/articles/what-is-ssl-san/"&gt;https://support.dnsimple.com/articles/what-is-ssl-san/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;that AWS Certificate Manager and other free-TLS-certificate services can&amp;rsquo;t validate private domain names since &lt;a href="https://www.ssl.com/guide/ssl-tls-certificate-issuance-and-revocation-with-acme/"&gt;ACME (Automated Certificate Management Environment)&lt;/a&gt; relies on public DNS or WHOIS records.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href="https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html"&gt;https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html&lt;/a&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Acronym&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;DSO&lt;/td&gt;
+&lt;td&gt;distribution system operators&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AGR&lt;/td&gt;
+&lt;td&gt;aggregator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TSO&lt;/td&gt;
+&lt;td&gt;transmission system operator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MCM&lt;/td&gt;
+&lt;td&gt;market-based coordination mechanism&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/"&gt;https://lfenergy.org/projects/shapeshifter/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/06/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/06/13/</guid><description>&lt;p&gt;That MAC can stand for &amp;ldquo;Message Authentication Code&amp;rdquo; in a security context.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/08/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/08/23/</guid><description>&lt;p&gt;This is embarrassingly late, but TIL that BOEM stands for the Bureau of Ocean Energy Management (&lt;a href="https://www.boem.gov/"&gt;https://www.boem.gov/&lt;/a&gt;)&lt;/p&gt;</description></item></channel></rss>

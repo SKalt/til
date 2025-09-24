@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nix on Today I Learned</title><link>https://skalt.github.io/til/tags/nix/</link><description>Recent content in Nix on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/nix/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/23/</guid><description>&lt;p>That ARIA stands for Accessible Rich Internet Applications!
-See &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>That in linux &lt;code>ls(1)&lt;/code> uses the environment variable &lt;code>LS_COLORS&lt;/code> to determine the colors in which the filenames are to be displayed.
-Also, that linux specifies a &lt;code>dir_colors(5)&lt;/code> configuration file format for &lt;code>dircolors(1)&lt;/code>, which exports &lt;code>LS_COLORS&lt;/code>&lt;/p>
-&lt;p>See &lt;a href="https://man7.org/linux/man-pages/man5/dir_colors.5.html">https://man7.org/linux/man-pages/man5/dir_colors.5.html&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>That nix is complicated, which is exactly what my prior research told me.&lt;/p>
-&lt;p>On one hand, it is &lt;strong>AWESOME&lt;/strong> to cd into a project and watch &lt;a href="">&lt;code>direnv&lt;/code>&lt;/a> automatically spawn a development shell with all the fixings.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nix on Today I Learned</title><link>https://skalt.github.io/til/tags/nix/</link><description>Recent content in Nix on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/nix/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/10/23/</guid><description>&lt;p&gt;That ARIA stands for Accessible Rich Internet Applications!
+See &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"&gt;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;That in linux &lt;code&gt;ls(1)&lt;/code&gt; uses the environment variable &lt;code&gt;LS_COLORS&lt;/code&gt; to determine the colors in which the filenames are to be displayed.
+Also, that linux specifies a &lt;code&gt;dir_colors(5)&lt;/code&gt; configuration file format for &lt;code&gt;dircolors(1)&lt;/code&gt;, which exports &lt;code&gt;LS_COLORS&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://man7.org/linux/man-pages/man5/dir_colors.5.html"&gt;https://man7.org/linux/man-pages/man5/dir_colors.5.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;That nix is complicated, which is exactly what my prior research told me.&lt;/p&gt;
+&lt;p&gt;On one hand, it is &lt;strong&gt;AWESOME&lt;/strong&gt; to cd into a project and watch &lt;a href=""&gt;&lt;code&gt;direnv&lt;/code&gt;&lt;/a&gt; automatically spawn a development shell with all the fixings.
 On the other, the nix ecosystem is bewildering.
-I read through a few articles:&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>&lt;p>That you need ato &lt;code>git add&lt;/code> a &lt;code>flake.nix&lt;/code> for the flake&amp;rsquo;s contents to start to work with &lt;code>nix develop&lt;/code>&lt;/p>
-&lt;blockquote>
-&lt;p>This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them.
-&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs">https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;hr>
-&lt;p>that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the &lt;code>$COLORTERM&lt;/code> env var&lt;/p></description></item></channel></rss>
+I read through a few articles:&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>&lt;p&gt;That you need ato &lt;code&gt;git add&lt;/code&gt; a &lt;code&gt;flake.nix&lt;/code&gt; for the flake&amp;rsquo;s contents to start to work with &lt;code&gt;nix develop&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them.
+&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs"&gt;https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the &lt;code&gt;$COLORTERM&lt;/code&gt; env var&lt;/p&gt;</description></item></channel></rss>

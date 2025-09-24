@@ -1,292 +1,292 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Oauth2 on Today I Learned</title><link>https://skalt.github.io/til/tags/oauth2/</link><description>Recent content in Oauth2 on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/oauth2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>&lt;p>About the hot-off-the-press OAuth2 DPoP specification: &lt;a href="https://datatracker.ietf.org/doc/html/rfc9449">https://datatracker.ietf.org/doc/html/rfc9449&lt;/a>.
-DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.&lt;/p>
-&lt;p>My simplified understanding of DPoP is as follows:&lt;/p>
-&lt;ol>
-&lt;li>the client generates a private/public key pair&lt;/li>
-&lt;li>the client generates a request for an access token. The request includes:
-&lt;ul>
-&lt;li>the client&amp;rsquo;s public key&lt;/li>
-&lt;li>the the authorization endpoint&amp;rsquo;s URL&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>the client signs the request with the client&amp;rsquo;s private key&lt;/li>
-&lt;li>the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key. As is normal in OAuth2, the access token is signed by the authorization server&amp;rsquo;s private key.&lt;/li>
-&lt;li>the client generates a new proof including the client&amp;rsquo;s public key and the intended API endpoint, attaches that to the access token (remember, the access token also includes the thumbprint of the client&amp;rsquo;s public key). The client sends the proof and access token to the API.&lt;/li>
-&lt;li>The API validates
-&lt;ol>
-&lt;li>the proof was signed by the client&amp;rsquo;s public key&lt;/li>
-&lt;li>the client&amp;rsquo;s public key matches the thumbprint in the access token&lt;/li>
-&lt;li>and the access key was signed by the and the authorization server&amp;rsquo;s public key&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;p>This seems much easier to manage than MTLS, which (I think) involves maintaining long-lived X509 certificates, signing infrastructure, and chains of trust.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>&lt;p>First, that &lt;a href="https://gohugo.io/content-management/diagrams/">&lt;code>hugo&lt;/code>&lt;/a> supports &lt;a href="https://github.com/bep/goat">&lt;code>goat&lt;/code>&lt;/a> ascii diagrams out-of-the box.&lt;/p>
-&lt;p>Second, about OAuth 2.0 authentication + authorization flows:&lt;/p>
-&lt;h2 id="authorization-code-flow">Authorization Code Flow&lt;/h2>
-&lt;p>From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1">https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a>
-and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow">https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a>&lt;/p>
-&lt;div class="goat svg-container ">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Oauth2 on Today I Learned</title><link>https://skalt.github.io/til/tags/oauth2/</link><description>Recent content in Oauth2 on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/oauth2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/09/</guid><description>&lt;p&gt;About the hot-off-the-press OAuth2 DPoP specification: &lt;a href="https://datatracker.ietf.org/doc/html/rfc9449"&gt;https://datatracker.ietf.org/doc/html/rfc9449&lt;/a&gt;.
+DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the sender of an access (JW) token is the same as the entity to whom the access token was issued.&lt;/p&gt;
+&lt;p&gt;My simplified understanding of DPoP is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the client generates a private/public key pair&lt;/li&gt;
+&lt;li&gt;the client generates a request for an access token. The request includes:
+&lt;ul&gt;
+&lt;li&gt;the client&amp;rsquo;s public key&lt;/li&gt;
+&lt;li&gt;the the authorization endpoint&amp;rsquo;s URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;the client signs the request with the client&amp;rsquo;s private key&lt;/li&gt;
+&lt;li&gt;the authorization server validates the request (signature and all) and issues an access (JW) token including the thumbprint of the client&amp;rsquo;s public key. As is normal in OAuth2, the access token is signed by the authorization server&amp;rsquo;s private key.&lt;/li&gt;
+&lt;li&gt;the client generates a new proof including the client&amp;rsquo;s public key and the intended API endpoint, attaches that to the access token (remember, the access token also includes the thumbprint of the client&amp;rsquo;s public key). The client sends the proof and access token to the API.&lt;/li&gt;
+&lt;li&gt;The API validates
+&lt;ol&gt;
+&lt;li&gt;the proof was signed by the client&amp;rsquo;s public key&lt;/li&gt;
+&lt;li&gt;the client&amp;rsquo;s public key matches the thumbprint in the access token&lt;/li&gt;
+&lt;li&gt;and the access key was signed by the and the authorization server&amp;rsquo;s public key&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This seems much easier to manage than MTLS, which (I think) involves maintaining long-lived X509 certificates, signing infrastructure, and chains of trust.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>&lt;p&gt;First, that &lt;a href="https://gohugo.io/content-management/diagrams/"&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/a&gt; supports &lt;a href="https://github.com/bep/goat"&gt;&lt;code&gt;goat&lt;/code&gt;&lt;/a&gt; ascii diagrams out-of-the box.&lt;/p&gt;
+&lt;p&gt;Second, about OAuth 2.0 authentication + authorization flows:&lt;/p&gt;
+&lt;h2 id="authorization-code-flow"&gt;Authorization Code Flow&lt;/h2&gt;
+&lt;p&gt;From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1"&gt;https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a&gt;
+and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow"&gt;https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a&gt;&lt;/p&gt;
+&lt;div class="goat svg-container "&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 font-family="Menlo,Lucida Console,monospace"
 viewBox="0 0 504 489"
->
-&lt;g transform='translate(8,16)'>
-&lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,0 L 488,0' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 8,32 L 48,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,32 L 152,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,32 L 440,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,32 L 488,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 32,80 L 112,80' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 128,128 L 352,128' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 32,176 L 352,176' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 32,224 L 464,224' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 368,272 L 464,272' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 128,320 L 352,320' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 128,368 L 352,368' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 128,416 L 352,416' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 8,432 L 48,432' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,432 L 152,432' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,432 L 440,432' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,432 L 488,432' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 8,464 L 48,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,464 L 152,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,464 L 440,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,464 L 488,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 8,0 L 8,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 8,432 L 8,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 24,48 L 24,416' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 48,0 L 48,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 48,432 L 48,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,0 L 96,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 96,432 L 96,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,48 L 120,160' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,192 L 120,208' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,240 L 120,416' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 152,0 L 152,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 152,432 L 152,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,0 L 280,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 280,432 L 280,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,48 L 360,208' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,240 L 360,416' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 448,0 L 448,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 448,432 L 448,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 456,0 L 456,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 456,432 L 456,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 472,48 L 472,416' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 488,0 L 488,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 488,432 L 488,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 24,40 L 24,48' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 24,416 L 24,424' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,40 L 120,48' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,160 L 120,168' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,184 L 120,192' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,208 L 120,216' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,232 L 120,240' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 120,416 L 120,424' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,40 L 360,48' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,208 L 360,216' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,232 L 360,240' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 360,416 L 360,424' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 472,40 L 472,48' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 472,416 L 472,424' fill='none' stroke='currentColor'>&lt;/path>
-&lt;polygon points='40.000000,176.000000 28.000000,170.399994 28.000000,181.600006' fill='currentColor' transform='rotate(180.000000, 32.000000, 176.000000)'>&lt;/polygon>
-&lt;polygon points='120.000000,80.000000 108.000000,74.400002 108.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 112.000000, 80.000000)'>&lt;/polygon>
-&lt;polygon points='136.000000,320.000000 124.000000,314.399994 124.000000,325.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 320.000000)'>&lt;/polygon>
-&lt;polygon points='136.000000,416.000000 124.000000,410.399994 124.000000,421.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 416.000000)'>&lt;/polygon>
-&lt;polygon points='360.000000,128.000000 348.000000,122.400002 348.000000,133.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 128.000000)'>&lt;/polygon>
-&lt;polygon points='360.000000,368.000000 348.000000,362.399994 348.000000,373.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 368.000000)'>&lt;/polygon>
-&lt;polygon points='376.000000,272.000000 364.000000,266.399994 364.000000,277.600006' fill='currentColor' transform='rotate(180.000000, 368.000000, 272.000000)'>&lt;/polygon>
-&lt;polygon points='472.000000,224.000000 460.000000,218.399994 460.000000,229.600006' fill='currentColor' transform='rotate(0.000000, 464.000000, 224.000000)'>&lt;/polygon>
-&lt;path d='M 440,0 A 16,16 0 0,1 456,16' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,0 A 16,16 0 0,0 448,16' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 456,16 A 16,16 0 0,1 440,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 448,16 A 16,16 0 0,0 464,32' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 440,432 A 16,16 0 0,1 456,448' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 464,432 A 16,16 0 0,0 448,448' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 456,448 A 16,16 0 0,1 440,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;path d='M 448,448 A 16,16 0 0,0 464,464' fill='none' stroke='currentColor'>&lt;/path>
-&lt;text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>U&lt;/text>
-&lt;text text-anchor='middle' x='16' y='452' fill='currentColor' style='font-size:1em'>U&lt;/text>
-&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='24' y='452' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='32' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='40' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>k&lt;/text>
-&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>g&lt;/text>
-&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
-&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='104' y='452' fill='currentColor' style='font-size:1em'>C&lt;/text>
-&lt;text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='112' y='452' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='120' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'>O&lt;/text>
-&lt;text text-anchor='middle' x='128' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>O&lt;/text>
-&lt;text text-anchor='middle' x='136' y='164' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>T&lt;/text>
-&lt;text text-anchor='middle' x='136' y='452' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>S&lt;/text>
-&lt;text text-anchor='middle' x='144' y='164' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='144' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>T&lt;/text>
-&lt;text text-anchor='middle' x='152' y='164' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='152' y='404' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='160' y='164' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='160' y='404' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='168' y='164' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='168' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='168' y='404' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='176' y='164' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='176' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='184' y='116' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='184' y='164' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='184' y='356' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='184' y='404' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='192' y='164' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='192' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='192' y='404' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'>L&lt;/text>
-&lt;text text-anchor='middle' x='200' y='356' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='208' y='164' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='208' y='212' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='208' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='208' y='404' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='216' y='164' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'>g&lt;/text>
-&lt;text text-anchor='middle' x='216' y='404' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='224' y='356' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='224' y='404' fill='currentColor' style='font-size:1em'>k&lt;/text>
-&lt;text text-anchor='middle' x='232' y='116' fill='currentColor' style='font-size:1em'>D&lt;/text>
-&lt;text text-anchor='middle' x='232' y='164' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='232' y='308' fill='currentColor' style='font-size:1em'>O&lt;/text>
-&lt;text text-anchor='middle' x='232' y='356' fill='currentColor' style='font-size:1em'>D&lt;/text>
-&lt;text text-anchor='middle' x='232' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='240' y='116' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='240' y='164' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='240' y='212' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='240' y='308' fill='currentColor' style='font-size:1em'>T&lt;/text>
-&lt;text text-anchor='middle' x='240' y='356' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='240' y='404' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='248' y='164' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='248' y='308' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='248' y='404' fill='currentColor' style='font-size:1em'>,&lt;/text>
-&lt;text text-anchor='middle' x='256' y='116' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='256' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='264' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='264' y='356' fill='currentColor' style='font-size:1em'>l&lt;/text>
-&lt;text text-anchor='middle' x='264' y='404' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='272' y='116' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='272' y='212' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='272' y='356' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='272' y='404' fill='currentColor' style='font-size:1em'>D&lt;/text>
-&lt;text text-anchor='middle' x='280' y='116' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='280' y='212' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='280' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='288' y='20' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='288' y='116' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='288' y='212' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='288' y='356' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='288' y='404' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='288' y='452' fill='currentColor' style='font-size:1em'>A&lt;/text>
-&lt;text text-anchor='middle' x='296' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
-&lt;text text-anchor='middle' x='296' y='116' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='296' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='296' y='404' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='296' y='452' fill='currentColor' style='font-size:1em'>u&lt;/text>
-&lt;text text-anchor='middle' x='304' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='304' y='116' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='304' y='404' fill='currentColor' style='font-size:1em'>k&lt;/text>
-&lt;text text-anchor='middle' x='304' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='312' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
-&lt;text text-anchor='middle' x='312' y='116' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='312' y='356' fill='currentColor' style='font-size:1em'>s&lt;/text>
-&lt;text text-anchor='middle' x='312' y='404' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='312' y='452' fill='currentColor' style='font-size:1em'>h&lt;/text>
-&lt;text text-anchor='middle' x='320' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='320' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='320' y='404' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='320' y='452' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='328' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='328' y='116' fill='currentColor' style='font-size:1em'>U&lt;/text>
-&lt;text text-anchor='middle' x='328' y='356' fill='currentColor' style='font-size:1em'>c&lt;/text>
-&lt;text text-anchor='middle' x='328' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='336' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='336' y='116' fill='currentColor' style='font-size:1em'>R&lt;/text>
-&lt;text text-anchor='middle' x='336' y='356' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='336' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='344' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
-&lt;text text-anchor='middle' x='344' y='116' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='344' y='356' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='344' y='452' fill='currentColor' style='font-size:1em'>z&lt;/text>
-&lt;text text-anchor='middle' x='352' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='352' y='356' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='352' y='452' fill='currentColor' style='font-size:1em'>a&lt;/text>
-&lt;text text-anchor='middle' x='360' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='360' y='452' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='368' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='368' y='452' fill='currentColor' style='font-size:1em'>i&lt;/text>
-&lt;text text-anchor='middle' x='376' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='376' y='452' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='384' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='384' y='260' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='384' y='452' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='392' y='260' fill='currentColor' style='font-size:1em'>D&lt;/text>
-&lt;text text-anchor='middle' x='400' y='20' fill='currentColor' style='font-size:1em'>S&lt;/text>
-&lt;text text-anchor='middle' x='400' y='452' fill='currentColor' style='font-size:1em'>S&lt;/text>
-&lt;text text-anchor='middle' x='408' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='408' y='260' fill='currentColor' style='font-size:1em'>t&lt;/text>
-&lt;text text-anchor='middle' x='408' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='416' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='416' y='260' fill='currentColor' style='font-size:1em'>o&lt;/text>
-&lt;text text-anchor='middle' x='416' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='424' y='20' fill='currentColor' style='font-size:1em'>v&lt;/text>
-&lt;text text-anchor='middle' x='424' y='260' fill='currentColor' style='font-size:1em'>k&lt;/text>
-&lt;text text-anchor='middle' x='424' y='452' fill='currentColor' style='font-size:1em'>v&lt;/text>
-&lt;text text-anchor='middle' x='432' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='432' y='260' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='432' y='452' fill='currentColor' style='font-size:1em'>e&lt;/text>
-&lt;text text-anchor='middle' x='440' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='440' y='260' fill='currentColor' style='font-size:1em'>n&lt;/text>
-&lt;text text-anchor='middle' x='440' y='452' fill='currentColor' style='font-size:1em'>r&lt;/text>
-&lt;text text-anchor='middle' x='464' y='20' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='464' y='452' fill='currentColor' style='font-size:1em'>I&lt;/text>
-&lt;text text-anchor='middle' x='472' y='20' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='472' y='452' fill='currentColor' style='font-size:1em'>d&lt;/text>
-&lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'>P&lt;/text>
-&lt;/g>
-&lt;/svg>
-&lt;/div>
-&lt;p>Note: IdP = &amp;ldquo;&lt;strong>Id&lt;/strong>entity &lt;strong>P&lt;/strong>rovider&amp;rdquo;.
-Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p></description></item><item><title/><link>https://skalt.github.io/til/2024/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/28/</guid><description>&lt;p>That 401 Unauthorized responses are supposed to include a &lt;code>www-authenticate&lt;/code> header with a value indicating how to obtain a valid token.
-See &lt;a href="https://datatracker.ietf.org/doc/html/rfc6750#section-3">https://datatracker.ietf.org/doc/html/rfc6750#section-3&lt;/a> for more details.&lt;/p></description></item></channel></rss>
+&gt;
+&lt;g transform='translate(8,16)'&gt;
+&lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,0 L 488,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,32 L 48,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,32 L 152,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,32 L 440,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,32 L 488,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 32,80 L 112,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 128,128 L 352,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 32,176 L 352,176' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 32,224 L 464,224' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 368,272 L 464,272' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 128,320 L 352,320' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 128,368 L 352,368' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 128,416 L 352,416' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,432 L 48,432' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,432 L 152,432' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,432 L 440,432' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,432 L 488,432' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,464 L 48,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,464 L 152,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,464 L 440,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,464 L 488,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,0 L 8,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,432 L 8,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,48 L 24,416' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 48,0 L 48,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 48,432 L 48,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,0 L 96,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 96,432 L 96,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,48 L 120,160' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,192 L 120,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,240 L 120,416' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,0 L 152,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,432 L 152,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,0 L 280,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 280,432 L 280,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,48 L 360,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,240 L 360,416' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 448,0 L 448,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 448,432 L 448,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,0 L 456,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,432 L 456,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,48 L 472,416' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 488,0 L 488,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 488,432 L 488,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,40 L 24,48' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,416 L 24,424' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,40 L 120,48' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,160 L 120,168' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,184 L 120,192' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,208 L 120,216' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,232 L 120,240' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 120,416 L 120,424' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,40 L 360,48' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,208 L 360,216' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,232 L 360,240' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,416 L 360,424' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,40 L 472,48' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,416 L 472,424' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;polygon points='40.000000,176.000000 28.000000,170.399994 28.000000,181.600006' fill='currentColor' transform='rotate(180.000000, 32.000000, 176.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='120.000000,80.000000 108.000000,74.400002 108.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 112.000000, 80.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='136.000000,320.000000 124.000000,314.399994 124.000000,325.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 320.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='136.000000,416.000000 124.000000,410.399994 124.000000,421.600006' fill='currentColor' transform='rotate(180.000000, 128.000000, 416.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='360.000000,128.000000 348.000000,122.400002 348.000000,133.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 128.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='360.000000,368.000000 348.000000,362.399994 348.000000,373.600006' fill='currentColor' transform='rotate(0.000000, 352.000000, 368.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='376.000000,272.000000 364.000000,266.399994 364.000000,277.600006' fill='currentColor' transform='rotate(180.000000, 368.000000, 272.000000)'&gt;&lt;/polygon&gt;
+&lt;polygon points='472.000000,224.000000 460.000000,218.399994 460.000000,229.600006' fill='currentColor' transform='rotate(0.000000, 464.000000, 224.000000)'&gt;&lt;/polygon&gt;
+&lt;path d='M 440,0 A 16,16 0 0,1 456,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,0 A 16,16 0 0,0 448,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,16 A 16,16 0 0,1 440,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 448,16 A 16,16 0 0,0 464,32' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 440,432 A 16,16 0 0,1 456,448' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 464,432 A 16,16 0 0,0 448,448' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,448 A 16,16 0 0,1 440,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 448,448 A 16,16 0 0,0 464,464' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'&gt;U&lt;/text&gt;
+&lt;text text-anchor='middle' x='16' y='452' fill='currentColor' style='font-size:1em'&gt;U&lt;/text&gt;
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'&gt;s&lt;/text&gt;
+&lt;text text-anchor='middle' x='24' y='452' fill='currentColor' style='font-size:1em'&gt;s&lt;/text&gt;
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='32' y='452' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='40' y='452' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'&gt;k&lt;/text&gt;
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'&gt;g&lt;/text&gt;
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'&gt;C&lt;/text&gt;
+&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='104' y='452' fill='currentColor' style='font-size:1em'&gt;C&lt;/text&gt;
+&lt;text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='112' y='452' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='120' y='452' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'&gt;O&lt;/text&gt;
+&lt;text text-anchor='middle' x='128' y='452' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'&gt;O&lt;/text&gt;
+&lt;text text-anchor='middle' x='136' y='164' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'&gt;T&lt;/text&gt;
+&lt;text text-anchor='middle' x='136' y='452' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'&gt;S&lt;/text&gt;
+&lt;text text-anchor='middle' x='144' y='164' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='144' y='452' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'&gt;T&lt;/text&gt;
+&lt;text text-anchor='middle' x='152' y='164' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='152' y='404' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='160' y='164' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='160' y='404' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='168' y='164' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='168' y='356' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='168' y='404' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='176' y='164' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='176' y='404' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='184' y='116' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='184' y='164' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='184' y='356' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='184' y='404' fill='currentColor' style='font-size:1em'&gt;s&lt;/text&gt;
+&lt;text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='192' y='164' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='192' y='356' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='192' y='404' fill='currentColor' style='font-size:1em'&gt;s&lt;/text&gt;
+&lt;text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'&gt;L&lt;/text&gt;
+&lt;text text-anchor='middle' x='200' y='356' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='208' y='164' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='208' y='212' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='208' y='356' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='208' y='404' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='216' y='164' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'&gt;g&lt;/text&gt;
+&lt;text text-anchor='middle' x='216' y='404' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='224' y='356' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='224' y='404' fill='currentColor' style='font-size:1em'&gt;k&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='116' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='164' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='308' fill='currentColor' style='font-size:1em'&gt;O&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='356' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='232' y='404' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='116' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='164' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='212' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='308' fill='currentColor' style='font-size:1em'&gt;T&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='356' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='240' y='404' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='248' y='164' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='248' y='308' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='248' y='404' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='256' y='116' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='256' y='356' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='264' y='116' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='264' y='356' fill='currentColor' style='font-size:1em'&gt;l&lt;/text&gt;
+&lt;text text-anchor='middle' x='264' y='404' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='272' y='116' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='272' y='212' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='272' y='356' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='272' y='404' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='280' y='116' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='280' y='212' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='280' y='356' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='20' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='116' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='212' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='356' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='404' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='452' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='20' fill='currentColor' style='font-size:1em'&gt;u&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='116' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='356' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='404' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='452' fill='currentColor' style='font-size:1em'&gt;u&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='20' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='116' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='404' fill='currentColor' style='font-size:1em'&gt;k&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='452' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='20' fill='currentColor' style='font-size:1em'&gt;h&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='116' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='356' fill='currentColor' style='font-size:1em'&gt;s&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='404' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='452' fill='currentColor' style='font-size:1em'&gt;h&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='20' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='356' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='404' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='452' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='20' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='116' fill='currentColor' style='font-size:1em'&gt;U&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='356' fill='currentColor' style='font-size:1em'&gt;c&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='452' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='20' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='116' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='356' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='452' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='20' fill='currentColor' style='font-size:1em'&gt;z&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='116' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='356' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='452' fill='currentColor' style='font-size:1em'&gt;z&lt;/text&gt;
+&lt;text text-anchor='middle' x='352' y='20' fill='currentColor' style='font-size:1em'&gt;a&lt;/text&gt;
+&lt;text text-anchor='middle' x='352' y='356' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='352' y='452' fill='currentColor' style='font-size:1em'&gt;a&lt;/text&gt;
+&lt;text text-anchor='middle' x='360' y='20' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='360' y='452' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='368' y='20' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='368' y='452' fill='currentColor' style='font-size:1em'&gt;i&lt;/text&gt;
+&lt;text text-anchor='middle' x='376' y='20' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='376' y='452' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='384' y='20' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='384' y='260' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='384' y='452' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='392' y='260' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='400' y='20' fill='currentColor' style='font-size:1em'&gt;S&lt;/text&gt;
+&lt;text text-anchor='middle' x='400' y='452' fill='currentColor' style='font-size:1em'&gt;S&lt;/text&gt;
+&lt;text text-anchor='middle' x='408' y='20' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='408' y='260' fill='currentColor' style='font-size:1em'&gt;t&lt;/text&gt;
+&lt;text text-anchor='middle' x='408' y='452' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='416' y='20' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='416' y='260' fill='currentColor' style='font-size:1em'&gt;o&lt;/text&gt;
+&lt;text text-anchor='middle' x='416' y='452' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='424' y='20' fill='currentColor' style='font-size:1em'&gt;v&lt;/text&gt;
+&lt;text text-anchor='middle' x='424' y='260' fill='currentColor' style='font-size:1em'&gt;k&lt;/text&gt;
+&lt;text text-anchor='middle' x='424' y='452' fill='currentColor' style='font-size:1em'&gt;v&lt;/text&gt;
+&lt;text text-anchor='middle' x='432' y='20' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='432' y='260' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='432' y='452' fill='currentColor' style='font-size:1em'&gt;e&lt;/text&gt;
+&lt;text text-anchor='middle' x='440' y='20' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='440' y='260' fill='currentColor' style='font-size:1em'&gt;n&lt;/text&gt;
+&lt;text text-anchor='middle' x='440' y='452' fill='currentColor' style='font-size:1em'&gt;r&lt;/text&gt;
+&lt;text text-anchor='middle' x='464' y='20' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='464' y='452' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='472' y='20' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='472' y='452' fill='currentColor' style='font-size:1em'&gt;d&lt;/text&gt;
+&lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;p&gt;Note: IdP = &amp;ldquo;&lt;strong&gt;Id&lt;/strong&gt;entity &lt;strong&gt;P&lt;/strong&gt;rovider&amp;rdquo;.
+Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/28/</guid><description>&lt;p&gt;That 401 Unauthorized responses are supposed to include a &lt;code&gt;www-authenticate&lt;/code&gt; header with a value indicating how to obtain a valid token.
+See &lt;a href="https://datatracker.ietf.org/doc/html/rfc6750#section-3"&gt;https://datatracker.ietf.org/doc/html/rfc6750#section-3&lt;/a&gt; for more details.&lt;/p&gt;</description></item></channel></rss>

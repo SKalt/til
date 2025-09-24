@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ts on Today I Learned</title><link>https://skalt.github.io/til/tags/ts/</link><description>Recent content in Ts on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/ts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/02/14/</guid><description>&lt;ul>
-&lt;li>
-&lt;p>that adding a &lt;code>!&lt;/code> suffix tells &lt;code>tsc&lt;/code> that the expression to the left doesn&amp;rsquo;t evaluate to &lt;code>null&lt;/code>&lt;/p>
-&lt;p>&lt;a href="https://mariusschulz.com/blog/assertion-functions-in-typescript#using-the-non-null-assertion-operator">https://mariusschulz.com/blog/assertion-functions-in-typescript#using-the-non-null-assertion-operator&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>that going to &lt;code>about:profile&lt;/code> in firefox lets you create separate firefox profiles.&lt;/p>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ts on Today I Learned</title><link>https://skalt.github.io/til/tags/ts/</link><description>Recent content in Ts on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/ts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/02/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/02/14/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;that adding a &lt;code&gt;!&lt;/code&gt; suffix tells &lt;code&gt;tsc&lt;/code&gt; that the expression to the left doesn&amp;rsquo;t evaluate to &lt;code&gt;null&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://mariusschulz.com/blog/assertion-functions-in-typescript#using-the-non-null-assertion-operator"&gt;https://mariusschulz.com/blog/assertion-functions-in-typescript#using-the-non-null-assertion-operator&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that going to &lt;code&gt;about:profile&lt;/code&gt; in firefox lets you create separate firefox profiles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

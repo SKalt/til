@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tiff on Today I Learned</title><link>https://skalt.github.io/til/tags/tiff/</link><description>Recent content in Tiff on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/tiff/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/02/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/05/</guid><description>&lt;p>That a &lt;code>*.tiff&lt;/code> file:&lt;/p>
-&lt;ul>
-&lt;li>was specified in 1986 by a company later consumed by Adobe&lt;/li>
-&lt;li>was originally intended for scanner interop&lt;/li>
-&lt;li>starts with an 8-byte header that includes a 2-byte magic number, a 2-byte endianness flag, and a 4-byte pointer to the first Image File Directory entry&lt;/li>
-&lt;li>the max tiff size is 2^32 bytes due to the u32 pointer size&lt;/li>
-&lt;li>Each IFD starts with a u16 count of entries, then a sequence of 12-byte ields, then another 4-byte offset of the next IFD entry (0 = none)&lt;/li>
-&lt;li>each IFD entry (= &amp;ldquo;field&amp;rdquo;) has a 2-byte tag, 2 bytes of field type, 4-byte count, and 4-byte offset of the value(s) of the field.&lt;/li>
-&lt;li>values may occur pretty much anywhere in the file, even before the IFD&lt;/li>
-&lt;li>each &amp;ldquo;subfile&amp;rdquo; may have one of several encodings (e.g. black/white, grayscale, rgb, etc)&lt;/li>
-&lt;/ul>
-&lt;p>&amp;ndash; &lt;a href="https://docs.fileformat.com/image/tiff/">https://docs.fileformat.com/image/tiff/&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tiff on Today I Learned</title><link>https://skalt.github.io/til/tags/tiff/</link><description>Recent content in Tiff on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/tiff/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/02/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/02/05/</guid><description>&lt;p&gt;That a &lt;code&gt;*.tiff&lt;/code&gt; file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;was specified in 1986 by a company later consumed by Adobe&lt;/li&gt;
+&lt;li&gt;was originally intended for scanner interop&lt;/li&gt;
+&lt;li&gt;starts with an 8-byte header that includes a 2-byte magic number, a 2-byte endianness flag, and a 4-byte pointer to the first Image File Directory entry&lt;/li&gt;
+&lt;li&gt;the max tiff size is 2^32 bytes due to the u32 pointer size&lt;/li&gt;
+&lt;li&gt;Each IFD starts with a u16 count of entries, then a sequence of 12-byte ields, then another 4-byte offset of the next IFD entry (0 = none)&lt;/li&gt;
+&lt;li&gt;each IFD entry (= &amp;ldquo;field&amp;rdquo;) has a 2-byte tag, 2 bytes of field type, 4-byte count, and 4-byte offset of the value(s) of the field.&lt;/li&gt;
+&lt;li&gt;values may occur pretty much anywhere in the file, even before the IFD&lt;/li&gt;
+&lt;li&gt;each &amp;ldquo;subfile&amp;rdquo; may have one of several encodings (e.g. black/white, grayscale, rgb, etc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://docs.fileformat.com/image/tiff/"&gt;https://docs.fileformat.com/image/tiff/&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

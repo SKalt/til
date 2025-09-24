@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Keyboard on Today I Learned</title><link>https://skalt.github.io/til/tags/keyboard/</link><description>Recent content in Keyboard on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/keyboard/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>&lt;p>On ubuntu:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># X11 keyboard options contain the codes that can be passed as options&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man xkeyboard-config
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># dconf controls how your keyboard(s) behave -- including lighting the caps-lock&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># indicator&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">dconf_opts&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/org/gnome/desktop/input-sources/xkb-options&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dconf &lt;span class="nb">read&lt;/span> &lt;span class="nv">$dconf_opts&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dconf write &lt;span class="nv">$dconf_opts&lt;/span> &lt;span class="s2">&amp;#34;[&lt;/span>&lt;span class="nv">$values&lt;/span>&lt;span class="s2">]&amp;#34;&lt;/span> &lt;span class="c1"># where values are taken from `man xkeyboard-config`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># notably, dconf&amp;#39;s settings clobber those set by `setxkbmap` and &lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># `/etc/default/keyboard`&amp;#39;s XKBOPTIONS variable&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">setxkbmap -query &lt;span class="c1"># prints the current key-map settings&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">setxkbmap -option &lt;span class="nv">$values&lt;/span> &lt;span class="c1"># &amp;lt;- these changes show up in Settings&amp;gt;Keyboard&amp;gt;${CurrentLayout}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat /etc/default/keyboard &lt;span class="p">|&lt;/span> grep XKBOPTIONS
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xev &lt;span class="c1"># opens a window and prints the events it sees -- including keypress events&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># with key codes&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://unix.stackexchange.com/a/331210/234355">https://unix.stackexchange.com/a/331210/234355&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Keyboard on Today I Learned</title><link>https://skalt.github.io/til/tags/keyboard/</link><description>Recent content in Keyboard on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/keyboard/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>&lt;p&gt;On ubuntu:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# X11 keyboard options contain the codes that can be passed as options&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;man xkeyboard-config
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# dconf controls how your keyboard(s) behave -- including lighting the caps-lock&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# indicator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;dconf_opts&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/org/gnome/desktop/input-sources/xkb-options&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;dconf &lt;span class="nb"&gt;read&lt;/span&gt; &lt;span class="nv"&gt;$dconf_opts&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;dconf write &lt;span class="nv"&gt;$dconf_opts&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;[&lt;/span&gt;&lt;span class="nv"&gt;$values&lt;/span&gt;&lt;span class="s2"&gt;]&amp;#34;&lt;/span&gt; &lt;span class="c1"&gt;# where values are taken from `man xkeyboard-config`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# notably, dconf&amp;#39;s settings clobber those set by `setxkbmap` and &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# `/etc/default/keyboard`&amp;#39;s XKBOPTIONS variable&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;setxkbmap -query &lt;span class="c1"&gt;# prints the current key-map settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;setxkbmap -option &lt;span class="nv"&gt;$values&lt;/span&gt; &lt;span class="c1"&gt;# &amp;lt;- these changes show up in Settings&amp;gt;Keyboard&amp;gt;${CurrentLayout}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cat /etc/default/keyboard &lt;span class="p"&gt;|&lt;/span&gt; grep XKBOPTIONS
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;xev &lt;span class="c1"&gt;# opens a window and prints the events it sees -- including keypress events&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# with key codes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href="https://unix.stackexchange.com/a/331210/234355"&gt;https://unix.stackexchange.com/a/331210/234355&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

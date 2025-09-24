@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ietf on Today I Learned</title><link>https://skalt.github.io/til/tags/ietf/</link><description>Recent content in Ietf on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/ietf/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/18/</guid><description>&lt;blockquote>
-&lt;p>RFCs are labeled with different statuses:&lt;/p>
-&lt;ol>
-&lt;li>Internet Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9112/">HTTP/1.1&lt;/a>)&lt;/li>
-&lt;li>Proposed Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9114/">HTTP/3&lt;/a>, &lt;a href="https://datatracker.ietf.org/doc/html/rfc9113">HTTP/2&lt;/a>)&lt;/li>
-&lt;li>Best Current Practice&lt;/li>
-&lt;li>Experimental&lt;/li>
-&lt;li>Informational&lt;/li>
-&lt;li>Historic&lt;/li>
-&lt;/ol>
-&lt;p>[&amp;hellip;]&lt;/p>
-&lt;p>RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
-In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p>
-&lt;p>&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/">https://www.ietf.org/standards/rfcs/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;hr>
-&lt;blockquote>
-&lt;p>Class fields are public by default, but private class members can be created by using a hash &lt;code>#&lt;/code> prefix.
-The privacy encapsulation of these class features is enforced by JavaScript itself.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ietf on Today I Learned</title><link>https://skalt.github.io/til/tags/ietf/</link><description>Recent content in Ietf on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/ietf/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/18/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;RFCs are labeled with different statuses:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Internet Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9112/"&gt;HTTP/1.1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Proposed Standard (e.g. &lt;a href="https://datatracker.ietf.org/doc/html/rfc9114/"&gt;HTTP/3&lt;/a&gt;, &lt;a href="https://datatracker.ietf.org/doc/html/rfc9113"&gt;HTTP/2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Best Current Practice&lt;/li&gt;
+&lt;li&gt;Experimental&lt;/li&gt;
+&lt;li&gt;Informational&lt;/li&gt;
+&lt;li&gt;Historic&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+&lt;p&gt;RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
+In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/"&gt;https://www.ietf.org/standards/rfcs/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Class fields are public by default, but private class members can be created by using a hash &lt;code&gt;#&lt;/code&gt; prefix.
+The privacy encapsulation of these class features is enforced by JavaScript itself.&lt;/p&gt;</description></item></channel></rss>

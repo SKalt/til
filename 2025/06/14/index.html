@@ -3,11 +3,11 @@
 <a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a></nav></header><main><h1><a href=https://skalt.github.io/til/2025>2025</a>/<span>06</span>/14</h1><div><a href=https://skalt.github.io/til/tags/go>go</a>
 <a href=https://skalt.github.io/til/tags/os>os</a>
 <a href=https://skalt.github.io/til/tags/geese>geese</a>
-<a href=https://skalt.github.io/til/tags/$HOME>$HOME</a></div><p>That mobile OS&rsquo;s often do not define a <code>$HOME</code> variable:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl>	<span class=c1>// On some geese the home directory is not always defined.</span>
-</span></span><span class=line><span class=cl>	<span class=k>switch</span> <span class=nx>runtime</span><span class=p>.</span><span class=nx>GOOS</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=s>&#34;android&#34;</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>		<span class=k>return</span> <span class=s>&#34;/sdcard&#34;</span><span class=p>,</span> <span class=kc>nil</span>
-</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=s>&#34;ios&#34;</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>		<span class=k>return</span> <span class=s>&#34;/&#34;</span><span class=p>,</span> <span class=kc>nil</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span></code></pre></div><p>Side note: hats off to the programmer that called the plural of <code>GOOS</code>es &ldquo;geese&rdquo;.</p></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
+<a href=https://skalt.github.io/til/tags/$HOME>$HOME</a></div><p>That mobile OS&rsquo;s often do not define a <code>$HOME</code> variable:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=w>	</span><span class=c1>// On some geese the home directory is not always defined.</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>	</span><span class=k>switch</span><span class=w> </span><span class=nx>runtime</span><span class=p>.</span><span class=nx>GOOS</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>	</span><span class=k>case</span><span class=w> </span><span class=s>&#34;android&#34;</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>		</span><span class=k>return</span><span class=w> </span><span class=s>&#34;/sdcard&#34;</span><span class=p>,</span><span class=w> </span><span class=kc>nil</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>	</span><span class=k>case</span><span class=w> </span><span class=s>&#34;ios&#34;</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>		</span><span class=k>return</span><span class=w> </span><span class=s>&#34;/&#34;</span><span class=p>,</span><span class=w> </span><span class=kc>nil</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></div><p>Side note: hats off to the programmer that called the plural of <code>GOOS</code>es &ldquo;geese&rdquo;.</p></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>
