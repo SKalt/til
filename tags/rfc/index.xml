@@ -12,7 +12,8 @@
 &lt;p&gt;[&amp;hellip;]&lt;/p&gt;
 &lt;p&gt;RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
 In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/"&gt;https://www.ietf.org/standards/rfcs/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/"&gt;https://www.ietf.org/standards/rfcs/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Class fields are public by default, but private class members can be created by using a hash &lt;code&gt;#&lt;/code&gt; prefix.

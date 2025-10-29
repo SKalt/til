@@ -11,6 +11,7 @@ On the other, the nix ecosystem is bewildering.
 I read through a few articles:&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>&lt;p&gt;That you need ato &lt;code&gt;git add&lt;/code&gt; a &lt;code&gt;flake.nix&lt;/code&gt; for the flake&amp;rsquo;s contents to start to work with &lt;code&gt;nix develop&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them.
-&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs"&gt;https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs"&gt;https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the &lt;code&gt;$COLORTERM&lt;/code&gt; env var&lt;/p&gt;</description></item></channel></rss>

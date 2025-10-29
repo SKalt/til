@@ -30,7 +30,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/08/</guid><description>&lt;p&gt;That the &lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_tag"&gt;&lt;code&gt;aws_ec2_tag&lt;/code&gt;&lt;/a&gt;
 resource can be used to add tags to AWS RAM-shared VPCs and subnets:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This resource should only be used in cases where EC2 resources are created outside Terraform (e.g., AMIs), being shared via Resource Access Manager (RAM), or implicitly created by other means (e.g., Transit Gateway VPN Attachments).&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This resource should only be used in cases where EC2 resources are created outside Terraform (e.g., AMIs), being shared via Resource Access Manager (RAM), or implicitly created by other means (e.g., Transit Gateway VPN Attachments).&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Also, that&lt;/p&gt;
 &lt;blockquote&gt;

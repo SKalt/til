@@ -3,4 +3,5 @@ submodule to track a branch with the same name as the parent repo&amp;rsquo;s cu
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;submodule.&lt;!-- raw HTML omitted --&gt;.branch&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;[&amp;hellip;] A special value of &lt;code&gt;.&lt;/code&gt; is used to indicate that the name of the branch in the submodule should be the same name as the current branch in the current repository.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://git-scm.com/docs/gitmodules#Documentation/gitmodules.txt-submoduleltnamegtbranch"&gt;https://git-scm.com/docs/gitmodules#Documentation/gitmodules.txt-submoduleltnamegtbranch&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;p&gt;&amp;ndash; &lt;a href="https://git-scm.com/docs/gitmodules#Documentation/gitmodules.txt-submoduleltnamegtbranch"&gt;https://git-scm.com/docs/gitmodules#Documentation/gitmodules.txt-submoduleltnamegtbranch&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

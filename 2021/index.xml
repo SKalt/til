@@ -88,7 +88,8 @@ For instance,&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There are two accepted formats for these strings: plain keyword/value strings and URIs.
 URIs generally follow RFC 3986, except that multi-host connection strings are allowed.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;you can pass a &lt;code&gt;application_name&lt;/code&gt; parameter to a connection string &amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-APPLICATION-NAME"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-APPLICATION-NAME&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/11/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/11/05/</guid><description>&lt;p&gt;That &lt;code&gt;sudo&lt;/code&gt; has a webpage and an unfortunate mascot: &lt;a href="https://www.sudo.ws/"&gt;https://www.sudo.ws/&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/11/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/11/23/</guid><description>&lt;p&gt;&lt;code&gt;locate&lt;/code&gt; searches all filenames for a keyword using a database which you can update &lt;code&gt;updatedb&lt;/code&gt;.

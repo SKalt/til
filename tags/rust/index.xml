@@ -30,7 +30,8 @@ See &lt;a href="https://docs.python.org/3/library/functions.html?highlight=isins
 &lt;p&gt;The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a
 specific version of the time crate, it actually specifies a range of versions
 and allows SemVer compatible updates.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Instead, in order to lock to a specific version of a crate, you need to write
 &lt;code&gt;= 0.1.2&lt;/code&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/24/</guid><description>&lt;p&gt;That you can destructure struct values:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-rs" data-lang="rs"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="nc"&gt;Point&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;

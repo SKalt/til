@@ -2,6 +2,7 @@
 &lt;p&gt;The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a
 specific version of the time crate, it actually specifies a range of versions
 and allows SemVer compatible updates.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Instead, in order to lock to a specific version of a crate, you need to write
 &lt;code&gt;= 0.1.2&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>

@@ -4,7 +4,8 @@
 &lt;blockquote&gt;
 &lt;p&gt;There are two accepted formats for these strings: plain keyword/value strings and URIs.
 URIs generally follow RFC 3986, except that multi-host connection strings are allowed.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;you can pass a &lt;code&gt;application_name&lt;/code&gt; parameter to a connection string &amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-APPLICATION-NAME"&gt;https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-APPLICATION-NAME&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/11/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/11/29/</guid><description>&lt;p&gt;that there&amp;rsquo;s a &lt;code&gt;pg_sleep(seconds)&lt;/code&gt; function: see &lt;a href="https://til.hashrocket.com/posts/8a6f68519d-sleeping-in-postgresql"&gt;https://til.hashrocket.com/posts/8a6f68519d-sleeping-in-postgresql&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/09/</guid><description>&lt;p&gt;1: That you can set statement timeouts:&lt;/p&gt;
@@ -46,7 +47,8 @@ See &lt;a href="https://www.postgresql.org/docs/current/catalog-pg-shdepend.html
 &lt;blockquote&gt;
 &lt;p&gt;Unlike regular triggers, which are attached to a single table and capture only DML events, event triggers are global to a particular database and are capable of capturing DDL events.
 Like regular triggers, event triggers can be written in any procedural language that includes event trigger support, or in C, but not in plain SQL.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/event-triggers.html"&gt;https://www.postgresql.org/docs/current/event-triggers.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>&lt;p&gt;That &lt;code&gt;psql&lt;/code&gt; et al. support colors:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/event-triggers.html"&gt;https://www.postgresql.org/docs/current/event-triggers.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/30/</guid><description>&lt;p&gt;That &lt;code&gt;psql&lt;/code&gt; et al. support colors:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PG_COLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;auto &lt;span class="c1"&gt;# only colorize output to ttys&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;learned from &lt;a href="https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html"&gt;https://fluca1978.github.io/2023/01/23/PostgreSQLColors.html&lt;/a&gt;
 See also:&lt;/p&gt;

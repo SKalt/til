@@ -2,7 +2,8 @@
 &lt;blockquote&gt;
 &lt;p&gt;Unlike regular triggers, which are attached to a single table and capture only DML events, event triggers are global to a particular database and are capable of capturing DDL events.
 Like regular triggers, event triggers can be written in any procedural language that includes event trigger support, or in C, but not in plain SQL.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/event-triggers.html"&gt;https://www.postgresql.org/docs/current/event-triggers.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/09/</guid><description>&lt;p&gt;That a directory service doesn&amp;rsquo;t necessarily provide authentication:
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.postgresql.org/docs/current/event-triggers.html"&gt;https://www.postgresql.org/docs/current/event-triggers.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/09/</guid><description>&lt;p&gt;That a directory service doesn&amp;rsquo;t necessarily provide authentication:
 &lt;a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/what-is-a-directory-service"&gt;https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/what-is-a-directory-service&lt;/a&gt;
 describes a directory service as a document database optimized for searches of a hierarchical (directory) tree.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -10,7 +11,8 @@ describes a directory service as a document database optimized for searches of a
 &lt;p&gt;Also: that AWS SSO does SCIM actions using the &lt;code&gt;sso-directory:*&lt;/code&gt; IAM prefix rather than the &lt;code&gt;sso:*&lt;/code&gt; prefix.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/28/</guid><description>&lt;p&gt;That you need ato &lt;code&gt;git add&lt;/code&gt; a &lt;code&gt;flake.nix&lt;/code&gt; for the flake&amp;rsquo;s contents to start to work with &lt;code&gt;nix develop&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is needed because Nix flakes respects gitignores. If you don&amp;rsquo;t add things to the git staging area, git doesn&amp;rsquo;t know about the files at all, and Nix flakes can&amp;rsquo;t know if it should ignore them.
-&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs"&gt;https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&amp;ndash; &lt;a href="https://xeiaso.net/blog/nix-flakes-go-programs"&gt;https://xeiaso.net/blog/nix-flakes-go-programs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;that &amp;ldquo;truecolor&amp;rdquo; support in shells is detected with the &lt;code&gt;$COLORTERM&lt;/code&gt; env var&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/29/</guid><description>&lt;p&gt;how to setup passwordless SSH login:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ssh-copy-id &lt;span class="k"&gt;$(&lt;/span&gt;whoami&lt;span class="k"&gt;)&lt;/span&gt;@&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;other_host&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
@@ -51,7 +53,8 @@ See &lt;a href="https://docs.python.org/3/library/functions.html?highlight=isins
 &lt;p&gt;The string &amp;ldquo;0.1.12&amp;rdquo; is a version requirement. Although it looks like a
 specific version of the time crate, it actually specifies a range of versions
 and allows SemVer compatible updates.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html"&gt;https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Instead, in order to lock to a specific version of a crate, you need to write
 &lt;code&gt;= 0.1.2&lt;/code&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/03/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/03/09/</guid><description>&lt;p&gt;This was a bit of a rollercoaster morning:
 (1) I tried &lt;code&gt;git worktree add $branch&lt;/code&gt;, and it was pretty convenient!
@@ -64,7 +67,8 @@ and allows SemVer compatible updates.&lt;/p&gt;
 Codec is a portmanteau of coder/decoder.
 In electronic communications, an &lt;em&gt;endec&lt;/em&gt; is a device that acts as both an encoder and a decoder on a signal or data stream, and hence is a type of codec.
 Endec is a portmanteau of encoder/decoder.
-&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/Codec"&gt;https://en.wikipedia.org/wiki/Codec&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/15/</guid><description>&lt;p&gt;That &lt;a href="https://www.nytimes.com/wirecutter/reviews/best-powerline-networking-kit/"&gt;powerline networking kits exist&lt;/a&gt;: they send signals over home electrical wiring to extend your home network.
+&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/Codec"&gt;https://en.wikipedia.org/wiki/Codec&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/15/</guid><description>&lt;p&gt;That &lt;a href="https://www.nytimes.com/wirecutter/reviews/best-powerline-networking-kit/"&gt;powerline networking kits exist&lt;/a&gt;: they send signals over home electrical wiring to extend your home network.
 Similarly, MoCA (Multimedia over Coaxial Alliance) sends signals over coax cable.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/16/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/16/</guid><description>&lt;p&gt;That there are instances where a git commit-message can start with a &lt;code&gt;#&lt;/code&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;set&lt;/span&gt; -eu
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;experiment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;mkdtemp -d&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;
@@ -99,7 +103,8 @@ When I got into the translation, I realized I only know enough to get the &lt;em
 &lt;p&gt;The following are my notes on the 2021 open-source update to &lt;em&gt;&lt;a href="https://learnyouahaskell.github.io/types-and-typeclasses.html"&gt;Learn You A Haskell for Great Good&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/30/</guid><description>&lt;p&gt;That there&amp;rsquo;s a Linux command to do sql-like &lt;code&gt;JOIN&lt;/code&gt;s of lines in files, possibly based on a field in each line: &lt;a href="https://linux.die.net/man/1/join"&gt;&lt;code&gt;join(1)&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/05/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/05/31/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;WebDAV (Web Distributed Authoring and Versioning) is a set of extensions to the Hypertext Transfer Protocol (HTTP)[. WebDAV provides] concurrency control and namespace operations &amp;hellip;
 WebDAV is defined in &lt;a href="https://datatracker.ietf.org/doc/html/rfc4918"&gt;IETF RFC 4918&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/WebDAV"&gt;https://en.wikipedia.org/wiki/WebDAV&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/WebDAV"&gt;https://en.wikipedia.org/wiki/WebDAV&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Apparently, Bazel, Gradle, and CCache all have support for a WebDAV-based remote cache: &lt;a href="https://github.com/mozilla/sccache/blob/main/docs/Webdav.md"&gt;https://github.com/mozilla/sccache/blob/main/docs/Webdav.md&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/06/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/04/</guid><description>&lt;p&gt;That k8s can run &amp;ldquo;init containers&amp;rdquo; before a pod&amp;rsquo;s app containers:
 &lt;a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"&gt;https://kubernetes.io/docs/concepts/workloads/pods/init-containers/&lt;/a&gt;.
 This provides setup-script functionality, and Cloudflare Pages uses multiple init containers for cloning, installing toolchains, and building pages: &lt;a href="https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/#our-modular-and-scalable-architecture"&gt;https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/#our-modular-and-scalable-architecture&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/06/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/06/05/</guid><description>&lt;p&gt;SPF (Sender Policy Framework) records are DNS TXT records like &lt;code&gt;v=spf1 _include=${email_server_domain} ~all&lt;/code&gt;.
@@ -149,7 +154,8 @@ When recieving an email from a text client, the emaio sender will be an email ad
 &lt;blockquote&gt;
 &lt;p&gt;Any reference to an array of tables points to the most recently defined table element of the array.
 This allows you to define sub-tables, and even sub-arrays of tables, inside the most recent table.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://toml.io/en/v1.0.0#array-of-tables"&gt;https://toml.io/en/v1.0.0#array-of-tables&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/07/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/30/</guid><description>&lt;h1 id="getting-the-top-level-directory-of-the-relevant-git-worktree"&gt;Getting the top-level directory of the relevant git worktree&lt;/h1&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://toml.io/en/v1.0.0#array-of-tables"&gt;https://toml.io/en/v1.0.0#array-of-tables&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/07/30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/07/30/</guid><description>&lt;h1 id="getting-the-top-level-directory-of-the-relevant-git-worktree"&gt;Getting the top-level directory of the relevant git worktree&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;#!/usr/bin/env bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;&lt;/span&gt;&lt;span class="c1"&gt;# set up a dummy repo&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;set&lt;/span&gt; -euo pipefail
@@ -763,7 +769,8 @@ The text &lt;code&gt;https://&lt;/code&gt; or &lt;code&gt;http://&lt;/code&gt; i
 &lt;li&gt;&lt;code&gt;#LI-DNI&lt;/code&gt;: To prevent jobs from displaying on LinkedIn completely. (DNI = Do Not Ingest)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;#LI-DNP&lt;/code&gt;: To prevent jobs from filling a job slot, use this tag or use the ‘block job’ functionality.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/"&gt;https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>&lt;p&gt;How to position an element relative to its parent without affecting the flow of other sibling elements:&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/"&gt;https://www.reddit.com/r/AskHR/comments/ifrayb/what_does_liremote_in_a_job_description_mean/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/22/</guid><description>&lt;p&gt;How to position an element relative to its parent without affecting the flow of other sibling elements:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;you&amp;rsquo;re most likely interested in &lt;code&gt;position: absolute&lt;/code&gt; which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has &lt;code&gt;position: relative&lt;/code&gt; or &lt;code&gt;position: absolute&lt;/code&gt; set on it, then it will act as the parent for positioning coordinates for its children.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://stackoverflow.com/a/105035/6571327"&gt;https://stackoverflow.com/a/105035/6571327&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote&gt;
@@ -793,7 +800,8 @@ The text &lt;code&gt;https://&lt;/code&gt; or &lt;code&gt;http://&lt;/code&gt; i
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/"&gt;https://lfenergy.org/projects/shapeshifter/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/"&gt;https://lfenergy.org/projects/shapeshifter/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;Executables, dynamic libraries and debug companions on all Apple platforms use the &lt;em&gt;Mach Object&lt;/em&gt;, or short &lt;em&gt;Mach-O&lt;/em&gt;, container format.
 This applies to iOS, iPadOS, tvOS, watchOS, and macOS.&lt;/p&gt;
 &lt;ul&gt;
@@ -1073,7 +1081,8 @@ DPoP is a &amp;ldquo;sender constraint&amp;rdquo;: a way of checking that the se
 &lt;p&gt;[&amp;hellip;]&lt;/p&gt;
 &lt;p&gt;RFCs usually begin as Internet-Drafts (I-Ds) written by an individual or a small group.
 In the IETF, these are then usually adopted by a working group, and improved and revised.&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/"&gt;https://www.ietf.org/standards/rfcs/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.ietf.org/standards/rfcs/"&gt;https://www.ietf.org/standards/rfcs/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Class fields are public by default, but private class members can be created by using a hash &lt;code&gt;#&lt;/code&gt; prefix.
@@ -1375,7 +1384,8 @@ This simplifies using &lt;code&gt;.env&lt;/code&gt; files in &lt;code&gt;.envrc&
 &lt;p&gt;Any value in an array may be semantically null, whether primitive or nested type.&lt;/p&gt;
 &lt;p&gt;[&amp;hellip;]&lt;/p&gt;
 &lt;p&gt;Arrays having a 0 null count may choose to not allocate the validity bitmap; how this is represented depends on the implementation&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://arrow.apache.org/docs/format/Columnar.html#null-count"&gt;https://arrow.apache.org/docs/format/Columnar.html#null-count&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://arrow.apache.org/docs/format/Columnar.html#null-count"&gt;https://arrow.apache.org/docs/format/Columnar.html#null-count&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Which is frustrating.
 I usually think of arrays or database columns as &lt;code&gt;NOT NULL&lt;/code&gt; by default, so I&amp;rsquo;m disappointed that I need to watch out for that footgun again when writing in-memory DBs.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/12/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/23/</guid><description>&lt;p&gt;Turns out Rust does support Any-types and downcasting: see
 &lt;a href="https://doc.rust-lang.org/std/any/index.html"&gt;https://doc.rust-lang.org/std/any/index.html&lt;/a&gt;
@@ -1384,4 +1394,5 @@ and
 .&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/12/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/12/24/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;Bayer and McCreight never explained what, if anything, the B stands for: Boeing, balanced, between, broad, bushy, and Bayer have been suggested.
 McCreight has said that &amp;ldquo;the more you think about what the B in B-trees means, the better you understand B-trees.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/B-tree#History"&gt;https://en.wikipedia.org/wiki/B-tree#History&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;p&gt;&amp;ndash; &lt;a href="https://en.wikipedia.org/wiki/B-tree#History"&gt;https://en.wikipedia.org/wiki/B-tree#History&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>
