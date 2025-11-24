@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Arm on Today I Learned</title><link>https://skalt.github.io/til/tags/arm/</link><description>Recent content in Arm on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/arm/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2025/11/24/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/11/24/</guid><description>&lt;p&gt;That there&amp;rsquo;s a &amp;ldquo;rotate bits left&amp;rdquo; instruction in all major instruction sets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikibooks.org/wiki/X86_Assembly/Shift_and_Rotate#Rotate_Instructions"&gt;x86&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://armasm.com/docs/bit-operations/shifting/#rotating"&gt;ARM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/Numeric/rotl"&gt;WASM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rust exposes this as a safe &lt;code&gt;const&lt;/code&gt; by-copy method on numeric primitive types:
+&lt;a href="https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left"&gt;https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
