@@ -164,4 +164,7 @@ Also, &lt;code&gt;opentofu&lt;/code&gt; supports it too: &lt;a href="https://ope
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/Numeric/rotl"&gt;WASM&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Rust exposes this as a safe &lt;code&gt;const&lt;/code&gt; by-copy method on numeric primitive types:
-&lt;a href="https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left"&gt;https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;a href="https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left"&gt;https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/12/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/12/03/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;When compiling packages, build ignores files that end in &amp;lsquo;_test.go&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://pkg.go.dev/cmd/go#:~:text=When%20compiling%20packages%2C%20build%20ignores%20files%20that%20end%20in%20%27%5Ftest%2Ego%27%2EA"&gt;https://pkg.go.dev/cmd/go#:~:text=When%20compiling%20packages%2C%20build%20ignores%20files%20that%20end%20in%20%27%5Ftest%2Ego%27%2EA&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>
