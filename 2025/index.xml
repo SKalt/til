@@ -167,4 +167,10 @@ Also, &lt;code&gt;opentofu&lt;/code&gt; supports it too: &lt;a href="https://ope
 &lt;a href="https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left"&gt;https://doc.rust-lang.org/std/primitive.u32.html#method.rotate_left&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/12/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/12/03/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;When compiling packages, build ignores files that end in &amp;lsquo;_test.go&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://pkg.go.dev/cmd/go#:~:text=When%20compiling%20packages%2C%20build%20ignores%20files%20that%20end%20in%20%27%5Ftest%2Ego%27%2EA"&gt;https://pkg.go.dev/cmd/go#:~:text=When%20compiling%20packages%2C%20build%20ignores%20files%20that%20end%20in%20%27%5Ftest%2Ego%27%2EA&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/12/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/12/04/</guid><description>&lt;p&gt;That &lt;em&gt;not&lt;/em&gt; using a pointer reciever for a custom error type can cause runtime panics:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you use non-pointer values and folks do shallow comparisons without an &lt;code&gt;Is&lt;/code&gt; method,
+you may put yourselves in a bad spot if the error type later includes a non-comparable
+child field (e.g., &lt;code&gt;map[K]V&lt;/code&gt;). See &lt;a href="https://go.dev/play/p/7fgO0EY5hWm"&gt;https://go.dev/play/p/7fgO0EY5hWm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.reddit.com/r/golang/comments/1bd1xzf/seeking_advice_on_custom_error_types_value_vs/"&gt;https://www.reddit.com/r/golang/comments/1bd1xzf/seeking_advice_on_custom_error_types_value_vs/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description></item></channel></rss>
