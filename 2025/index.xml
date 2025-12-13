@@ -173,4 +173,6 @@ Also, &lt;code&gt;opentofu&lt;/code&gt; supports it too: &lt;a href="https://ope
 you may put yourselves in a bad spot if the error type later includes a non-comparable
 child field (e.g., &lt;code&gt;map[K]V&lt;/code&gt;). See &lt;a href="https://go.dev/play/p/7fgO0EY5hWm"&gt;https://go.dev/play/p/7fgO0EY5hWm&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://www.reddit.com/r/golang/comments/1bd1xzf/seeking_advice_on_custom_error_types_value_vs/"&gt;https://www.reddit.com/r/golang/comments/1bd1xzf/seeking_advice_on_custom_error_types_value_vs/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/12/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/12/13/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Since May 2024, this feature works across the latest devices and browser versions.
+The light-dark() CSS &lt;!-- raw HTML omitted --&gt; function enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme - without needing to encase the theme colors within a prefers-color-scheme media feature query.&lt;/p&gt;</description></item></channel></rss>

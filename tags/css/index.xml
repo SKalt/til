@@ -80,4 +80,6 @@ In [CSS] the em unit is the height of the font in nominal points or inches.&lt;/
 &lt;blockquote&gt;
 &lt;p&gt;Outline is a line outside of the element&amp;rsquo;s border. Unlike other areas of the box, outlines don&amp;rsquo;t take up space, so they don&amp;rsquo;t affect the layout of the document in any way.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline#description"&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/outline#description&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/12/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/12/13/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Since May 2024, this feature works across the latest devices and browser versions.
+The light-dark() CSS &lt;!-- raw HTML omitted --&gt; function enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme - without needing to encase the theme colors within a prefers-color-scheme media feature query.&lt;/p&gt;</description></item></channel></rss>
