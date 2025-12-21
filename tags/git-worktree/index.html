@@ -8,7 +8,7 @@
 (1) I tried <code>git worktree add $branch</code>, and it was pretty convenient!
 (2) until I got a pre-commit error, then I got <code>error: unable to read $HASH</code> on <code>git status</code>
 (3) which led me to discover <code>git fsck --full --name-objects</code>, which is currently yelling about <code>error: $HASH: invalid sha1 pointer in cache-tree</code></p></article><hr><article><h3><a href=https://skalt.github.io/til/2023/07/30/>2023/07/30</a></h3><h1 id=getting-the-top-level-directory-of-the-relevant-git-worktree>Getting the top-level directory of the relevant git worktree</h1><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=cp>#!/usr/bin/env bash
-</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1># set up a dummy repo</span>
+</span></span></span><span class=line><span class=cl><span class=c1># set up a dummy repo</span>
 </span></span><span class=line><span class=cl><span class=nb>set</span> -euo pipefail
 </span></span><span class=line><span class=cl><span class=nv>experiment_dir</span><span class=o>=</span><span class=s2>&#34;</span><span class=k>$(</span>mktemp -d --tmpdir test_repo.XXX<span class=k>)</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>git clone --recurse-submodules git@github.com:SKalt/dummy_repo.git <span class=s2>&#34;</span><span class=nv>$experiment_dir</span><span class=s2>&#34;</span>

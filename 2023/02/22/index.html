@@ -4,11 +4,11 @@
 <a href=https://skalt.github.io/til/tags/ssl>ssl</a>
 <a href=https://skalt.github.io/til/tags/self-signed%20certificate>self-signed certificate</a>
 <a href=https://skalt.github.io/til/tags/tls>tls</a></div><p>How to make a self-signed TLS certificate:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=cp>#!/usr/bin/env bash
-</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1># stolen from https://stackoverflow.com/questions/10175812/how-to-generate-a-self-signed-ssl-certificate-using-openssl</span>
+</span></span></span><span class=line><span class=cl><span class=c1># stolen from https://stackoverflow.com/questions/10175812/how-to-generate-a-self-signed-ssl-certificate-using-openssl</span>
 </span></span><span class=line><span class=cl>openssl <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  req -x509 <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  -newkey rsa:4096 <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  -keyout key.pem <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  -out cert.pem <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  -sha256 -days <span class=m>365</span> -nodes -subj <span class=s1>&#39;/CN=localhost&#39;</span>
+</span></span></span><span class=line><span class=cl>  req -x509 <span class=se>\
+</span></span></span><span class=line><span class=cl>  -newkey rsa:4096 <span class=se>\
+</span></span></span><span class=line><span class=cl>  -keyout key.pem <span class=se>\
+</span></span></span><span class=line><span class=cl>  -out cert.pem <span class=se>\
+</span></span></span><span class=line><span class=cl>  -sha256 -days <span class=m>365</span> -nodes -subj <span class=s1>&#39;/CN=localhost&#39;</span>
 </span></span></code></pre></div></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>

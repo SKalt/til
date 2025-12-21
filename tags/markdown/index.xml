@@ -7,10 +7,10 @@
 On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.&lt;/p&gt;
 &lt;p&gt;An example of all five types:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!NOTE]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="ge"&gt;&lt;/span&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Highlights information that users should take into account, even when skimming.
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="ge"&gt;&lt;/span&gt;&lt;span class="k"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Highlights information that users should take into account, even when skimming.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!TIP]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="ge"&gt;&lt;/span&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Optional information to help a user be more successful.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Optional information to help a user be more successful.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;blockquote&gt;

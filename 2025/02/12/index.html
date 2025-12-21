@@ -2,19 +2,19 @@
 <a href=https://skalt.github.io/til/search>search</a>
 <a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a></nav></header><main><h1><a href=https://skalt.github.io/til/2025>2025</a>/<span>02</span>/12</h1><div><a href=https://skalt.github.io/til/tags/go>go</a></div><p>That <code>defer</code> statements are block-scoped:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span><span class=w> </span><span class=nx>main</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kn>import</span><span class=w> </span><span class=s>&#34;fmt&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kn>import</span><span class=w> </span><span class=s>&#34;fmt&#34;</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>func</span><span class=w> </span><span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kd>func</span><span class=w> </span><span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=k>defer</span><span class=w> </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;end func&#34;</span><span class=p>)</span><span class=w> </span><span class=c1>// runs at end of function</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;start func&#34;</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=k>defer</span><span class=w> </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;end block&#34;</span><span class=p>)</span><span class=w> </span><span class=c1>// runs at end of block</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>		</span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;start block&#34;</span><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=p>}</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// Output:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// start func</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// statt block</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// end block</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// end func</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// Output:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// start func</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// statt block</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// end block</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// end func</span><span class=w>
 </span></span></span></code></pre></div><p>see <a href=https://go.dev/play/p/2OYL2-g1iUE>https://go.dev/play/p/2OYL2-g1iUE</a></p></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>

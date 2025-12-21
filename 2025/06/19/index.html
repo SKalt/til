@@ -2,32 +2,32 @@
 <a href=https://skalt.github.io/til/search>search</a>
 <a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a></nav></header><main><h1><a href=https://skalt.github.io/til/2025>2025</a>/<span>06</span>/19</h1><div><a href=https://skalt.github.io/til/tags/go>go</a></div><p>That go&rsquo;s <code>runtime/debug</code> package keeps track of the version of all modules:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span><span class=w> </span><span class=nx>main</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kn>import</span><span class=w> </span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kn>import</span><span class=w> </span><span class=p>(</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=s>&#34;fmt&#34;</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=s>&#34;runtime/debug&#34;</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>)</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>func</span><span class=w> </span><span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kd>func</span><span class=w> </span><span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=nx>info</span><span class=p>,</span><span class=w> </span><span class=nx>_</span><span class=w> </span><span class=o>:=</span><span class=w> </span><span class=nx>debug</span><span class=p>.</span><span class=nf>ReadBuildInfo</span><span class=p>()</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>	</span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;info: %#v&#34;</span><span class=p>,</span><span class=w> </span><span class=nx>info</span><span class=p>)</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>// info: &amp;debug.BuildInfo{</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   GoVersion: &#34;go1.24.4&#34;,</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   Path: &#34;play&#34;,</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   Main:debug.Module{</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     Path:&#34;play&#34;,</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     Version:&#34;(devel)&#34;,</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     Sum:&#34;&#34;,</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     Replace:(*debug.Module)(nil),</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   },</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   Deps:[]*debug.Module(nil),</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//   Settings:[]debug.BuildSetting{</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;-buildmode&#34;, Value:&#34;exe&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;-compiler&#34;, Value:&#34;gc&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;-tags&#34;, Value:&#34;faketime&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;CGO_ENABLED&#34;, Value:&#34;0&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;GOARCH&#34;, Value:&#34;amd64&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;GOOS&#34;, Value:&#34;linux&#34;},</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>//     debug.BuildSetting{Key:&#34;GOAMD64&#34;, Value:&#34;v1&#34;}}}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>// info: &amp;debug.BuildInfo{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   GoVersion: &#34;go1.24.4&#34;,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   Path: &#34;play&#34;,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   Main:debug.Module{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     Path:&#34;play&#34;,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     Version:&#34;(devel)&#34;,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     Sum:&#34;&#34;,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     Replace:(*debug.Module)(nil),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   },</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   Deps:[]*debug.Module(nil),</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//   Settings:[]debug.BuildSetting{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;-buildmode&#34;, Value:&#34;exe&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;-compiler&#34;, Value:&#34;gc&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;-tags&#34;, Value:&#34;faketime&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;CGO_ENABLED&#34;, Value:&#34;0&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;GOARCH&#34;, Value:&#34;amd64&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;GOOS&#34;, Value:&#34;linux&#34;},</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=c1>//     debug.BuildSetting{Key:&#34;GOAMD64&#34;, Value:&#34;v1&#34;}}}</span><span class=w>
 </span></span></span></code></pre></div><p><a href=https://go.dev/play/p/RPP3ld4kPmD>https://go.dev/play/p/RPP3ld4kPmD</a></p><p>See also <a href=https://pkg.go.dev/runtime/debug#BuildInfo>https://pkg.go.dev/runtime/debug#BuildInfo</a></p><p>I heard about this from <a href="https://github.com/charmbracelet/fang#:~:text=automatic%20--version%3A%20set%20it%20to%20the%20build%20info%2C%20or%20a%20version%20of%20your%20choice">https://github.com/charmbracelet/fang#:~:text=automatic%20--version%3A%20set%20it%20to%20the%20build%20info%2C%20or%20a%20version%20of%20your%20choice</a></p></main><footer><span>© 2022-2022 CC BY-NC-SA 4.0</span></footer></body></html>

@@ -3,7 +3,7 @@
 <a href=https://github.com/skalt/til><img alt=repo title=repo src=https://skalt.github.io/til/icon_gh.512c0dbb601adf88d85cdd317f632f04c74f76183e9dd30c331272d46a59aa13.svg></a></nav></header><main><h1><a href=https://skalt.github.io/til/2023>2023</a>/<span>07</span>/30</h1><div><a href=https://skalt.github.io/til/tags/git>git</a>
 <a href=https://skalt.github.io/til/tags/git-worktree>git-worktree</a>
 <a href=https://skalt.github.io/til/tags/git-submodule>git-submodule</a></div><h1 id=getting-the-top-level-directory-of-the-relevant-git-worktree>Getting the top-level directory of the relevant git worktree</h1><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=cp>#!/usr/bin/env bash
-</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1># set up a dummy repo</span>
+</span></span></span><span class=line><span class=cl><span class=c1># set up a dummy repo</span>
 </span></span><span class=line><span class=cl><span class=nb>set</span> -euo pipefail
 </span></span><span class=line><span class=cl><span class=nv>experiment_dir</span><span class=o>=</span><span class=s2>&#34;</span><span class=k>$(</span>mktemp -d --tmpdir test_repo.XXX<span class=k>)</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>git clone --recurse-submodules git@github.com:SKalt/dummy_repo.git <span class=s2>&#34;</span><span class=nv>$experiment_dir</span><span class=s2>&#34;</span>
