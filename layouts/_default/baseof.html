@@ -26,10 +26,8 @@
 
     <link rel="stylesheet" href="{{ $critical_css.Permalink }}">
     <style>
-      @import url("{{ $syntax_light.Permalink | safeCSS }}");
-      @media (prefers-color-scheme: dark) {
-        @import url("{{ $syntax_dark.Permalink | safeCSS }}");
-      }
+      @import "{{ $syntax_light.Permalink | safeCSS }}";
+      @import "{{ $syntax_dark.Permalink | safeCSS }}" (prefers-color-scheme: dark)
     </style>
     <script src="{{ $clipboard.Permalink }}" integrity="{{ $clipboard.Data.Integrity }}" defer></script>
   </head>
