@@ -58,4 +58,8 @@ Generally, double leading underscores should be used only to avoid name conflict
 &lt;/ol&gt;
 &lt;p&gt;See &lt;a href="https://docs.python.org/3/library/venv.html#creating-virtual-environments"&gt;https://docs.python.org/3/library/venv.html#creating-virtual-environments&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Less exciting, but I also (re-)learned that setting a &lt;code&gt;PYTHONPATH&lt;/code&gt; on windows requires using &lt;code&gt;;&lt;/code&gt; rather than &lt;code&gt;:&lt;/code&gt; as the path-separator.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/07/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/07/07/</guid><description>&lt;p&gt;About python&amp;rsquo;s &lt;code&gt;__debug__&lt;/code&gt; constant: &lt;a href="https://docs.python.org/3/library/constants.html#debug"&gt;https://docs.python.org/3/library/constants.html#debug&lt;/a&gt;__&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s true unless python is run in &lt;code&gt;-O&lt;/code&gt; mode, stripping out assertions and other unoptimized code.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;It&amp;rsquo;s true unless python is run in &lt;code&gt;-O&lt;/code&gt; mode, stripping out assertions and other unoptimized code.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/23/</guid><description>&lt;p&gt;that pypi packages all have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS feeds of their release history&lt;/li&gt;
+&lt;li&gt;blake2b-256 hashes (but not blake3?)&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -2341,4 +2341,8 @@ context&amp;rsquo;s Done channel is closed, whichever happens first.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// &amp;lt;-- exhaustiveness check failed for sum type &amp;#39;MySumType&amp;#39;: missing cases for VariantB&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See &lt;a href="https://github.com/alecthomas/go-check-sumtype"&gt;https://github.com/alecthomas/go-check-sumtype&lt;/a&gt;
-see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksumtype"&gt;https://golangci-lint.run/docs/linters/configuration/#gochecksumtype&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksumtype"&gt;https://golangci-lint.run/docs/linters/configuration/#gochecksumtype&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/23/</guid><description>&lt;p&gt;that pypi packages all have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS feeds of their release history&lt;/li&gt;
+&lt;li&gt;blake2b-256 hashes (but not blake3?)&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
