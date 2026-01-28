@@ -2345,4 +2345,12 @@ see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksum
 &lt;ul&gt;
 &lt;li&gt;RSS feeds of their release history&lt;/li&gt;
 &lt;li&gt;blake2b-256 hashes (but not blake3?)&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/28/</guid><description>&lt;p&gt;That GitHub provides RSS feeds:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GitHub does offer built-in RSS feeds for certain activities, but they have key limitations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Commits: Only available for a single branch (e.g., main). The URL format is &lt;a href="https://github.com/%7Busername%7D/%7Brepo%7D/commits/%7Bbranch%7D.atom"&gt;https://github.com/{username}/{repo}/commits/{branch}.atom&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Releases, issues, and pull requests: These have dedicated RSS feeds (e.g., &lt;a href="https://github.com/%7Busername%7D/%7Brepo%7D/releases.atom)"&gt;https://github.com/{username}/{repo}/releases.atom)&lt;/a&gt;, but they don’t include commit details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;ndash; &lt;a href="https://www.codestudy.net/blog/setting-up-a-github-commit-rss-feed/#understanding-githubs-native-rss-limitations"&gt;https://www.codestudy.net/blog/setting-up-a-github-commit-rss-feed/#understanding-githubs-native-rss-limitations&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>
