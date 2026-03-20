@@ -29,7 +29,7 @@ languageCode = 'en-us'
   [[module.mounts]]
     source = '.'
     target = 'content'
-    includeFiles = ['20**/**/*', 'search*']
+    files = ['20**/**/*', 'search*']
   [[module.mounts]]
     source = 'layouts'
     target = 'layouts'
