@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>2024s on Today I Learned</title><link>https://skalt.github.io/til/2024/</link><description>Recent content in 2024s on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2024/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/01/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/03/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2024s on Today I Learned</title><link>https://skalt.github.io/til/2024/</link><description>Recent content in 2024s on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2024/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/01/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/03/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;bit bucket n.&lt;/p&gt;
 &lt;p&gt;(very common) 1. The universal data sink (originally, the mythical receptacle used to catch bits when they fall off the end of a register during a shift instruction).
 Discarded, lost, or destroyed data is said to have &amp;ldquo;gone to the bit bucket&amp;rdquo;.
@@ -14,25 +14,25 @@ A qualified computer technician can empty a full bit bucket as part of scheduled
 See &lt;a href="https://datatracker.ietf.org/doc/html/rfc6750#section-3"&gt;https://datatracker.ietf.org/doc/html/rfc6750#section-3&lt;/a&gt; for more details.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>&lt;h2 id="typographic-units"&gt;Typographic Units&lt;/h2&gt;
 &lt;h3 id="absolute-distance"&gt;Absolute distance&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th style="text-align: center"&gt;CSS Unit&lt;/th&gt;
-&lt;th&gt;length&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Picas&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;pc&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1/6 inch&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Points&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1/72 inches&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Name&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;CSS Unit&lt;/th&gt;
+ &lt;th&gt;length&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Picas&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;code&gt;pc&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;1/6 inch&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Points&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;1/72 inches&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units"&gt;https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="font-relative-units"&gt;Font-relative units&lt;/h3&gt;
@@ -126,7 +126,7 @@ That &lt;code&gt;go mod vendor&lt;/code&gt; only pulls in files that are referen
 &lt;p&gt;Alerts are an extension of Markdown used to emphasize critical information.
 On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.&lt;/p&gt;
 &lt;p&gt;An example of all five types:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!NOTE]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!NOTE] 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Highlights information that users should take into account, even when skimming.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!TIP]

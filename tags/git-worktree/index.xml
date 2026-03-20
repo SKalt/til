@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Git-Worktree on Today I Learned</title><link>https://skalt.github.io/til/tags/git-worktree/</link><description>Recent content in Git-Worktree on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/git-worktree/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/12/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/12/05/</guid><description>&lt;p&gt;That NFC in the context of security keys stands for Near Field Communication: a (usually bluetooth) connection that lets your security key authenticate with a nearby device.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git-Worktree on Today I Learned</title><link>https://skalt.github.io/til/tags/git-worktree/</link><description>Recent content in Git-Worktree on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/git-worktree/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/12/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/12/05/</guid><description>&lt;p&gt;That NFC in the context of security keys stands for Near Field Communication: a (usually bluetooth) connection that lets your security key authenticate with a nearby device.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;That &lt;code&gt;git-worktree(1)&lt;/code&gt; is pretty handy! During the process of a refactor, I was able to run&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git worktree add --checkout &lt;span class="nv"&gt;$local_path&lt;/span&gt; &lt;span class="nv"&gt;$old_branch&lt;/span&gt;
@@ -37,20 +37,21 @@
 │   │   └── file.txt
 │   └── README.md
 └── wrktr
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-└── README.md
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ └── README.md
+
 11 directories, 18 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tree .git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;./.git
@@ -99,40 +100,41 @@
 │   │   └── HEAD
 │   └── tags
 └── worktrees
-└── wrktr
-├── commondir
-├── gitdir
-├── HEAD
-├── index
-├── logs
-│   └── HEAD
-├── modules
-│   └── submod
-│   ├── branches
-│   ├── config
-│   ├── description
-│   ├── HEAD
-│   ├── hooks/...
-│   ├── index
-│   ├── info/...
-│   ├── logs/...
-│   ├── modules
-│   │   └── submod
-│   │   ├── branches
-│   │   ├── config
-│   │   ├── description
-│   │   ├── HEAD
-│   │   ├── hooks/...
-│   │   ├── index
-│   │   ├── info/...
-│   │   ├── logs/...
-│   │   ├── objects/...
-│   │   ├── packed-refs
-│   │   └── refs/...
-│   ├── objects/...
-│   ├── packed-refs
-│   └── refs/...
-└── ORIG_HEAD
+ └── wrktr
+ ├── commondir
+ ├── gitdir
+ ├── HEAD
+ ├── index
+ ├── logs
+ │   └── HEAD
+ ├── modules
+ │   └── submod
+ │   ├── branches
+ │   ├── config
+ │   ├── description
+ │   ├── HEAD
+ │   ├── hooks/...
+ │   ├── index
+ │   ├── info/...
+ │   ├── logs/...
+ │   ├── modules
+ │   │   └── submod
+ │   │   ├── branches
+ │   │   ├── config
+ │   │   ├── description
+ │   │   ├── HEAD
+ │   │   ├── hooks/...
+ │   │   ├── index
+ │   │   ├── info/...
+ │   │   ├── logs/...
+ │   │   ├── objects/...
+ │   │   ├── packed-refs
+ │   │   └── refs/...
+ │   ├── objects/...
+ │   ├── packed-refs
+ │   └── refs/...
+ └── ORIG_HEAD
+
 91 directories, 133 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;args&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --git-common-dir
@@ -355,201 +357,201 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; explore_tab &lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="nv"&gt;$p&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s2"&gt;&amp;#34;s#&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PWD&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;#\${PWD}#g&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;</description></item></channel></rss>

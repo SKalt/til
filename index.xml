@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Today I Learned</title><link>https://skalt.github.io/til/</link><description>Recent content on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/07/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/12/</guid><description>&lt;p&gt;TIL that terminals attached to interactive docker containers don&amp;rsquo;t necesarily respect ANSI escape codes.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Today I Learned</title><link>https://skalt.github.io/til/</link><description>Recent content on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2021/07/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/12/</guid><description>&lt;p&gt;TIL that terminals attached to interactive docker containers don&amp;rsquo;t necesarily respect ANSI escape codes.
 I&amp;rsquo;m still not 100% sure what causes the terminal to respect ANSI escape codes or not, but &lt;code&gt;test -t 1&lt;/code&gt; didn&amp;rsquo;t seem to correctly discriminate.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/07/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/13/</guid><description>&lt;p&gt;That &lt;code&gt;pickle.loads(pickle.dumps(obj))&lt;/code&gt; is faster than &lt;code&gt;copy.deepcopy(obj)&lt;/code&gt;
 Learned from &lt;a href="https://twitter.com/simonw/status/1413635105755570177"&gt;Simon Willison&amp;rsquo;s twitter&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/07/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/14/</guid><description>&lt;p&gt;that &lt;!-- raw HTML omitted --&gt;Cmd&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;D&lt;!-- raw HTML omitted --&gt; selects the next occurence of the currently-highlighted text in VS Code!
 Thanks to Mark Brewer for teaching me this!&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/07/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/07/22/</guid><description>&lt;p&gt;about &lt;code&gt;const enum&lt;/code&gt;s in typescript, which get compiled to their values rather than getting represented as a mapping object.
@@ -64,7 +64,7 @@ I also learned about &lt;a href="https://linux.die.net/man/1/echo"&gt;&lt;code&g
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cat &amp;gt; /tmp/file
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;subsequent typed input
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;is still stdin, which is being &lt;span class="nb"&gt;read&lt;/span&gt; by &lt;span class="sb"&gt;`&lt;/span&gt;cat&lt;span class="sb"&gt;`&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;and so will be written to the file
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;and so will be written to the file 
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;^C &lt;span class="c1"&gt;# cancels `cat` writing to the file&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/10/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/10/22/</guid><description>&lt;p&gt;That there are special CSS classes for theme colors in MSFT PowerPoint: &lt;a href="https://www.brightcarbon.com/blog/responsive-svgs-and-smart-icons-in-powerpoint/"&gt;https://www.brightcarbon.com/blog/responsive-svgs-and-smart-icons-in-powerpoint/&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2021/10/27/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2021/10/27/</guid><description>&lt;p&gt;About the svg &lt;code&gt;view&lt;/code&gt; element: &lt;a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view"&gt;https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view&lt;/a&gt;
 It can be used to create views referable like&lt;/p&gt;
@@ -159,7 +159,7 @@ See &lt;a href="https://sqlite.org/pragma.html#pragma_user_version"&gt;https://s
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# character set: [ :]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# repetition: +&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/03/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/03/22/</guid><description>&lt;p&gt;You can replace the &lt;code&gt;nth&lt;/code&gt; instance of a pattern on a line with sed:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;a\tb\tc\n&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s1"&gt;&amp;#39;s/\t/\t~/2&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;a\tb\tc\n&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s1"&gt;&amp;#39;s/\t/\t~/2&amp;#39;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# a b ~c&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/04/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/04/04/</guid><description>&lt;p&gt;to run &lt;code&gt;terraform output $output_name&lt;/code&gt; to print a named output&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/04/06/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/04/06/</guid><description>&lt;p&gt;That python f-strings can do&lt;/p&gt;
 &lt;ul&gt;
@@ -347,8 +347,11 @@ Also, the author alleges that the limit applies to http/2 and http/3+QUIC.&lt;/p
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;--duration-seconds (integer)
+
 The duration, in seconds, of the role session. The value specified can range from 900 seconds (15 minutes) up to the maximum session duration set for the role. **The maximum session duration setting can have a value from 1 hour to 12 hours.** If you specify a value higher than this setting or the administrator setting (whichever is lower), the operation fails. For example, if you specify a session duration of 12 hours, but your administrator set the maximum session duration to 6 hours, your operation fails.
+
 Role chaining limits your Amazon Web Services CLI or Amazon Web Services API role session to a maximum of one hour. When you use the AssumeRole API operation to assume a role, you can specify the duration of your role session with the DurationSeconds parameter. You can specify a parameter value of up to 43200 seconds (12 hours), depending on the maximum session duration setting for your role. However, if you assume a role using role chaining and provide a DurationSeconds parameter value greater than one hour, the operation fails. To learn how to view the maximum value for your role, see View the Maximum Session Duration Setting for a Role in the IAM User Guide .
+
 By default, the value is set to 3600 seconds.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;see &lt;a href="https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html#options"&gt;https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html#options&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/08/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/08/31/</guid><description>&lt;p&gt;That linux has a capability system:
@@ -407,7 +410,7 @@ It generates a &lt;code&gt;bad substitution&lt;/code&gt; message in bash 3.2, so
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I found the following: &lt;a href="https://www.tecmint.com/fix-ssh-too-many-authentication-failures-error/"&gt;https://www.tecmint.com/fix-ssh-too-many-authentication-failures-error/&lt;/a&gt;
 which advocated adding&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;Host *
-IdentitiesOnly yes
+ IdentitiesOnly yes
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to reduce the number of tried keys&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/07/</guid><description>&lt;p&gt;that AWS ALB target groups support HTTPS healthcheck targets: &lt;a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"&gt;https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;That FQDN stands for Fully Qualified Domain Name. For example &lt;code&gt;sub.domain.tld.&lt;/code&gt; is a FQDN.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/08/</guid><description>&lt;p&gt;That the &lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_tag"&gt;&lt;code&gt;aws_ec2_tag&lt;/code&gt;&lt;/a&gt;
@@ -464,12 +467,12 @@ H/t Vlad Grenkov for this one :)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;fieldset&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;produces&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt; ┌────legend─────┐
-│ │
-│ │
-│ ... │
-│ │
-│ │
-└───────────────┘
+ │ │
+ │ │
+ │ ... │
+ │ │
+ │ │
+ └───────────────┘
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;which is simultaneously cool and hard to style.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/12/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/12/26/</guid><description>&lt;p&gt;That you need to set a &lt;code&gt;value=&amp;quot;number&amp;quot;&lt;/code&gt; attribute AND a &lt;code&gt;max=&amp;quot;number&amp;quot;&lt;/code&gt; attribute on a html &lt;code&gt;&amp;lt;progress&amp;gt;&lt;/code&gt; element in order to display fractional progress.&lt;/p&gt;
 &lt;p&gt;See &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"&gt;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/01/</guid><description>&lt;p&gt;The difference between triggers and event triggers in postgres:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -657,20 +660,21 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 │   │   └── file.txt
 │   └── README.md
 └── wrktr
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-└── README.md
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ └── README.md
+
 11 directories, 18 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tree .git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;./.git
@@ -719,40 +723,41 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 │   │   └── HEAD
 │   └── tags
 └── worktrees
-└── wrktr
-├── commondir
-├── gitdir
-├── HEAD
-├── index
-├── logs
-│   └── HEAD
-├── modules
-│   └── submod
-│   ├── branches
-│   ├── config
-│   ├── description
-│   ├── HEAD
-│   ├── hooks/...
-│   ├── index
-│   ├── info/...
-│   ├── logs/...
-│   ├── modules
-│   │   └── submod
-│   │   ├── branches
-│   │   ├── config
-│   │   ├── description
-│   │   ├── HEAD
-│   │   ├── hooks/...
-│   │   ├── index
-│   │   ├── info/...
-│   │   ├── logs/...
-│   │   ├── objects/...
-│   │   ├── packed-refs
-│   │   └── refs/...
-│   ├── objects/...
-│   ├── packed-refs
-│   └── refs/...
-└── ORIG_HEAD
+ └── wrktr
+ ├── commondir
+ ├── gitdir
+ ├── HEAD
+ ├── index
+ ├── logs
+ │   └── HEAD
+ ├── modules
+ │   └── submod
+ │   ├── branches
+ │   ├── config
+ │   ├── description
+ │   ├── HEAD
+ │   ├── hooks/...
+ │   ├── index
+ │   ├── info/...
+ │   ├── logs/...
+ │   ├── modules
+ │   │   └── submod
+ │   │   ├── branches
+ │   │   ├── config
+ │   │   ├── description
+ │   │   ├── HEAD
+ │   │   ├── hooks/...
+ │   │   ├── index
+ │   │   ├── info/...
+ │   │   ├── logs/...
+ │   │   ├── objects/...
+ │   │   ├── packed-refs
+ │   │   └── refs/...
+ │   ├── objects/...
+ │   ├── packed-refs
+ │   └── refs/...
+ └── ORIG_HEAD
+
 91 directories, 133 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;args&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --git-common-dir
@@ -975,203 +980,203 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; explore_tab &lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="nv"&gt;$p&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s2"&gt;&amp;#34;s#&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PWD&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;#\${PWD}#g&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>&lt;p&gt;On ubuntu:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# X11 keyboard options contain the codes that can be passed as options&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;man xkeyboard-config
@@ -1248,30 +1253,30 @@ The text &lt;code&gt;https://&lt;/code&gt; or &lt;code&gt;http://&lt;/code&gt; i
 &lt;p&gt;you&amp;rsquo;re most likely interested in &lt;code&gt;position: absolute&lt;/code&gt; which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has &lt;code&gt;position: relative&lt;/code&gt; or &lt;code&gt;position: absolute&lt;/code&gt; set on it, then it will act as the parent for positioning coordinates for its children.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://stackoverflow.com/a/105035/6571327"&gt;https://stackoverflow.com/a/105035/6571327&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Acronym&lt;/th&gt;
-&lt;th&gt;Meaning&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;DSO&lt;/td&gt;
-&lt;td&gt;distribution system operators&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;AGR&lt;/td&gt;
-&lt;td&gt;aggregator&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TSO&lt;/td&gt;
-&lt;td&gt;transmission system operator&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MCM&lt;/td&gt;
-&lt;td&gt;market-based coordination mechanism&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Acronym&lt;/th&gt;
+ &lt;th&gt;Meaning&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;DSO&lt;/td&gt;
+ &lt;td&gt;distribution system operators&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;AGR&lt;/td&gt;
+ &lt;td&gt;aggregator&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TSO&lt;/td&gt;
+ &lt;td&gt;transmission system operator&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;MCM&lt;/td&gt;
+ &lt;td&gt;market-based coordination mechanism&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/"&gt;https://lfenergy.org/projects/shapeshifter/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>&lt;blockquote&gt;
@@ -1288,234 +1293,234 @@ They usually contain a symbol table and debug information, but rarely unwind inf
 &lt;/ul&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/"&gt;https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/03/</guid><description>&lt;p&gt;That out of ~51672 extensions on the VSCode marketplace, there are only 31 that are marked as commercial software: &amp;ldquo;Trial&amp;rdquo; rather than &amp;ldquo;Free&amp;rdquo;.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;#&lt;/th&gt;
-&lt;th&gt;date&lt;/th&gt;
-&lt;th&gt;extension&lt;/th&gt;
-&lt;th&gt;publisher&lt;/th&gt;
-&lt;th&gt;license&lt;/th&gt;
-&lt;th&gt;kind&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2020-04-18&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client"&gt;Redis&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2020-04-21&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh"&gt;SSH Client&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;2020-05-05&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2"&gt;MySQL&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;2021-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2"&gt;ElasticSearch&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;2021-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2"&gt;PostgreSQL&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;2021-02-05&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2"&gt;Database Client&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;2021-06-20&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor"&gt;JS Refactoring Assistant&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://p42.ai"&gt;P42&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;2021-06-29&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;GitHub Copilot&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;2021-11-22&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://getlocalci.com"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;GPL-2&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;2021-12-01&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2"&gt;SQl Server Client(mssql)&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td&gt;2022-01-18&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt"&gt;DVT IDE for Visual Studio Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://amiq.com"&gt;AMIQ EDA s.r.l.&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;2022-06-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test"&gt;TestExtension&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://sap.com"&gt;Prashant&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;experiment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;2022-11-09&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub"&gt;GitHub Copilot Voice&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;2022-11-25&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg"&gt;UPG Code Generator for VS Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://gptlabs.us/"&gt;GPT Labs&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;2022-12-14&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode"&gt;SkyCode&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://singularity-ai.com/"&gt;singularity-ai&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;16&lt;/td&gt;
-&lt;td&gt;2023-01-01&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://softwaretesting.ai/"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;2023-01-06&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme"&gt;arandomtheme&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MiloTilo&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;experiment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;2023-01-19&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.codeassist.tech"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;2023-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools"&gt;DuckDB Sql Tools&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Random Fractals Inc.&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;2023-03-28&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook"&gt;Polyverse Boost AI: Complexity Simplified&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://polyverse.com"&gt;Polyverse Corporation&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;21&lt;/td&gt;
-&lt;td&gt;2023-04-12&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai"&gt;Merlin: GPT Assistant for VS Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://spellcraft.org"&gt;Spellcraft&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;2023-04-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;GitHub Copilot Chat&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;2023-07-03&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://grappl.io"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;24&lt;/td&gt;
-&lt;td&gt;2023-07-16&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask"&gt;Bask&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://scious.io"&gt;Scious&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;dsl&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;25&lt;/td&gt;
-&lt;td&gt;2023-07-17&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync"&gt;Data Sync&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://nguyenngoclongdev.github.io/"&gt;Nguyen Ngoc Long&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;2023-07-19&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map"&gt;FnMap&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://yicode.tech"&gt;yicode.tech&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;GPL-3&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;2023-08-10&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy"&gt;Taskfy&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Taskfy&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;#&lt;/th&gt;
+ &lt;th&gt;date&lt;/th&gt;
+ &lt;th&gt;extension&lt;/th&gt;
+ &lt;th&gt;publisher&lt;/th&gt;
+ &lt;th&gt;license&lt;/th&gt;
+ &lt;th&gt;kind&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;2020-04-18&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client"&gt;Redis&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;2020-04-21&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh"&gt;SSH Client&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;2020-05-05&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2"&gt;MySQL&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;2021-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2"&gt;ElasticSearch&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;2021-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2"&gt;PostgreSQL&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;2021-02-05&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2"&gt;Database Client&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;2021-06-20&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor"&gt;JS Refactoring Assistant&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://p42.ai"&gt;P42&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;8&lt;/td&gt;
+ &lt;td&gt;2021-06-29&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;GitHub Copilot&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;9&lt;/td&gt;
+ &lt;td&gt;2021-11-22&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://getlocalci.com"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;GPL-2&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;10&lt;/td&gt;
+ &lt;td&gt;2021-12-01&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2"&gt;SQl Server Client(mssql)&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;11&lt;/td&gt;
+ &lt;td&gt;2022-01-18&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt"&gt;DVT IDE for Visual Studio Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://amiq.com"&gt;AMIQ EDA s.r.l.&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;2022-06-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test"&gt;TestExtension&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://sap.com"&gt;Prashant&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;experiment&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;13&lt;/td&gt;
+ &lt;td&gt;2022-11-09&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub"&gt;GitHub Copilot Voice&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;14&lt;/td&gt;
+ &lt;td&gt;2022-11-25&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg"&gt;UPG Code Generator for VS Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://gptlabs.us/"&gt;GPT Labs&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;2022-12-14&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode"&gt;SkyCode&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://singularity-ai.com/"&gt;singularity-ai&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;16&lt;/td&gt;
+ &lt;td&gt;2023-01-01&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://softwaretesting.ai/"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;17&lt;/td&gt;
+ &lt;td&gt;2023-01-06&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme"&gt;arandomtheme&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MiloTilo&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;experiment&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;18&lt;/td&gt;
+ &lt;td&gt;2023-01-19&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.codeassist.tech"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;19&lt;/td&gt;
+ &lt;td&gt;2023-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools"&gt;DuckDB Sql Tools&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Random Fractals Inc.&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;20&lt;/td&gt;
+ &lt;td&gt;2023-03-28&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook"&gt;Polyverse Boost AI: Complexity Simplified&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://polyverse.com"&gt;Polyverse Corporation&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;21&lt;/td&gt;
+ &lt;td&gt;2023-04-12&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai"&gt;Merlin: GPT Assistant for VS Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://spellcraft.org"&gt;Spellcraft&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;22&lt;/td&gt;
+ &lt;td&gt;2023-04-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;GitHub Copilot Chat&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;23&lt;/td&gt;
+ &lt;td&gt;2023-07-03&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://grappl.io"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;24&lt;/td&gt;
+ &lt;td&gt;2023-07-16&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask"&gt;Bask&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://scious.io"&gt;Scious&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;dsl&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;25&lt;/td&gt;
+ &lt;td&gt;2023-07-17&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync"&gt;Data Sync&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://nguyenngoclongdev.github.io/"&gt;Nguyen Ngoc Long&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;26&lt;/td&gt;
+ &lt;td&gt;2023-07-19&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map"&gt;FnMap&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://yicode.tech"&gt;yicode.tech&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;GPL-3&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;27&lt;/td&gt;
+ &lt;td&gt;2023-08-10&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy"&gt;Taskfy&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Taskfy&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The paying for use of an extension is usually predicated on using a remote API (i.e. remote LLM services) using a paid API key or a subscription associated with an OIDC identity (e.g. a GitHub user account).
 Most common yet is no monetization scheme, which is understandable &amp;ndash; setting up payments isn&amp;rsquo;t trivial.
@@ -1564,13 +1569,18 @@ The privacy encapsulation of these class features is enforced by JavaScript itse
 &lt;h2 id="authorization-code-flow"&gt;Authorization Code Flow&lt;/h2&gt;
 &lt;p&gt;From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1"&gt;https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a&gt;
 and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow"&gt;https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a&gt;&lt;/p&gt;
+
+
+
 &lt;div class="goat svg-container "&gt;
-&lt;svg
-xmlns="http://www.w3.org/2000/svg"
-font-family="Menlo,Lucida Console,monospace"
-viewBox="0 0 504 489"
-&gt;
-&lt;g transform='translate(8,16)'&gt;
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="Menlo,Lucida Console,monospace"
+ 
+ viewBox="0 0 504 489"
+ &gt;
+ &lt;g transform='translate(8,16)'&gt;
 &lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
@@ -1824,7 +1834,9 @@ viewBox="0 0 504 489"
 &lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;/g&gt;
-&lt;/svg&gt;
+
+ &lt;/svg&gt;
+ 
 &lt;/div&gt;
 &lt;p&gt;Note: IdP = &amp;ldquo;&lt;strong&gt;Id&lt;/strong&gt;entity &lt;strong&gt;P&lt;/strong&gt;rovider&amp;rdquo;.
 Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/23/</guid><description>&lt;p&gt;About the three VCard specifications:&lt;/p&gt;
@@ -1884,25 +1896,25 @@ A qualified computer technician can empty a full bit bucket as part of scheduled
 See &lt;a href="https://datatracker.ietf.org/doc/html/rfc6750#section-3"&gt;https://datatracker.ietf.org/doc/html/rfc6750#section-3&lt;/a&gt; for more details.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/01/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/29/</guid><description>&lt;h2 id="typographic-units"&gt;Typographic Units&lt;/h2&gt;
 &lt;h3 id="absolute-distance"&gt;Absolute distance&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th style="text-align: center"&gt;CSS Unit&lt;/th&gt;
-&lt;th&gt;length&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Picas&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;pc&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1/6 inch&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Points&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1/72 inches&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Name&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;CSS Unit&lt;/th&gt;
+ &lt;th&gt;length&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Picas&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;code&gt;pc&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;1/6 inch&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Points&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;1/72 inches&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units"&gt;https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="font-relative-units"&gt;Font-relative units&lt;/h3&gt;
@@ -1996,7 +2008,7 @@ That &lt;code&gt;go mod vendor&lt;/code&gt; only pulls in files that are referen
 &lt;p&gt;Alerts are an extension of Markdown used to emphasize critical information.
 On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.&lt;/p&gt;
 &lt;p&gt;An example of all five types:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!NOTE]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!NOTE] 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;Highlights information that users should take into account, even when skimming.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;&amp;gt; &lt;/span&gt;&lt;span class="ge"&gt;[!TIP]
@@ -2204,12 +2216,12 @@ git config tag.gpgSign true
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;defer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;end func&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// runs at end of function&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;start func&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;defer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;end block&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// runs at end of block&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;start block&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;defer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;end func&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// runs at end of function&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;start func&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="k"&gt;defer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;end block&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// runs at end of block&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;start block&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// Output:&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// start func&lt;/span&gt;&lt;span class="w"&gt;
@@ -2232,36 +2244,36 @@ And that the campaign itself used a pirated copy of that font: &lt;a href="https
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;type&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;asdf&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;any&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;.(&lt;/span&gt;&lt;span class="kd"&gt;type&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;cool&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;uh&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="kd"&gt;type&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;asdf&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;any&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;.(&lt;/span&gt;&lt;span class="kd"&gt;type&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;cool&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;uh&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href="https://go.dev/play/p/VkDckf3vp_O"&gt;https://go.dev/play/p/VkDckf3vp_O&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/05/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/05/09/</guid><description>&lt;p&gt;Clicking &amp;ldquo;Debug Test&amp;rdquo; in VSCode doesn&amp;rsquo;t use the configuration in &lt;code&gt;launch.json&lt;/code&gt;: &lt;a href="https://github.com/golang/vscode-go/wiki/debugging#:~:text=the%20%22debug%20test%22%20codelens%20and%20the%20test%20ui%20do%20not%20use%20the%20launch.json%20configuration"&gt;https://github.com/golang/vscode-go/wiki/debugging#:~:text=the%20%22debug%20test%22%20codelens%20and%20the%20test%20ui%20do%20not%20use%20the%20launch.json%20configuration&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/05/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/05/13/</guid><description>&lt;p&gt;That &lt;code&gt;$?&lt;/code&gt; automatically includes the boolean success/failure of the previous command and &lt;code&gt;&amp;gt;&lt;/code&gt; redirects stdout to a file &lt;strong&gt;AS UTF16&lt;/strong&gt;.
 &lt;code&gt;&amp;quot;unicode: ...&amp;quot; | Out-File -FilePath &amp;quot;...&amp;quot; -Encoding UTF8&lt;/code&gt; correctly handles character encoding.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/06/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/06/14/</guid><description>&lt;p&gt;That mobile OS&amp;rsquo;s often do not define a &lt;code&gt;$HOME&lt;/code&gt; variable:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// On some geese the home directory is not always defined.&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;runtime&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;GOOS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;android&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;/sdcard&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;nil&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;ios&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;nil&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="c1"&gt;// On some geese the home directory is not always defined.&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;runtime&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;GOOS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;android&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;/sdcard&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;nil&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;ios&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;		&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;nil&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Side note: hats off to the programmer that called the plural of &lt;code&gt;GOOS&lt;/code&gt;es &amp;ldquo;geese&amp;rdquo;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2025/06/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2025/06/19/</guid><description>&lt;p&gt;That go&amp;rsquo;s &lt;code&gt;runtime/debug&lt;/code&gt; package keeps track of the version of all modules:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;runtime/debug&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;runtime/debug&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;ReadBuildInfo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;info: %#v&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;ReadBuildInfo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;	&lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;info: %#v&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// info: &amp;amp;debug.BuildInfo{&lt;/span&gt;&lt;span class="w"&gt;
@@ -2341,7 +2353,9 @@ context&amp;rsquo;s Done channel is closed, whichever happens first.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// &amp;lt;-- exhaustiveness check failed for sum type &amp;#39;MySumType&amp;#39;: missing cases for VariantB&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See &lt;a href="https://github.com/alecthomas/go-check-sumtype"&gt;https://github.com/alecthomas/go-check-sumtype&lt;/a&gt;
-see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksumtype"&gt;https://golangci-lint.run/docs/linters/configuration/#gochecksumtype&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/23/</guid><description>&lt;p&gt;that pypi packages all have&lt;/p&gt;
+see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksumtype"&gt;https://golangci-lint.run/docs/linters/configuration/#gochecksumtype&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/07/</guid><description>&lt;p&gt;That there&amp;rsquo;s a remove block that was added in Terraform 1.7.0 :
+&lt;a href="https://developer.hashicorp.com/terraform/language/block/removed"&gt;https://developer.hashicorp.com/terraform/language/block/removed&lt;/a&gt;
+&lt;a href="https://www.hashicorp.com/en/blog/terraform-1-7-adds-test-mocking-and-config-driven-remove#config-driven-remove"&gt;https://www.hashicorp.com/en/blog/terraform-1-7-adds-test-mocking-and-config-driven-remove#config-driven-remove&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/01/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/01/23/</guid><description>&lt;p&gt;that pypi packages all have&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;RSS feeds of their release history&lt;/li&gt;
 &lt;li&gt;blake2b-256 hashes (but not blake3?)&lt;/li&gt;
@@ -2353,4 +2367,5 @@ see &lt;a href="https://golangci-lint.run/docs/linters/configuration/#gochecksum
 &lt;li&gt;Releases, issues, and pull requests: These have dedicated RSS feeds (e.g., &lt;a href="https://github.com/%7Busername%7D/%7Brepo%7D/releases.atom)"&gt;https://github.com/{username}/{repo}/releases.atom)&lt;/a&gt;, but they don’t include commit details.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://www.codestudy.net/blog/setting-up-a-github-commit-rss-feed/#understanding-githubs-native-rss-limitations"&gt;https://www.codestudy.net/blog/setting-up-a-github-commit-rss-feed/#understanding-githubs-native-rss-limitations&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/02/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/02/02/</guid><description>&lt;p&gt;That vim will jump to the previous cursor position if you hit &lt;!-- raw HTML omitted --&gt;Ctrl-O&lt;!-- raw HTML omitted --&gt; or &lt;!-- raw HTML omitted --&gt;``&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/02/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/02/04/</guid><description>&lt;p&gt;That Mac has a built-in clipboard history feature: &lt;a href="https://support.apple.com/guide/mac-help/search-your-clipboard-history-mchl40d5b86b/mac"&gt;Cmd-Space Cmd-4&lt;/a&gt;, no copyq or flycut necessary.&lt;/p&gt;</description></item></channel></rss>
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/02/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/02/02/</guid><description>&lt;p&gt;That vim will jump to the previous cursor position if you hit &lt;!-- raw HTML omitted --&gt;Ctrl-O&lt;!-- raw HTML omitted --&gt; or &lt;!-- raw HTML omitted --&gt;``&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/02/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/02/04/</guid><description>&lt;p&gt;That Mac has a built-in clipboard history feature: &lt;a href="https://support.apple.com/guide/mac-help/search-your-clipboard-history-mchl40d5b86b/mac"&gt;Cmd-Space Cmd-4&lt;/a&gt;, no copyq or flycut necessary.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/03/19/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/03/19/</guid><description>&lt;p&gt;That &lt;code&gt;go tool buildid&lt;/code&gt; reads a build ID from go binaries: see &lt;a href="https://alexanderobregon.substack.com/p/go-build-id-and-reproducibility"&gt;https://alexanderobregon.substack.com/p/go-build-id-and-reproducibility&lt;/a&gt;
+It could be useful for caching in CI systems.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/search/</guid><description/></item></channel></rss>

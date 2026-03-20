@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>2023s on Today I Learned</title><link>https://skalt.github.io/til/2023/</link><description>Recent content in 2023s on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2023/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/01/</guid><description>&lt;p&gt;The difference between triggers and event triggers in postgres:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2023s on Today I Learned</title><link>https://skalt.github.io/til/2023/</link><description>Recent content in 2023s on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2023/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/01/01/</guid><description>&lt;p&gt;The difference between triggers and event triggers in postgres:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unlike regular triggers, which are attached to a single table and capture only DML events, event triggers are global to a particular database and are capable of capturing DDL events.
 Like regular triggers, event triggers can be written in any procedural language that includes event trigger support, or in C, but not in plain SQL.&lt;/p&gt;
@@ -184,20 +184,21 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 │   │   └── file.txt
 │   └── README.md
 └── wrktr
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-├── README.md
-└── submod
-├── LICENSE
-├── nested
-│   └── file.txt
-└── README.md
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ ├── README.md
+ └── submod
+ ├── LICENSE
+ ├── nested
+ │   └── file.txt
+ └── README.md
+
 11 directories, 18 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tree .git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;./.git
@@ -246,40 +247,41 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 │   │   └── HEAD
 │   └── tags
 └── worktrees
-└── wrktr
-├── commondir
-├── gitdir
-├── HEAD
-├── index
-├── logs
-│   └── HEAD
-├── modules
-│   └── submod
-│   ├── branches
-│   ├── config
-│   ├── description
-│   ├── HEAD
-│   ├── hooks/...
-│   ├── index
-│   ├── info/...
-│   ├── logs/...
-│   ├── modules
-│   │   └── submod
-│   │   ├── branches
-│   │   ├── config
-│   │   ├── description
-│   │   ├── HEAD
-│   │   ├── hooks/...
-│   │   ├── index
-│   │   ├── info/...
-│   │   ├── logs/...
-│   │   ├── objects/...
-│   │   ├── packed-refs
-│   │   └── refs/...
-│   ├── objects/...
-│   ├── packed-refs
-│   └── refs/...
-└── ORIG_HEAD
+ └── wrktr
+ ├── commondir
+ ├── gitdir
+ ├── HEAD
+ ├── index
+ ├── logs
+ │   └── HEAD
+ ├── modules
+ │   └── submod
+ │   ├── branches
+ │   ├── config
+ │   ├── description
+ │   ├── HEAD
+ │   ├── hooks/...
+ │   ├── index
+ │   ├── info/...
+ │   ├── logs/...
+ │   ├── modules
+ │   │   └── submod
+ │   │   ├── branches
+ │   │   ├── config
+ │   │   ├── description
+ │   │   ├── HEAD
+ │   │   ├── hooks/...
+ │   │   ├── index
+ │   │   ├── info/...
+ │   │   ├── logs/...
+ │   │   ├── objects/...
+ │   │   ├── packed-refs
+ │   │   └── refs/...
+ │   ├── objects/...
+ │   ├── packed-refs
+ │   └── refs/...
+ └── ORIG_HEAD
+
 91 directories, 133 files
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;args&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --git-common-dir
@@ -502,203 +504,203 @@ This allows you to define sub-tables, and even sub-arrays of tables, inside the 
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; explore_tab &lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="nv"&gt;$p&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s2"&gt;&amp;#34;s#&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PWD&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;#\${PWD}#g&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/nested&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;code&gt;pwd&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-common-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-git-dir&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--is-inside-work-tree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;--show-toplevel&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./config#core.worktree&lt;/code&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;code&gt;./gitdir&lt;/code&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fatal: this operation must be run in a work tree&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;&amp;lt;missing&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/.git&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/worktrees/wrktr/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../../../wrktr/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/.git/modules/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;${PWD}/submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;../../../submod&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/08/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/08/02/</guid><description>&lt;p&gt;On ubuntu:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# X11 keyboard options contain the codes that can be passed as options&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;man xkeyboard-config
@@ -775,30 +777,30 @@ The text &lt;code&gt;https://&lt;/code&gt; or &lt;code&gt;http://&lt;/code&gt; i
 &lt;p&gt;you&amp;rsquo;re most likely interested in &lt;code&gt;position: absolute&lt;/code&gt; which will position an element relative to a container. By default, the container is the browser window, but if a parent element either has &lt;code&gt;position: relative&lt;/code&gt; or &lt;code&gt;position: absolute&lt;/code&gt; set on it, then it will act as the parent for positioning coordinates for its children.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://stackoverflow.com/a/105035/6571327"&gt;https://stackoverflow.com/a/105035/6571327&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/25/</guid><description>&lt;blockquote&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Acronym&lt;/th&gt;
-&lt;th&gt;Meaning&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;DSO&lt;/td&gt;
-&lt;td&gt;distribution system operators&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;AGR&lt;/td&gt;
-&lt;td&gt;aggregator&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TSO&lt;/td&gt;
-&lt;td&gt;transmission system operator&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MCM&lt;/td&gt;
-&lt;td&gt;market-based coordination mechanism&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Acronym&lt;/th&gt;
+ &lt;th&gt;Meaning&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;DSO&lt;/td&gt;
+ &lt;td&gt;distribution system operators&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;AGR&lt;/td&gt;
+ &lt;td&gt;aggregator&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TSO&lt;/td&gt;
+ &lt;td&gt;transmission system operator&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;MCM&lt;/td&gt;
+ &lt;td&gt;market-based coordination mechanism&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://lfenergy.org/projects/shapeshifter/"&gt;https://lfenergy.org/projects/shapeshifter/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/09/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/09/28/</guid><description>&lt;blockquote&gt;
@@ -815,234 +817,234 @@ They usually contain a symbol table and debug information, but rarely unwind inf
 &lt;/ul&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/"&gt;https://docs.sentry.io/platforms/apple/data-management/debug-files/file-formats/&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/03/</guid><description>&lt;p&gt;That out of ~51672 extensions on the VSCode marketplace, there are only 31 that are marked as commercial software: &amp;ldquo;Trial&amp;rdquo; rather than &amp;ldquo;Free&amp;rdquo;.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;#&lt;/th&gt;
-&lt;th&gt;date&lt;/th&gt;
-&lt;th&gt;extension&lt;/th&gt;
-&lt;th&gt;publisher&lt;/th&gt;
-&lt;th&gt;license&lt;/th&gt;
-&lt;th&gt;kind&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2020-04-18&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client"&gt;Redis&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2020-04-21&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh"&gt;SSH Client&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;2020-05-05&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2"&gt;MySQL&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;2021-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2"&gt;ElasticSearch&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;2021-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2"&gt;PostgreSQL&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;2021-02-05&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2"&gt;Database Client&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;2021-06-20&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor"&gt;JS Refactoring Assistant&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://p42.ai"&gt;P42&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;2021-06-29&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;GitHub Copilot&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;2021-11-22&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://getlocalci.com"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;GPL-2&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;2021-12-01&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2"&gt;SQl Server Client(mssql)&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td&gt;2022-01-18&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt"&gt;DVT IDE for Visual Studio Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://amiq.com"&gt;AMIQ EDA s.r.l.&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;2022-06-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test"&gt;TestExtension&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://sap.com"&gt;Prashant&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;experiment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;2022-11-09&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub"&gt;GitHub Copilot Voice&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;2022-11-25&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg"&gt;UPG Code Generator for VS Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://gptlabs.us/"&gt;GPT Labs&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;2022-12-14&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode"&gt;SkyCode&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://singularity-ai.com/"&gt;singularity-ai&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;16&lt;/td&gt;
-&lt;td&gt;2023-01-01&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://softwaretesting.ai/"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;2023-01-06&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme"&gt;arandomtheme&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MiloTilo&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;experiment&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;2023-01-19&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.codeassist.tech"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;2023-01-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools"&gt;DuckDB Sql Tools&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Random Fractals Inc.&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;2023-03-28&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook"&gt;Polyverse Boost AI: Complexity Simplified&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://polyverse.com"&gt;Polyverse Corporation&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;21&lt;/td&gt;
-&lt;td&gt;2023-04-12&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai"&gt;Merlin: GPT Assistant for VS Code&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://spellcraft.org"&gt;Spellcraft&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;2023-04-27&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;GitHub Copilot Chat&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;ai&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;2023-07-03&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://grappl.io"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;24&lt;/td&gt;
-&lt;td&gt;2023-07-16&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask"&gt;Bask&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://scious.io"&gt;Scious&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;dsl&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;25&lt;/td&gt;
-&lt;td&gt;2023-07-17&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync"&gt;Data Sync&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://nguyenngoclongdev.github.io/"&gt;Nguyen Ngoc Long&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;MIT&lt;/td&gt;
-&lt;td&gt;db&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;2023-07-19&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map"&gt;FnMap&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://yicode.tech"&gt;yicode.tech&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;GPL-3&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;2023-08-10&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy"&gt;Taskfy&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Taskfy&lt;/td&gt;
-&lt;td&gt;commercial&lt;/td&gt;
-&lt;td&gt;tool&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;#&lt;/th&gt;
+ &lt;th&gt;date&lt;/th&gt;
+ &lt;th&gt;extension&lt;/th&gt;
+ &lt;th&gt;publisher&lt;/th&gt;
+ &lt;th&gt;license&lt;/th&gt;
+ &lt;th&gt;kind&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;2020-04-18&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-redis-client"&gt;Redis&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;2020-04-21&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-ssh"&gt;SSH Client&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;2020-05-05&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2"&gt;MySQL&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;2021-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-es-client2"&gt;ElasticSearch&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;2021-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2"&gt;PostgreSQL&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;2021-02-05&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2"&gt;Database Client&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;2021-06-20&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor"&gt;JS Refactoring Assistant&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://p42.ai"&gt;P42&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;8&lt;/td&gt;
+ &lt;td&gt;2021-06-29&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;GitHub Copilot&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;9&lt;/td&gt;
+ &lt;td&gt;2021-11-22&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=LocalCI.local-ci"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://getlocalci.com"&gt;Local CI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;GPL-2&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;10&lt;/td&gt;
+ &lt;td&gt;2021-12-01&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-myssql-client2"&gt;SQl Server Client(mssql)&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://database-client.com"&gt;Weijan Chen&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;11&lt;/td&gt;
+ &lt;td&gt;2022-01-18&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=amiq.dvt"&gt;DVT IDE for Visual Studio Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://amiq.com"&gt;AMIQ EDA s.r.l.&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;2022-06-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PrashantCholachagudda.trial-test"&gt;TestExtension&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://sap.com"&gt;Prashant&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;experiment&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;13&lt;/td&gt;
+ &lt;td&gt;2022-11-09&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.heygithub"&gt;GitHub Copilot Voice&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;14&lt;/td&gt;
+ &lt;td&gt;2022-11-25&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=gptlabs.upg"&gt;UPG Code Generator for VS Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://gptlabs.us/"&gt;GPT Labs&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;2022-12-14&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=singularity-ai.skycode"&gt;SkyCode&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://singularity-ai.com/"&gt;singularity-ai&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;16&lt;/td&gt;
+ &lt;td&gt;2023-01-01&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=SoftwareTestingAI.softwaretestingai-extension"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://softwaretesting.ai/"&gt;Software Testing AI&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;17&lt;/td&gt;
+ &lt;td&gt;2023-01-06&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=MiloTilo.arandomtheme"&gt;arandomtheme&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MiloTilo&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;experiment&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;18&lt;/td&gt;
+ &lt;td&gt;2023-01-19&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CodeAssist.codeassist"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.codeassist.tech"&gt;CodeAssist&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;19&lt;/td&gt;
+ &lt;td&gt;2023-01-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools"&gt;DuckDB Sql Tools&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Random Fractals Inc.&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;20&lt;/td&gt;
+ &lt;td&gt;2023-03-28&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=PolyverseCorporation.polyverse-boost-notebook"&gt;Polyverse Boost AI: Complexity Simplified&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://polyverse.com"&gt;Polyverse Corporation&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;21&lt;/td&gt;
+ &lt;td&gt;2023-04-12&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Spellcraft.merlin-ai"&gt;Merlin: GPT Assistant for VS Code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://spellcraft.org"&gt;Spellcraft&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;22&lt;/td&gt;
+ &lt;td&gt;2023-04-27&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;GitHub Copilot Chat&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;ai&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;23&lt;/td&gt;
+ &lt;td&gt;2023-07-03&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=grappl.grappl"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://grappl.io"&gt;Grappl&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;24&lt;/td&gt;
+ &lt;td&gt;2023-07-16&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Scious.Bask"&gt;Bask&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://scious.io"&gt;Scious&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;dsl&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;25&lt;/td&gt;
+ &lt;td&gt;2023-07-17&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=nguyenngoclong.data-sync"&gt;Data Sync&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://nguyenngoclongdev.github.io/"&gt;Nguyen Ngoc Long&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;MIT&lt;/td&gt;
+ &lt;td&gt;db&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;26&lt;/td&gt;
+ &lt;td&gt;2023-07-19&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=chensuiyi.fn-map"&gt;FnMap&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://yicode.tech"&gt;yicode.tech&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;GPL-3&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;27&lt;/td&gt;
+ &lt;td&gt;2023-08-10&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=Taskfy.taskfy"&gt;Taskfy&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Taskfy&lt;/td&gt;
+ &lt;td&gt;commercial&lt;/td&gt;
+ &lt;td&gt;tool&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The paying for use of an extension is usually predicated on using a remote API (i.e. remote LLM services) using a paid API key or a subscription associated with an OIDC identity (e.g. a GitHub user account).
 Most common yet is no monetization scheme, which is understandable &amp;ndash; setting up payments isn&amp;rsquo;t trivial.
@@ -1091,13 +1093,18 @@ The privacy encapsulation of these class features is enforced by JavaScript itse
 &lt;h2 id="authorization-code-flow"&gt;Authorization Code Flow&lt;/h2&gt;
 &lt;p&gt;From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1"&gt;https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a&gt;
 and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow"&gt;https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a&gt;&lt;/p&gt;
+
+
+
 &lt;div class="goat svg-container "&gt;
-&lt;svg
-xmlns="http://www.w3.org/2000/svg"
-font-family="Menlo,Lucida Console,monospace"
-viewBox="0 0 504 489"
-&gt;
-&lt;g transform='translate(8,16)'&gt;
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="Menlo,Lucida Console,monospace"
+ 
+ viewBox="0 0 504 489"
+ &gt;
+ &lt;g transform='translate(8,16)'&gt;
 &lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
@@ -1351,7 +1358,9 @@ viewBox="0 0 504 489"
 &lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;/g&gt;
-&lt;/svg&gt;
+
+ &lt;/svg&gt;
+ 
 &lt;/div&gt;
 &lt;p&gt;Note: IdP = &amp;ldquo;&lt;strong&gt;Id&lt;/strong&gt;entity &lt;strong&gt;P&lt;/strong&gt;rovider&amp;rdquo;.
 Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2023/10/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/23/</guid><description>&lt;p&gt;About the three VCard specifications:&lt;/p&gt;

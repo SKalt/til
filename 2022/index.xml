@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>2022s on Today I Learned</title><link>https://skalt.github.io/til/2022/</link><description>Recent content in 2022s on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2022/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/01/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/04/</guid><description>&lt;p&gt;about the css &lt;code&gt;:target&lt;/code&gt; selector (matches the element with the id specified by the url document-fragment)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2022s on Today I Learned</title><link>https://skalt.github.io/til/2022/</link><description>Recent content in 2022s on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/2022/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2022/01/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/04/</guid><description>&lt;p&gt;about the css &lt;code&gt;:target&lt;/code&gt; selector (matches the element with the id specified by the url document-fragment)
 and the svg &lt;code&gt;&amp;lt;view&amp;gt;&lt;/code&gt; element, which specifies a &lt;code&gt;viewBox&lt;/code&gt; and can have an id.&lt;/p&gt;
 &lt;p&gt;see &lt;a href="https://css-tricks.com/svg-fragment-identifiers-work/"&gt;https://css-tricks.com/svg-fragment-identifiers-work/&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/01/09/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/01/09/</guid><description>&lt;p&gt;1: That you can set statement timeouts:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;ALTER&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;DATABASE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mydatabase&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;SET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statement_timeout&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;60s&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;
@@ -62,7 +62,7 @@ See &lt;a href="https://sqlite.org/pragma.html#pragma_user_version"&gt;https://s
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# character set: [ :]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# repetition: +&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/03/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/03/22/</guid><description>&lt;p&gt;You can replace the &lt;code&gt;nth&lt;/code&gt; instance of a pattern on a line with sed:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;a\tb\tc\n&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s1"&gt;&amp;#39;s/\t/\t~/2&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;a\tb\tc\n&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; sed &lt;span class="s1"&gt;&amp;#39;s/\t/\t~/2&amp;#39;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# a b ~c&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/04/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/04/04/</guid><description>&lt;p&gt;to run &lt;code&gt;terraform output $output_name&lt;/code&gt; to print a named output&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/04/06/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/04/06/</guid><description>&lt;p&gt;That python f-strings can do&lt;/p&gt;
 &lt;ul&gt;
@@ -250,8 +250,11 @@ Also, the author alleges that the limit applies to http/2 and http/3+QUIC.&lt;/p
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;--duration-seconds (integer)
+
 The duration, in seconds, of the role session. The value specified can range from 900 seconds (15 minutes) up to the maximum session duration set for the role. **The maximum session duration setting can have a value from 1 hour to 12 hours.** If you specify a value higher than this setting or the administrator setting (whichever is lower), the operation fails. For example, if you specify a session duration of 12 hours, but your administrator set the maximum session duration to 6 hours, your operation fails.
+
 Role chaining limits your Amazon Web Services CLI or Amazon Web Services API role session to a maximum of one hour. When you use the AssumeRole API operation to assume a role, you can specify the duration of your role session with the DurationSeconds parameter. You can specify a parameter value of up to 43200 seconds (12 hours), depending on the maximum session duration setting for your role. However, if you assume a role using role chaining and provide a DurationSeconds parameter value greater than one hour, the operation fails. To learn how to view the maximum value for your role, see View the Maximum Session Duration Setting for a Role in the IAM User Guide .
+
 By default, the value is set to 3600 seconds.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;see &lt;a href="https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html#options"&gt;https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html#options&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/08/31/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/08/31/</guid><description>&lt;p&gt;That linux has a capability system:
@@ -310,7 +313,7 @@ It generates a &lt;code&gt;bad substitution&lt;/code&gt; message in bash 3.2, so
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I found the following: &lt;a href="https://www.tecmint.com/fix-ssh-too-many-authentication-failures-error/"&gt;https://www.tecmint.com/fix-ssh-too-many-authentication-failures-error/&lt;/a&gt;
 which advocated adding&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;Host *
-IdentitiesOnly yes
+ IdentitiesOnly yes
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to reduce the number of tried keys&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/07/</guid><description>&lt;p&gt;that AWS ALB target groups support HTTPS healthcheck targets: &lt;a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"&gt;https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;That FQDN stands for Fully Qualified Domain Name. For example &lt;code&gt;sub.domain.tld.&lt;/code&gt; is a FQDN.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/11/08/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/11/08/</guid><description>&lt;p&gt;That the &lt;a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_tag"&gt;&lt;code&gt;aws_ec2_tag&lt;/code&gt;&lt;/a&gt;
@@ -367,11 +370,11 @@ H/t Vlad Grenkov for this one :)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;fieldset&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;produces&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt; ┌────legend─────┐
-│ │
-│ │
-│ ... │
-│ │
-│ │
-└───────────────┘
+ │ │
+ │ │
+ │ ... │
+ │ │
+ │ │
+ └───────────────┘
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;which is simultaneously cool and hard to style.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2022/12/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2022/12/26/</guid><description>&lt;p&gt;That you need to set a &lt;code&gt;value=&amp;quot;number&amp;quot;&lt;/code&gt; attribute AND a &lt;code&gt;max=&amp;quot;number&amp;quot;&lt;/code&gt; attribute on a html &lt;code&gt;&amp;lt;progress&amp;gt;&lt;/code&gt; element in order to display fractional progress.&lt;/p&gt;
 &lt;p&gt;See &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"&gt;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

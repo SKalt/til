@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Goat on Today I Learned</title><link>https://skalt.github.io/til/tags/goat/</link><description>Recent content in Goat on Today I Learned</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/goat/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>&lt;p&gt;First, that &lt;a href="https://gohugo.io/content-management/diagrams/"&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/a&gt; supports &lt;a href="https://github.com/bep/goat"&gt;&lt;code&gt;goat&lt;/code&gt;&lt;/a&gt; ascii diagrams out-of-the box.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Goat on Today I Learned</title><link>https://skalt.github.io/til/tags/goat/</link><description>Recent content in Goat on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/goat/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2023/10/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2023/10/20/</guid><description>&lt;p&gt;First, that &lt;a href="https://gohugo.io/content-management/diagrams/"&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/a&gt; supports &lt;a href="https://github.com/bep/goat"&gt;&lt;code&gt;goat&lt;/code&gt;&lt;/a&gt; ascii diagrams out-of-the box.&lt;/p&gt;
 &lt;p&gt;Second, about OAuth 2.0 authentication + authorization flows:&lt;/p&gt;
 &lt;h2 id="authorization-code-flow"&gt;Authorization Code Flow&lt;/h2&gt;
 &lt;p&gt;From &lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1"&gt;https://tools.ietf.org/html/rfc6749#section-4.1&lt;/a&gt;
 and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow"&gt;https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow&lt;/a&gt;&lt;/p&gt;
+
+
+
 &lt;div class="goat svg-container "&gt;
-&lt;svg
-xmlns="http://www.w3.org/2000/svg"
-font-family="Menlo,Lucida Console,monospace"
-viewBox="0 0 504 489"
-&gt;
-&lt;g transform='translate(8,16)'&gt;
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="Menlo,Lucida Console,monospace"
+ 
+ viewBox="0 0 504 489"
+ &gt;
+ &lt;g transform='translate(8,16)'&gt;
 &lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
@@ -263,7 +268,9 @@ viewBox="0 0 504 489"
 &lt;text text-anchor='middle' x='480' y='20' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;/g&gt;
-&lt;/svg&gt;
+
+ &lt;/svg&gt;
+ 
 &lt;/div&gt;
 &lt;p&gt;Note: IdP = &amp;ldquo;&lt;strong&gt;Id&lt;/strong&gt;entity &lt;strong&gt;P&lt;/strong&gt;rovider&amp;rdquo;.
 Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p&gt;</description></item></channel></rss>
