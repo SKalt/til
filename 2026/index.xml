@@ -23,4 +23,4 @@ git blame attribution: &lt;a href="https://nesbitt.io/2026/02/05/git-magic-files
 &lt;blockquote&gt;
 &lt;p&gt;in e.g. .NET, python, and rust, the default &lt;code&gt;\d&lt;/code&gt; matches Unicode digits (~370 digits in .NET, ~770 in Rust), not just ASCII 0-9. that includes Eastern Arabic (٠١٢٣), Devanagari (०१२३), Fullwidth (０１２３), and many others.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://iev.ee/blog/what-262715-regex-questions-havent-answered/#:~:text=in%20e%2Eg,others"&gt;https://iev.ee/blog/what-262715-regex-questions-havent-answered/#:~:text=in%20e%2Eg,others&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/05/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/05/22/</guid><description>&lt;p&gt;That FF, opera, and chromium derivatives can talk to microcontrollers directly: &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API"&gt;https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
