@@ -29,14 +29,14 @@ and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorizat
 
 
 &lt;div class="goat svg-container "&gt;
- 
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- font-family="Menlo,Lucida Console,monospace"
- 
- viewBox="0 0 504 489"
- &gt;
- &lt;g transform='translate(8,16)'&gt;
+	
+		&lt;svg
+			xmlns="http://www.w3.org/2000/svg"
+			font-family="Menlo,Lucida Console,monospace"
+			
+				viewBox="0 0 504 489"
+			&gt;
+			&lt;g transform='translate(8,16)'&gt;
 &lt;path d='M 8,0 L 48,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 96,0 L 152,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
 &lt;path d='M 280,0 L 440,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
@@ -291,8 +291,8 @@ and &lt;a href="https://auth0.com/docs/get-started/authentication-and-authorizat
 &lt;text text-anchor='middle' x='480' y='452' fill='currentColor' style='font-size:1em'&gt;P&lt;/text&gt;
 &lt;/g&gt;
 
- &lt;/svg&gt;
- 
+		&lt;/svg&gt;
+	
 &lt;/div&gt;
 &lt;p&gt;Note: IdP = &amp;ldquo;&lt;strong&gt;Id&lt;/strong&gt;entity &lt;strong&gt;P&lt;/strong&gt;rovider&amp;rdquo;.
 Also note that the OAuth 2.0 spec separates the user from the &amp;ldquo;user-agent&amp;rdquo;, which is typically the browser. For my notes I&amp;rsquo;m calling the human user the same thing as their browser.&lt;/p&gt;</description></item><item><title/><link>https://skalt.github.io/til/2024/01/28/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/01/28/</guid><description>&lt;p&gt;That 401 Unauthorized responses are supposed to include a &lt;code&gt;www-authenticate&lt;/code&gt; header with a value indicating how to obtain a valid token.
