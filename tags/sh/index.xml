@@ -70,4 +70,6 @@ This simplifies using &lt;code&gt;.env&lt;/code&gt; files in &lt;code&gt;.envrc&
 &lt;p&gt;which -a python # shows all matches on $PATH
 type python # checks if a builtin/alias/fn/exe&lt;/p&gt;
 &lt;p&gt;&amp;ndash; &lt;a href="https://wizardzines.com/comics/path-tips/"&gt;https://wizardzines.com/comics/path-tips/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item></channel></rss>
+&lt;/blockquote&gt;</description></item><item><title/><link>https://skalt.github.io/til/2026/08/07/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2026/08/07/</guid><description>&lt;p&gt;that &lt;code&gt;fc(1)&lt;/code&gt; is a portable way to edit your last shell command in your preferred editor, then re-run it.&lt;/p&gt;
+&lt;p&gt;See
+&lt;a href="https://refp.se/articles/your-shell-and-the-lazy-exclamation-mark#posix-and-the-power-of-fc"&gt;https://refp.se/articles/your-shell-and-the-lazy-exclamation-mark#posix-and-the-power-of-fc&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
