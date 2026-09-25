@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cpe on Today I Learned</title><link>https://skalt.github.io/til/tags/cpe/</link><description>Recent content in Cpe on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/cpe/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/03/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/13/</guid><description>&lt;p&gt;Common Platform Enumeration, a syntax for identifying &amp;ldquo;IT stuff&amp;rdquo;:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;cpe
-:&amp;lt;cpe_version&amp;gt;
-:&amp;lt;part&amp;gt;
-:&amp;lt;vendor&amp;gt;
-:&amp;lt;product&amp;gt;
-:&amp;lt;version&amp;gt;
-:&amp;lt;update&amp;gt;
-:&amp;lt;edition&amp;gt;
-:&amp;lt;language&amp;gt;
-:&amp;lt;sw_edition&amp;gt;
-:&amp;lt;target_sw&amp;gt;
-:&amp;lt;target_hw&amp;gt;
-:&amp;lt;other&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notably, &lt;code&gt;part&lt;/code&gt; can only be &lt;code&gt;a|h|o&lt;/code&gt; = &lt;code&gt;app | hardware | OS&lt;/code&gt;, not &amp;ldquo;documentation&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://en.wikipedia.org/wiki/Common_Platform_Enumeration"&gt;https://en.wikipedia.org/wiki/Common_Platform_Enumeration&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cpe on Today I Learned</title><link>https://skalt.github.io/til/tags/cpe/</link><description>Recent content in Cpe on Today I Learned</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC-SA 4.0</copyright><atom:link href="https://skalt.github.io/til/tags/cpe/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://skalt.github.io/til/2024/03/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skalt.github.io/til/2024/03/13/</guid><description>&lt;p&gt;Common Platform Enumeration, a syntax for identifying &amp;ldquo;IT stuff&amp;rdquo;:&lt;/p&gt;&#10;&lt;pre tabindex="0"&gt;&lt;code&gt;cpe&#10;:&amp;lt;cpe_version&amp;gt;&#10;:&amp;lt;part&amp;gt;&#10;:&amp;lt;vendor&amp;gt;&#10;:&amp;lt;product&amp;gt;&#10;:&amp;lt;version&amp;gt;&#10;:&amp;lt;update&amp;gt;&#10;:&amp;lt;edition&amp;gt;&#10;:&amp;lt;language&amp;gt;&#10;:&amp;lt;sw_edition&amp;gt;&#10;:&amp;lt;target_sw&amp;gt;&#10;:&amp;lt;target_hw&amp;gt;&#10;:&amp;lt;other&amp;gt;&#10;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notably, &lt;code&gt;part&lt;/code&gt; can only be &lt;code&gt;a|h|o&lt;/code&gt; = &lt;code&gt;app | hardware | OS&lt;/code&gt;, not &amp;ldquo;documentation&amp;rdquo;.&lt;/p&gt;&#10;&lt;p&gt;See &lt;a href="https://en.wikipedia.org/wiki/Common_Platform_Enumeration"&gt;https://en.wikipedia.org/wiki/Common_Platform_Enumeration&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
